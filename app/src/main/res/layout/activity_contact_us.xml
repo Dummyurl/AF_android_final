@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.ContactUsActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+<!--
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                     />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_us_address_head"
+                        android:layout_marginLeft="@dimen/cont_us_mar_left"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/cont_us_heading_dimen"
+                         />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/layout_margin"
+                        >
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/con_addr_icon"
+                            android:layout_width="@dimen/cont_us_logo_hight"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/form_tv_size"
+                            android:text="@string/home_icon"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_toEndOf="@+id/con_addr_icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_us_address"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="@dimen/cont_us_textsize" />
+
+                    </RelativeLayout>
+                    <include layout="@layout/item_divider1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/cont_us_mar_top"
+                        android:layout_marginLeft="@dimen/cont_us_mar_left"
+                        android:text="@string/contact_us_cont_number_head"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/cont_us_heading_dimen"
+                         />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/layout_margin"
+                        >
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/con_contact_icon"
+                            android:layout_width="@dimen/cont_us_logo_hight"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/form_tv_size"
+                            android:text="@string/landlin_icon"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:layout_toEndOf="@+id/con_contact_icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contact_us_cont_number"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="@dimen/cont_us_textsize" />
+                    </RelativeLayout>
+                    <include layout="@layout/item_divider1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/cont_us_mar_top"
+                        android:layout_marginLeft="@dimen/cont_us_mar_left"
+                        android:text="@string/contact_us_email_head"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/about_us_heading_dimen"
+                         />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/layout_margin"
+
+                        >
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/con_email_icon"
+                            android:layout_width="@dimen/cont_us_logo_hight"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/form_tv_size"
+                            android:text="@string/email_icon"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:layout_toEndOf="@+id/con_email_icon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="info@theleelagroup.com"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="@dimen/cont_us_textsize" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_matrimony"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/layout_margin"
+                >
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  >
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/Extra_Activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Extra_Curriculum_Activity"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/Level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Zonal_National_International_Level"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Year"
+                        android:inputType="number"
+                        android:maxLength="4" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Position"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/Other_Achivment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layoutMarginBottom"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:text="@string/Any_Other_Achivment"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+                <EditText
+                    android:textSize="@dimen/text_size"
+
+                    android:id="@+id/AnyOtherAchivment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:maxLines="5"
+                    android:scrollHorizontally="false" />
+
+                <TextView
+                    android:id="@+id/Hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:text="@string/Hobbies"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+                <EditText
+                    android:id="@+id/EditText_Hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:maxLines="5"
+                    android:textSize="@dimen/text_size"
+
+                    android:scrollHorizontally="false" />
+
+                    <Button
+                        android:id="@+id/O_Next"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@drawable/res_drawable_btn_flat_normal"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:onClick="startNext"
+                        android:textSize="@dimen/text_size"
+
+                        android:text="@string/Next"
+                        android:textColor="#ffffff" />
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.FormFamilyDetailsActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="vertical">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_fthrfllname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/FatherFullName"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_mthrfllname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/MotherFullName"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_fthroccpn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="Father's Occupation"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_mthroccptn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:layout_weight=".5"
+                        android:hint="@string/MotherOccupation"
+                        android:inputType="textMultiLine|textCapWords"
+                        android:scrollbars="vertical" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_noofbros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:digits="0123456789"
+                        android:hint="@string/NumberOfBrothers"
+                        android:inputType="number"
+                        android:maxLength="1" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_noofsis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:digits="0123456789"
+                        android:hint="@string/NumberOfSisters"
+                        android:inputType="number"
+                        android:maxLength="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_noofbromaried"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:digits="0123456789"
+                        android:hint="@string/NumberOfBrothersMarried"
+                        android:inputType="number"
+                        android:maxLength="1" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_fmilydtl_et_noofsismaried"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:digits="0123456789"
+                        android:hint="@string/NumberOfSistersMarried"
+                        android:inputType="number"
+                        android:maxLength="1" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/frm_fmilydtl_tv_fmlysts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:textColor="@color/black"
+                android:text="@string/FamilyStatus"
+                />
+
+
+
+
+                <Spinner
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:id="@+id/frm_fmilydtl_spr_fmlysts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/family_status" />
+
+            <TextView
+                android:id="@+id/frm_fmilydtl_tv_fmlytpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:textColor="@color/black"
+                android:text="@string/FamilyType"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Spinner
+                    android:id="@+id/frm_fmilydtl_spr_fmlytpe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/family_type" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frm_fmilydtl_tv_fmlyanlincome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:text="@string/FamilyAnnualIncome"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Spinner
+                    android:id="@+id/frm_fmilydtl_spr_fmlyanlincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/income" />
+            </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:onClick="goToFormPhysicalAttribute"
+                    android:text="@string/save_next"
+                    android:textSize="@dimen/text_size"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttonTextColor"
+                    />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

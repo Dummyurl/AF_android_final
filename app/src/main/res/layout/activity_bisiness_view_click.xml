@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context="business.Business_View_Click_Activity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar_matrimony" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/layout_bottom_margin"
+                android:layout_marginTop="@dimen/layout_Top_margin"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_logo"
+                    android:src="@drawable/profile_circle"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin">
+
+
+                <TextView
+                    android:id="@+id/na"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <!--
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/na"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tag_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/tag_icon"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!--     <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_tag_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/tag_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/email_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+
+                    android:text="@string/email_icon"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/email_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/m_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/phone_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/m_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/Contact_Code"
+                     />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+
+                <TextView
+                    android:id="@+id/tv_contact_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <include layout="@layout/item_divider2" />-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/landline_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+
+                    android:text="@string/landline_icon"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+                <!--             <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_contact_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@id/landline_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/d_per_ntvplace"
+                    android:text="@string/Address_Line_1"
+                    />
+
+                <!--
+                  <TextView
+                      android:layout_width="@dimen/textview_width"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+              />-->
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                    android:id="@+id/natv_place"
+                    android:text="@string/home_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorPrimary"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/natv_place"
+                    android:id="@+id/tv_address1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/cun"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+
+                    android:text="@string/c_icon"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_country1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/cun"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/s_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/s_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--  <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_state1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/s_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/city_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+
+                    android:text="@string/city_icon"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+
+                <TextView
+                    android:id="@+id/tv_city1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/city_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:id="@+id/address2"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/Address_Line_2"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!--<TextView
+                      android:layout_width="@dimen/textview_width"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      />
+  -->
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                    android:id="@+id/addrss2"
+                    android:text="@string/home_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/tv_address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:layout_toEndOf="@+id/addrss2"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/c1"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/c_icon"
+                    android:textSize="@dimen/text_size"
+
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_country2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/c1"
+                    android:textSize="@dimen/text_size"
+                    android:layout_weight=".5"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/s1"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/s_icon"
+                    android:textSize="@dimen/text_size"
+
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!--   <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_state2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/s1"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+
+                    android:id="@+id/c2"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+
+                    android:text="@string/city_icon"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!--  <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_city2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/c2"
+                    android:layout_weight=".5"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/dec_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/descrioption_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/dec_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/lD_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/lD_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_long_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/lD_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/established"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/established"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+                <!--  <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_establist_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/established"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/web"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/website_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--     <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/web"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/cer"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/certificate_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+
+                <!--    <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_certification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/cer"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/lic_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/licen_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_licenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/lic_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/payment"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/payment_method_ic"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--  <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_payment_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/payment"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/lang_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--    <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_languages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/textView9"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/categry"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/catgory_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+                <!--
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/categry"
+                    android:layout_weight=".5"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/sub_c"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/sub_categry_icon"
+
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--  <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_subcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/sub_c"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/locale_icon"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/locale_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+
+                <TextView
+                    android:id="@+id/tv_locale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/locale_icon"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/serve_area"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/serv_area"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--<TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_service_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/serve_area"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/working"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/working_day_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--    <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_working_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/working"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/clock"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/clock"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--  <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_hours_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/clock"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/logo"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+                <!--
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/logo"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart"
+
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/spec"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/spetiality_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!--      <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_Specialities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/spec"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/business"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/business_type_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+                <!--
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />-->
+
+                <TextView
+                    android:id="@+id/tv_business_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/business"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart"
+
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_width="@dimen/text_view40_height"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:text="@string/adevertisement_type_icon"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"
+                    />
+
+                <!-- <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/dot" />
+-->
+                <TextView
+                    android:id="@+id/tv_advertiser_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/add"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="textStart" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

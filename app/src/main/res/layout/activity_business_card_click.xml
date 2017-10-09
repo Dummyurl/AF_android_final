@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_result__medical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.LeelaGroup.AgrawalFedration.medical.SearchResult_Medical">
+
+    <include layout="@layout/toolbar_matrimony">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        android:padding="@dimen/TextInputLayoutMargin_top_bottom"
+                        tools:ignore="UselessParent">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_card"
+                            android:layout_width="@dimen/image_width"
+                            android:src="@drawable/profile_circle"
+                            android:layout_height="@dimen/image_height"
+                            android:layout_gravity="center" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <TextView
+                                android:id="@+id/B_name"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/medical_ic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/about_us_heading_dimen" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_name"
+                                android:textSize="@dimen/text_size"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin"
+                            tools:ignore="UseCompoundDrawables">
+
+
+                            <TextView
+                                android:id="@+id/B_category"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/category"
+                                android:textSize="@dimen/about_us_heading_dimen"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                            />
+
+
+                            <TextView
+                                android:id="@+id/category"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_category"
+                                android:scrollbars="vertical"
+                                android:textSize="@dimen/text_size"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+                        </RelativeLayout>
+
+
+                        <include layout="@layout/item_divider1" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin"
+                            tools:ignore="UseCompoundDrawables">
+
+
+                            <TextView
+                                android:id="@+id/B_address"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_ic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/about_us_heading_dimen"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true" />
+
+
+                            <TextView
+                                android:id="@+id/Address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_address"
+                                android:scrollbars="vertical"
+                                android:textSize="@dimen/text_size"
+
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider1" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <TextView
+                                android:id="@+id/B_city"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/city_ic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/about_us_heading_dimen"
+                                />
+
+                            <TextView
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_city"
+                                android:textSize="@dimen/text_size"
+
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+
+                            <TextView
+                                android:id="@+id/B_mobile"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:text="@string/mobile_ic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/about_us_heading_dimen"
+                                />
+
+                            <TextView
+                                android:textSize="@dimen/text_size"
+
+                                android:id="@+id/mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_mobile"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+
+                            <TextView
+                                android:id="@+id/B_email"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/email_ic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/about_us_heading_dimen"
+                                />
+
+
+                            <TextView
+                                android:textSize="@dimen/text_size"
+
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_email"
+                                android:scrollbars="vertical"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+                        </RelativeLayout>
+                        <include layout="@layout/item_divider1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+
+                            <TextView
+                                android:id="@+id/B_website"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/website_ic"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/about_us_heading_dimen"
+                                />
+
+
+                            <TextView
+                                android:textSize="@dimen/text_size"
+
+                                android:id="@+id/Website"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/B_website"
+                                android:scrollbars="vertical"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+<!--
+            </LinearLayout>
+-->
+    </ScrollView>
+</LinearLayout>

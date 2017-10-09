@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeee"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_circle"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/aboutuss"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logoutt"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

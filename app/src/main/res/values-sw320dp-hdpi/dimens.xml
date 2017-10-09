@@ -1,0 +1,162 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--user profile-->
+    <dimen name="Iconsize">50dp</dimen>
+    <dimen name="socialIcon">30sp</dimen>
+    <dimen name="edittext_width">270dp</dimen>
+    <dimen name="Ndrawer_width">240dp</dimen>
+    <dimen name="business_height">150dp</dimen>
+    <dimen name="textViewHeight">50dp</dimen>
+
+    <dimen name="layoutHeight">150dp</dimen>
+
+
+    <!--************************************Search card dimension*********************************-->
+    <dimen name="MarginTopCardField">10dp</dimen>
+
+    <!--Business Dimension-->
+    <dimen name="layout_width">140dp</dimen>
+    <dimen name="layout_height">120dp</dimen>
+    <dimen name="layout_bottom_margin">5dp</dimen>
+    <dimen name="layout_Top_margin">5dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="textview_width">20dp</dimen>
+    <dimen name="text_layout_margin">20dp</dimen>
+    <dimen name="TextInputLayout_bottom">8dp</dimen>
+    <dimen name="imageview_width">150dp</dimen>
+    <dimen name="text_view40_height">40dp</dimen>
+    <dimen name="paddingTop6">6dp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="top_margin_15">15dp</dimen>
+    <dimen name="text_size_40">40sp</dimen>
+    <dimen name="Dimage_height">150dp</dimen>
+    <dimen name="login_educ_height">240dp</dimen>
+<dimen name="drawer_width">80dp</dimen>
+    <dimen name="a70">70dp</dimen>
+    <dimen name="a60">60dp</dimen>
+    <dimen name="bottom">20dp</dimen>
+
+
+
+
+    <!--  matrimony  Dimention -->
+    <!--
+    <dimen name="layout_margin">10dp</dimen>
+-->
+    <dimen name="form_layout_margin">20dp</dimen>
+    <dimen name="about_us_heading_dimen">18sp</dimen>
+    <dimen name="colapsing_lay_mar_start">48dp</dimen>
+    <dimen name="colapsing_lay_mar_end">64dp</dimen>
+    <dimen name="colapsing_lay_mar_img_height">150dp</dimen>
+    <dimen name="profile_pic_width">130dp</dimen>
+    <dimen name="profile_pic_hight">200dp</dimen>
+    <dimen name="basic_details_inner_lay_mar">5dp</dimen>
+    <dimen name="seperator_width">20dp</dimen>
+    <dimen name="cont_us_mar_left">5dp</dimen>
+    <dimen name="cont_us_mar_top">10dp</dimen>
+    <dimen name="cont_us_heading_dimen">18sp</dimen>
+    <dimen name="cont_us_logo_hight">40dp</dimen>
+    <dimen name="cont_us_logo_width">40dp</dimen>
+    <dimen name="cont_us_textsize">15sp</dimen>
+
+    <dimen name="event_row_cardview_margin">8dp</dimen>
+    <dimen name="event_row_cardview_layout_mar_bottom">5dp</dimen>
+
+    <dimen name="event_full_layout_margin">5dp</dimen>
+    <dimen name="event_full_layout_tv_padding">2dp</dimen>
+    <dimen name="event_full_layout_tv_mar_top">5dp</dimen>
+    <dimen name="event_full_layout_tv_mar_left">10dp</dimen>
+    <dimen name="event_full_layout_tv_mar_right">10dp</dimen>
+    <dimen name="event_full_layout_tv_size">15sp</dimen>
+    <dimen name="event_full_layout_patrika_ht">250dp</dimen>
+
+    <dimen name="family_detail_layout_margin">5dp</dimen>
+
+    <dimen name="h160">160dp</dimen>
+
+    <dimen name="form_text_input_layout_padding">5dp</dimen>
+    <dimen name="form_et_drawable_padding">5dp</dimen>
+    <dimen name="button_margin_top">10dp</dimen>
+    <dimen name="button_margin_bottom">20dp</dimen>
+    <dimen name="button_margin_bottom_frm_basicdetails">30dp</dimen>
+    <dimen name="formPartnerPref_button_margin_bottom">30dp</dimen>
+    <dimen name="button_padding">10dp</dimen>
+
+    <dimen name="form_tv_size">15sp</dimen>
+    <dimen name="login_form_tv_size">15sp</dimen>
+    <dimen name="form_inner_layout_margin">2dp</dimen>
+    <dimen name="form_first_radio_bn_width">200dp</dimen>
+
+    <dimen name="form_spinner_layout_margin_top">15dp</dimen>
+    <dimen name="form_spinner_layout_margin_bottom">15dp</dimen>
+    <dimen name="form_tv_religiondetl_margin_top">20dp</dimen>
+    <dimen name="form_tv_religiondetl_margin_bottom">10dp</dimen>
+    <dimen name="form_tv_propic_padding">2dp</dimen>
+    <dimen name="form_tv_propic_margin_top">5dp</dimen>
+    <dimen name="form_spinner_label_mar_left">5dp</dimen>
+
+    <dimen name="form_login_main_lay_margin">20dp</dimen>
+    <dimen name="form_login_tv_mar_top">10dp</dimen>
+    <dimen name="form_login_tv_login_size">30dp</dimen>
+    <dimen name="form_login_til_mar_top">10dp</dimen>
+    <dimen name="form_login_tv_forgotpass_width">100dp</dimen>
+    <dimen name="form_login_tv_forgotpass_padding">5dp</dimen>
+
+    <dimen name="createProfile_textSize">15sp</dimen>
+
+    <dimen name="form_registration_til_mar_top">10dp</dimen>
+    <dimen name="myProfileHeadingMarLeft">10dp</dimen>
+    <dimen name="myProfileHeadingMarTop">20dp</dimen>
+    <dimen name="myProfileHeadingSize">20sp</dimen>
+    <dimen name="personDetailRowLay_main_lay_height">165dp</dimen>
+    <dimen name="personDetailRowLay_main_lay_padding">5dp</dimen>
+    <dimen name="personDetailRowLay_main_lay_inr_padding">2dp</dimen>
+    <dimen name="personDetailRowLay_main_lay_textSize">15sp</dimen>
+    <dimen name="successStoriesRowLay_mar_left">10dp</dimen>
+    <dimen name="successStoriesRowLay_textSize">16sp</dimen>
+    <dimen name="successStoriesRowLay_margin_top">10dp</dimen>
+    <dimen name="successStoriesRowLay_logo_height">50dp</dimen>
+    <dimen name="successStoriesRowLay_margin_left">10dp</dimen>
+
+    <!--***********************************Medical**********************************************-->
+    <dimen name="layoutMargin">10dp</dimen>
+    <dimen name="layoutMarginBottom">10dp</dimen>
+    <dimen name="layoutMarginBottom1">10dp</dimen>
+    <dimen name="marginButton1">5dp</dimen>
+    <dimen name="image_width">150dp</dimen>
+    <dimen name="image_height">140dp</dimen>
+    <dimen name="radio_button_height">40dp</dimen>
+    <dimen name="image_height_medical_view">200dp</dimen>
+    <dimen name="TextInputLayoutMargin_top_bottom">8dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="text_Width">120dp</dimen>
+    <dimen name="mywidth_180">180dp</dimen>
+    <dimen name="navigation_icon_size" tools:override="true">40dp</dimen>
+
+
+    <!--***********************************Education*********************************************-->
+    <dimen name="education_registration_image">220dp</dimen>
+    <dimen name="button_margin">15dp</dimen>
+    <dimen name="DOB">240dp</dimen>
+    <dimen name="spinnerMargin">28dp</dimen>
+    <dimen name="button_margin_one">28dp</dimen>
+    <dimen name="button_margin_two">18dp</dimen>
+    <dimen name="button_margin_three">18dp</dimen>
+    <dimen name="main_module_top_margin">100dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_HeaderTop">36dp</dimen>
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="spinner_start_margin">10dp</dimen>
+    <dimen name="button_Height">50dp</dimen>
+    <dimen name="nav_button_ht">20dp</dimen>
+    <dimen name="spinner_bottom_margin">5dp</dimen>
+    <dimen name="mar_top_edit_icon">-30dp</dimen>
+    <dimen name="edit_icon_size">15sp</dimen>
+    <dimen name="edit_icon_padding">6dp</dimen>
+</resources>

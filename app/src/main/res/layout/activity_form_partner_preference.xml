@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context=".matrimony.FormPartnerPreferenceActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/frm_prtnrpref_tv_lknfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/form_spinner_label_mar_left"
+                android:layout_weight=".5"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:text="@string/LookingFor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+
+
+                <Spinner
+                    android:id="@+id/frm_prtnrpref_spr_lknfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/looking_for" />
+
+            <TextView
+                android:id="@+id/frm_prtnrpref_tv_minage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_marginTop="@dimen/button_margin_bottom"
+                android:layout_weight=".5"
+                android:text="@string/MinimumAge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+
+
+
+                <Spinner
+                    android:id="@+id/frm_prtnrpref_et_minagefrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/select_age" />
+
+            <TextView
+                android:id="@+id/frm_prtnrpref_tv_maxage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:layout_weight=".5"
+                android:textColor="@color/black"
+                android:text="@string/MaximumAge"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+
+
+
+                <Spinner
+                    android:id="@+id/frm_prtnrpref_et_maxagefrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/select_age" />
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/frm_prtnrpref_spr_cntry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:textSize="@dimen/text_size"
+                        android:hint="@string/Country"
+                        android:inputType="textCapWords" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/frm_prtnrpref_spr_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/State"
+                        android:textSize="@dimen/text_size"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/frm_prtnrpref_spr_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/City"
+                        android:textSize="@dimen/text_size"
+                        android:inputType="textCapWords" />
+                </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/frm_prtnrpref_tv_resdntrstts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:layout_weight=".5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:text="@string/ResidentStatus"
+                />
+
+
+
+
+                <Spinner
+                    android:id="@+id/frm_prtnrpref_spr_resdntrstts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/resident_status" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/frm_prtnrpref_et_minht"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/MinimumHeight"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size"
+                        android:maxLength="3" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/frm_prtnrpref_et_maxht"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/MaximumHeight"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size"
+                        android:maxLength="3" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                android:id="@+id/frm_prtnrpref_tv_complexion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:layout_weight=".5"
+                android:text="@string/Complexion"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+
+                <Spinner
+                    android:id="@+id/frm_prtnrpref_spr_complexion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/complexion" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/frm_prtnrpref_et_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/HighestEducation"
+                        android:textSize="@dimen/text_size"
+                        android:inputType="textCapWords" />
+                </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/frm_prtnrpref_tv_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:layout_weight=".5"
+                android:textColor="@color/black"
+                android:text="@string/Religion"
+                android:textSize="@dimen/about_us_heading_dimen"
+                />
+
+
+
+                <Spinner
+                    android:id="@+id/frm_prtnrpref_spr_religion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/frm_prtnrpref_spr_cast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/Cast"
+                        android:textSize="@dimen/text_size"
+                        android:inputType="textCapWords" />
+                </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <CheckBox
+                    android:id="@+id/frm_prtnrpref_ckbx_termcondtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginTop="@dimen/button_margin_top"
+
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/term_and_cond"
+                    android:layout_toEndOf="@+id/frm_prtnrpref_ckbx_termcondtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:foregroundGravity="center"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/button_margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/termsandConditions"
+                    android:textColor="@color/ev_name" />
+            </RelativeLayout>
+
+
+
+            <!--
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="start"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight=".5"
+                                android:background="@color/circleArrowButton"
+                                android:text="Clear"
+
+                                android:textColor="#fff" />-->
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginBottom="@dimen/formPartnerPref_button_margin_bottom"
+                android:background="@drawable/res_drawable_btn_flat_normal"
+                android:onClick="saveAndGoToMatrimonyActivity"
+                android:text="@string/SaveAll"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/buttonTextColor"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

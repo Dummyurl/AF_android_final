@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".matrimony.FindMatchActivity">
+
+    <include
+        android:id="@+id/toolbar_matrimony"
+        layout="@layout/toolbar_matrimony" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fm_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/check_internet_conn" />
+
+    <include layout="@layout/no_result_found" />
+</LinearLayout>

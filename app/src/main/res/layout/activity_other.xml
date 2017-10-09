@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context="com.LeelaGroup.AgrawalFedration.matrimony.OtherActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                   >
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_profl_crtedby"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pencil_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_profilecreatedby"
+                        android:layout_toEndOf="@+id/per_profl_crtedby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                  >
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_hobbies"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/football_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_hobies"
+                        android:layout_toEndOf="@+id/per_hobbies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+              >
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_interests"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thumbsup_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                    <TextView
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/d_per_intrests"
+                        android:layout_toEndOf="@+id/per_interests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       />
+                </RelativeLayout>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

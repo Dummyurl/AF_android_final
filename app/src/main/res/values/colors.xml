@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FC3F7</color>
+    <color name="colorPrimaryDark">#29B6F6</color>
+    <color name="colorAccent">#4FC3F7</color>
+    <color name="backgroundSplash">#bffaf674</color>
+    <color name="buttons">#ef5350</color>
+ <color name="circleArrowButton">#ef5053</color>
+    <color name="fab_clr1">#4cfa50</color>
+    <color name="fab_clr2">#2196f3</color>
+    <color name="colorTextHint">#51d8c7</color>
+    <color name="colorBackground">#413e4f</color>
+    <color name="bg_splash">#adf0f4</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_color">#EF5350</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="dark_grey">#BDBDBD</color>
+    <color name="ddark_grey">#a23d3c3c</color>
+    <color name="view_more">#0000ee</color>
+    <color name="ev_name">#000</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="createProfileColor">#9e9e9e</color>
+    <color name="transperent">#8000</color>
+    <color name="sdfh">#4FC3F7</color>
+    <color name="dark">#29B6F6 </color>
+    <color name="edu_third">#01579B</color>
+    <color name="light_blue">#81D4FA</color>
+</resources>

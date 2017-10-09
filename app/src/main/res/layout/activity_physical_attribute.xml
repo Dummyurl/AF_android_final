@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context=".matrimony.PhysicalAttributeActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--
+                                <TextView
+                                    android:id="@+id/tv_ahycialattr"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Physical Attribute"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold" />
+                                    -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                   >
+
+                    <TextView
+                        android:id="@+id/per_height"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/height_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+<!--
+                    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_height"
+                        android:layout_toEndOf="@+id/per_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+              >
+
+                    <TextView
+                        android:id="@+id/per_weight"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weight_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                  <!--  <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_weight"
+                        android:layout_toEndOf="@+id/per_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                   >
+
+                    <TextView
+                        android:id="@+id/per_bdytype"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bodytype_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_bdyype"
+                        android:layout_toEndOf="@+id/per_bdytype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_bloodgrp"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drop_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_bloodgrp"
+                        android:layout_toEndOf="@+id/per_bloodgrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                  >
+
+                    <TextView
+                        android:id="@+id/per_complexion"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smile_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+               <!--     <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_complexion"
+                        android:layout_toEndOf="@+id/per_complexion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_diet"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diet_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_dirt"
+                        android:layout_toEndOf="@+id/per_diet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_smoke"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smoke_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                   <!-- <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />-->
+
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_smoke"
+                        android:layout_toEndOf="@+id/per_smoke"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                 >
+
+                    <TextView
+                        android:id="@+id/per_drink"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                  <!--  <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_drink"
+                        android:layout_toEndOf="@+id/per_drink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_handicap"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/handicap_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+                         />
+
+                  <!--  <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                        android:textStyle="bold" />
+-->
+                    <TextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/d_per_handicap"
+                        android:layout_toEndOf="@+id/per_handicap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

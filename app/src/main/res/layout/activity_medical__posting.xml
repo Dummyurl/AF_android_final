@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medical__posting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.LeelaGroup.AgrawalFedration.medical.Medical_Posting">
+
+    <include layout="@layout/toolbar_matrimony" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgVwMedical_posting"
+                        android:layout_width="@dimen/image_width"
+                        android:layout_height="@dimen/image_height"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                        android:src="@drawable/ic_camera_alt_black_24dp"
+                        />
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/mar_top_edit_icon"
+                        android:text="@string/fa_camera"
+                        android:background="@drawable/bg_circle"
+                        android:padding="@dimen/edit_icon_padding"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/edit_icon_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/post_Basic_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layoutMargin"
+                    android:text="@string/Basic_Details"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <RadioButton
+                            android:id="@+id/doctor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/radio_button_height"
+                            android:layout_weight="0.5"
+                            android:checked="true"
+                            android:text="@string/Doctor"
+                            android:textColor="#616161"
+                            android:textSize="@dimen/text_size" />
+
+                        <RadioButton
+                            android:id="@+id/medical"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/radio_button_height"
+                            android:layout_weight="0.5"
+                            android:checked="false"
+                            android:text="@string/Medical"
+                            android:textColor="#616161"
+                            android:textSize="@dimen/text_size" />
+
+                        <RadioButton
+                            android:id="@+id/hospital"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/radio_button_height"
+                            android:layout_weight="0.5"
+                            android:checked="false"
+                            android:text="@string/Hospital"
+                            android:textColor="#616161"
+                            android:textSize="@dimen/text_size" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_BusinessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom">
+
+                    <EditText
+                        android:id="@+id/Id_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Business_Name"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:textSize="@dimen/text_size">
+
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_BusinessAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+           >
+
+                    <EditText
+                        android:id="@+id/Id_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Business_address"
+                        android:inputType="text"
+                        android:lines="4"
+                        android:maxLength="50"
+                        android:maxLines="5"
+                        android:minLines="2"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size">
+
+                    </EditText>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_BusinessPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                   >
+
+                    <EditText
+                        android:id="@+id/Id_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Pincode"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_BusinessContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+   >
+
+                    <EditText
+                        android:id="@+id/Id_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Business_Contact"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="@dimen/text_size"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Country"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/about_us_heading_dimen"/>
+
+                <Spinner
+
+                    android:id="@+id/posting_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.50"
+                    android:hint="Enter Country"
+                    android:maxLength="50"
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/State"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/about_us_heading_dimen"/>
+
+                <Spinner
+                    android:id="@+id/posting_stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.50"
+                    android:hint="Enter State"
+                    android:maxLength="50"
+                    android:textSize="@dimen/text_size"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/City"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size"/>
+
+                <Spinner
+                    android:id="@+id/posting_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.50"
+                    android:hint="Enter City"
+                    android:maxLength="50"
+                    android:textSize="@dimen/text_size"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_BusinessQualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                   >
+
+                    <EditText
+                        android:id="@+id/Id_post_edu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Qualification"
+                        android:inputType="text"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:orientation="horizontal"
+                    tools:ignore="DisableBaselineAlignment">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_weight="0.50">
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:hint="@string/Open_Time"
+                            android:padding="@dimen/layoutMarginBottom"
+                            android:textColor="#090"
+                            android:textSize="@dimen/text_size"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                        android:layout_weight="0.50">
+
+                        <TextView
+                            android:id="@+id/timesec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:hint="@string/Close_Time"
+                            android:padding="@dimen/layoutMarginBottom"
+                            android:textColor="#090"
+                            android:textSize="@dimen/text_size"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_AboutBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                   >
+
+                    <EditText
+                        android:id="@+id/Id_AboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/About_Business"
+                        android:inputType="text"
+                        android:maxLines="7"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_BusinessEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    tools:ignore="InefficientWeight">
+
+                    <EditText
+                        android:id="@+id/Id_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Business_Website"
+                        android:inputType="text"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/text_size"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/post_person_Basic_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layoutMargin"
+                        android:text="@string/Contact_Person_Detail"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/about_us_heading_dimen" />
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_personName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                     >
+
+                        <EditText
+                            android:id="@+id/contactperson_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Name"
+                            android:inputType="textPersonName"
+                            android:maxLength="30"
+                            android:textSize="@dimen/text_size"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_personNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                >
+
+
+                        <EditText
+                            android:id="@+id/contactperson_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/mobile"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/text_size"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_personDesig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                      >
+
+                        <EditText
+                            android:id="@+id/contactperson_designation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Designation"
+                            android:inputType="text"
+                            android:maxLength="25"
+                            android:scrollbars="vertical"
+                            android:textSize="@dimen/text_size"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_personMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                  >
+
+                        <EditText
+                            android:id="@+id/contactperson_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="@dimen/text_size"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <TextView
+                        android:id="@+id/contactperson_"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layoutMargin"
+                        android:text="@string/Contact_Details"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/about_us_heading_dimen"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupContactDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layoutMarginBottom"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/contactperson_show"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/radio_button_height"
+                                android:layout_weight="0.5"
+                                android:checked="true"
+                                android:text="@string/Show"
+                                android:textSize="@dimen/text_size"/>
+
+                            <RadioButton
+                                android:id="@+id/contactperson_hide"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/radio_button_height"
+                                android:layout_weight="0.5"
+                                android:checked="false"
+                                android:text="Hide"
+
+                                android:textSize="@dimen/text_size"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_postingSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_Height"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layoutMarginBottom"
+                        android:background="@drawable/res_drawable_btn_flat_normal"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:layout_marginBottom="@dimen/button_margin_bottom_frm_basicdetails"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/about_us_heading_dimen"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".education.FeatchDetails">
+
+    <include layout="@layout/toolbar_matrimony" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profile"
+                        android:layout_width="@dimen/image_width"
+                        android:layout_height="@dimen/image_height"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/profile_circle"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="35dp"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_personaldetails1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin"
+                            android:text="Personal Details"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/cont_us_heading_dimen"
+                            android:drawableEnd="@drawable/down_arrow_small"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:id="@+id/li_basic_dtail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:focusable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/per_fname"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/person_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/d_per_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/per_fname" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/per_lname"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/person_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/per_lname" />
+
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/per_dob"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dob_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/per_dob" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/per_fathername"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/person_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_fathername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/per_fathername" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/per_Mothername"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/person_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_Mothername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/per_Mothername" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/per_gender"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/per_gender" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/country1"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/country_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/per_country1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:text="India"
+                            android:layout_toEndOf="@+id/country1" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/state1"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/state_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_state1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/state1" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/city1"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/city_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_city1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/city1" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/address1"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/address1" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layoutMargin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/pincode1"
+                            android:layout_width="@dimen/radio_button_height"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pincode_ic"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/d_per_pincode1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size"
+                            android:layout_toEndOf="@+id/pincode1" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_family_detl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:elevation="35dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_famildtl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layout_margin"
+                                android:text="@string/Family_Details"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/cont_us_heading_dimen"
+                                android:drawableRight="@drawable/down_arrow_small"/>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/li_family_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:focusable="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/per_ftheroccptn"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/occupation_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_ftheroccptn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/per_ftheroccptn" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Father_MobileNo1"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mobile_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_Father_MobileNo1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Father_MobileNo1" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Father_Telephone"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/phone_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_Father_Telephone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Father_Telephone" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Designation1"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/occupation_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_Designation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Designation1" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal"
+                             android:layout_margin="2dp"
+                             android:weightSum="1">
+                             <TextView
+                                 android:id="@+id/Anual_Income1"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="Anual Income :-"
+                                 android:layout_weight=".5"
+                                 android:layout_margin="@dimen/layoutMargin"
+                                 android:layout_gravity="center"
+                                 android:textStyle="bold" />
+                             <TextView
+                                 android:id="@+id/d_per_Anual_Income1"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:text="Anual Income"
+                                 android:layout_weight=".5"
+                                 android:layout_gravity="center"
+                                 android:textStyle="bold" />
+                         </LinearLayout>-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/PAN1"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pan_card_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/d_per_PAN1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@id/PAN1" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Mother_Occupation1"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/occupation_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_Mother_Occupation1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Mother_Occupation1" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Mother_Telephone1"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pincode_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/d_per_Mother_Telephone1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Mother_Telephone1" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Mother_MobileNo1"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mobile_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_MobileNo1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Mother_MobileNo1" />
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/layoutMargin">
+
+                            <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                android:id="@+id/Religion2"
+                                android:layout_width="@dimen/radio_button_height"
+                                android:layout_height="wrap_content"
+                                android:text="@string/religion_ic"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/d_per_Religion2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size"
+                                android:layout_toEndOf="@+id/Religion2" />
+
+
+                        </RelativeLayout>
+
+                        <include layout="@layout/item_divider" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_education_detl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="35dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/SS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin"
+                                    android:text="@string/Education_Details"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/cont_us_heading_dimen"
+                                    android:drawableRight="@drawable/down_arrow_small"/>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <LinearLayout
+                            android:id="@+id/li_edication_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:focusable="true"
+                            >
+
+                            <TextView
+                                android:id="@+id/SSC"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin"
+                                android:layout_marginStart="@dimen/layoutMargin"
+                                android:text="@string/SSC_Details"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/cont_us_heading_dimen" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin">
+
+                                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                    android:id="@+id/SSC_Board"
+                                    android:layout_width="@dimen/radio_button_height"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/result_ic"
+                                    android:textColor="@color/edu_third"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/d_per_SSC_Board"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size"
+                                    android:layout_toEndOf="@+id/SSC_Board" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_divider" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin">
+
+                                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                    android:id="@+id/SSC_SchoolName"
+                                    android:layout_width="@dimen/radio_button_height"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/school_ic"
+                                    android:textColor="@color/edu_third"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/d_per_SSC_SchoolName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size"
+                                    android:layout_toEndOf="@id/SSC_SchoolName" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_divider" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin">
+
+                                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                    android:id="@+id/SSC_Roll_No"
+                                    android:layout_width="@dimen/radio_button_height"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rollno_ic"
+                                    android:textColor="@color/edu_third"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/d_per_SSC_graduatein"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size"
+                                    android:layout_toEndOf="@+id/SSC_Roll_No" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_divider" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin">
+
+                                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                    android:id="@+id/SSC_Year"
+                                    android:layout_width="@dimen/radio_button_height"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/year_ic"
+                                    android:textColor="@color/edu_third"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:id="@+id/d_per_Year"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size"
+                                    android:layout_toEndOf="@+id/SSC_Year" />
+
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_divider" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin">
+
+                                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                    android:id="@+id/SSC_Percent"
+                                    android:layout_width="@dimen/radio_button_height"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/percentage_ic"
+                                    android:textColor="@color/edu_third"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/d_per_SSC_Percent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/text_size"
+                                    android:layout_toEndOf="@+id/SSC_Percent" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_divider" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/layoutMargin">
+
+                                <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                    android:id="@+id/SSC_Rank1"
+                                    android:layout_width="@dimen/radio_button_height"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/rank_ic"
+                                    android:textColor="@color/edu_third"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:id="@+id/d_per_SSC_Rank1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@+id/SSC_Rank1"
+                                    android:textSize="@dimen/text_size"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <include layout="@layout/item_divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/HSC"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin"
+                                    android:text="@string/HSC_Details"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/cont_us_heading_dimen" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/HSC_Board"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/school_ic"
+                                        android:textColor="@color/edu_third"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/d_per_HSC_Board"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@id/HSC_Board" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/HSC_SchoolName"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/school_ic"
+                                        android:textColor="@color/edu_third"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_HSC_SchoolName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/HSC_SchoolName" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/HSC_Roll_No"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/rollno_ic"
+                                        android:textColor="@color/edu_third"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_graduatein"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/HSC_Roll_No" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/HSC_Year"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/year_ic"
+                                        android:textColor="@color/edu_third"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_HSC_Year"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/HSC_Year" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/HSC_Percent"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/percentage_ic"
+                                        android:textColor="@color/edu_third"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_HSC_Percent"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/HSC_Percent" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/HSC_Rank1"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/rank_ic"
+                                        android:textColor="@color/edu_third"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_HSC_Rank1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/HSC_Rank1"
+                                        android:textSize="@dimen/text_size"
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/Graduation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:text="@string/Graduation_Details"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/cont_us_heading_dimen" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Grad_Board"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/school_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_Board"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Grad_Board" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Gard_SchoolName"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/school_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_SchoolName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Gard_SchoolName" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Gard_Roll_No"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/degree_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_grad_Roll_No"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Gard_Roll_No" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Grad_Year"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/year_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_Year"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Grad_Year" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Grad_Percent"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/percentage_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_Percent"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Grad_Percent" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Grad_Rank1"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/rank_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold"
+                                            tools:ignore="HardcodedText" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_Rank1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toEndOf="@+id/Grad_Rank1"
+                                            android:textStyle="bold"
+                                            android:textSize="@dimen/text_size"
+                                            tools:ignore="HardcodedText" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Grad_Final_Year"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/year_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold"
+                                            tools:ignore="HardcodedText" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_Final_Year"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Grad_Final_Year"
+
+                                            tools:ignore="HardcodedText" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/Post_Graduation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:text="@string/Post_Graduation_Details"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/cont_us_heading_dimen" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Grad_Board"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/school_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Post_Grad_Board"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Grad_Board" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Gard_SchoolName"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/school_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Post_Grad_SchoolName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Gard_SchoolName" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Gard_Roll_No"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/rollno_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Grad_Roll_No"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Gard_Roll_No" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Grad_Year"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/year_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Post_Grad_Year"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Grad_Year" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Grad_Percent"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/percentage_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Post_Grad_Percent"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Grad_Percent" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Grad_Rank1"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/rank_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold"
+                                            tools:ignore="HardcodedText" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Post_Grad_Rank1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Grad_Rank1"
+
+                                            tools:ignore="HardcodedText" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Post_Grad_Final_Year"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/year_ic"
+                                            android:textColor="@color/edu_third"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold"
+                                            tools:ignore="HardcodedText" />
+
+                                        <TextView
+                                            android:id="@+id/d_per_Post_Grad_Final_Year"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/text_size"
+                                            android:layout_toEndOf="@+id/Post_Grad_Final_Year"
+
+                                            tools:ignore="HardcodedText" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_contact_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="35dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:id="@+id/CET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:text="@string/CET_Details"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/cont_us_heading_dimen"
+                                        android:drawableRight="@drawable/down_arrow_small"
+                                        tools:ignore="HardcodedText" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                            <LinearLayout
+                                android:id="@+id/li_cet_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:focusable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Facilty_from_AF"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/facility_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_Facilty_from_AF"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/Facilty_from_AF" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <!--<LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_margin="2dp"
+                                    android:weightSum="1">
+                                    <TextView
+                                        android:id="@+id/Know_About_CET1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Know About CET/AF :-"
+                                        android:layout_weight=".5"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold" />
+                                    <TextView
+                                        android:id="@+id/d_per_Know_About_CET1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="CET/AF"
+                                        android:layout_weight=".5"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold" />
+                                </LinearLayout>-->
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Language_CET"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/language_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_Language_CET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/Language_CET" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Examination_Center"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/language_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_Examination_Center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/text_size"
+                                        android:layout_toEndOf="@+id/Examination_Center"
+
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_social_attribute"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="35dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/Exam_And_Subject"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:drawableRight="@drawable/down_arrow_small"
+                                        android:text="@string/APPEAR"
+                                        android:textAlignment="viewStart"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/cont_us_heading_dimen" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                            <LinearLayout
+                                android:id="@+id/li_nameofexam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:focusable="true">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Exam_name"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/subject_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_exam_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Exam_name" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/ES_Year"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/year_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_ExS_Year"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/ES_Year" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/ES_Languages"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/language_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_exam_lang"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/ES_Languages" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/ES_Exam_Center"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/pincode_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_ES_Exam_Center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/ES_Exam_Center" />
+
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/ES_Exam_Language"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/language_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_ES_Exam_Language"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/ES_Exam_Language" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/Exam_Name"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/subject_ic"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_state_exam_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toEndOf="@+id/Exam_Name" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/ES_year"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/year_ic"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/d_sec_ES_year"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toEndOf="@+id/ES_year" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin">
+
+                                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                            android:id="@+id/ES_Exam_center"
+                                            android:layout_width="@dimen/radio_button_height"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/pincode_ic"
+                                            android:textColor="@color/colorPrimary"
+                                            android:textSize="@dimen/text_size"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/state_exam_center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_toEndOf="@+id/ES_Exam_center" />
+                                    </RelativeLayout>
+
+                                    <include layout="@layout/item_divider" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_occupation_detl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="35dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/OtherInformation"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:drawableRight="@drawable/down_arrow_small"
+                                        android:text="@string/Other_Information"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/cont_us_heading_dimen" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                            <LinearLayout
+                                android:id="@+id/li_other_details"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:focusable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/OI_Activity"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/extra_activity_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/other_activity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/OI_Activity" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/OI_Level"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/leval_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/other_level"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/OI_Level"
+
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/OI_Year"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/year_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/other_year"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/OI_Year" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/OI_Position"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/rank_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/other_Position"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/OI_Position" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_physical_detl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:elevation="35dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/REFERENCE"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/layoutMargin"
+                                        android:text="@string/REFERENCE"
+                                        android:textAlignment="viewStart"
+                                        android:textAllCaps="false"
+                                        android:drawableRight="@drawable/down_arrow_small"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/cont_us_heading_dimen" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+                            <LinearLayout
+                                android:id="@+id/li_reference"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:focusable="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Name1"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/person_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Name1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_Name1" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Address1"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/add_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Address1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_Address1" />
+
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_City1"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/city_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_City1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_City1"
+
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Mobile1"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/mobile_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Mobile1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_Mobile1"
+
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Telephone1"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/phone_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Telephone1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_Telephone1"
+
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Name2"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/person_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Name2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_Name2" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Address2"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/add_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Address2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_toEndOf="@+id/Ref_Address2" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_City2"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/city_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_City2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_toEndOf="@+id/Ref_City2"
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Mobile2"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/mobile_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_per_Ref_Mobile2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_toEndOf="@+id/Ref_Mobile2"
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+
+                                <include layout="@layout/item_divider" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layoutMargin">
+
+                                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                                        android:id="@+id/Ref_Telephone2"
+                                        android:layout_width="@dimen/radio_button_height"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/phone_ic"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="@dimen/text_size"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/d_Ref_Telephone2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toEndOf="@+id/Ref_Telephone2"
+                                        tools:ignore="HardcodedText" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/check_internet_conn"/>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_fillprofile"
+        android:title="Create New Profile"
+        />
+    <item
+        android:id="@+id/action_myprofile"
+        android:title="My Profiles"
+        />
+
+    <item
+        android:id="@+id/action_succsstories"
+        android:title="Success Stories"
+        />
+
+    <item
+        android:id="@+id/action_events"
+        android:title="Events"
+        />
+
+   <!-- <item
+        android:id="@+id/action_aboutus"
+        android:title="About Us"
+        />
+
+    <item
+        android:id="@+id/action_contactus"
+        android:title="Contact Us"
+        />-->
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        />
+  <!--  <item
+        android:id="@+id/main"
+        android:title="Logout"
+        />-->
+    <!--   <item
+       android:id="@+id/action_editprofile"
+       android:title="Edit Profile"
+       />-->
+    <!-- <item
+         android:id="@+id/action_profsearch"
+         android:title="Profile Search"
+         android:icon="@drawable/search_ic_search_black_24dp"
+         app:showAsAction="always"
+         />-->
+
+    <!--<item
+        android:id="@+id/action_login"
+        android:title="Login"
+        android:icon="@drawable/profile_ic_account_circle_black_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_signup"
+        android:title="SignUp"
+        android:icon="@drawable/signup_ic_play_for_work_black_24dp"
+        app:showAsAction="always"
+        />-->
+
+    <!-- <item
+         android:id="@+id/action_feedback"
+         android:title="Feedback"
+         />-->
+    <!--<item
+        android:id="@+id/matri_action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_action_search_mat"
+        app:showAsAction="always|collapseActionView"
+        app:actoinViewClass="android.support.v7.widget.SearchView"
+        />
+-->
+</menu>

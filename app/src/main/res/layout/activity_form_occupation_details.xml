@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.FormOccupationDetailsActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+               >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/frm_ocuption_spr_cccupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/Occupation"
+                        android:inputType="textCapWords"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_ocuption_spr_indstry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/Industry"
+                        android:inputType="textCapWords" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_ocuption_et_bsnsempat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/WorkField"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/frm_ocuption_tv_psnlanulincome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:textColor="@color/black"
+                android:text="Personal Annual Income(In LPA)"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:orientation="horizontal"
+                >
+
+
+                <Spinner
+                    android:id="@+id/frm_ocuption_et_psnlanulincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_marginBottom="@dimen/form_spinner_layout_margin_bottom"
+                    android:entries="@array/income"
+                    />
+            </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:textSize="@dimen/text_size"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="@dimen/button_margin_bottom"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:onClick="goToFamillyDetails"
+                    android:text="@string/save_next"
+                    android:textColor="@color/buttonTextColor"
+              />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

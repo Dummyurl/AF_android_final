@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size"
+    android:layout_marginLeft="6dp"
+    android:layout_marginStart="@dimen/spinner_bottom_margin"
+    android:layout_marginBottom="@dimen/spinner_bottom_margin">
+
+</TextView>

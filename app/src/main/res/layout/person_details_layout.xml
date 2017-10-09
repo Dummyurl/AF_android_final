@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pdl_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_prsndeails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h160"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/personDetailRowLay_main_lay_inr_padding"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/person_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile_circle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:padding="@dimen/personDetailRowLay_main_lay_inr_padding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/userid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/userId"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <TextView
+                        android:id="@+id/person_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/event_full_layout_tv_mar_top"
+                        android:layout_toEndOf="@+id/userid"
+                        android:padding="1dp"
+                        android:text="ID007"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/event_full_layout_tv_mar_top">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/usernamee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <TextView
+                        android:id="@+id/person_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/event_full_layout_tv_mar_top"
+                        android:layout_toEndOf="@+id/usernamee"
+                        android:padding="1dp"
+                        android:text="Name"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/event_full_layout_tv_mar_top">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/degree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fa_briefcase"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <TextView
+                        android:id="@+id/person_designation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/event_full_layout_tv_mar_top"
+                        android:layout_toEndOf="@+id/degree"
+                        android:padding="1dp"
+                        android:text="IT Engineer"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/event_full_layout_tv_mar_top">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cake_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size" />
+
+
+                    <TextView
+                        android:id="@+id/person_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/event_full_layout_tv_mar_top"
+                        android:layout_toEndOf="@+id/age"
+                        android:padding="1dp"
+                        android:text="25"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

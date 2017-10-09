@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_matrimony" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:orientation="vertical">
+
+                <!-- <TextView
+                    android:id="@+id/FamilyDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="@dimen/layoutMarginBottom"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:text="@string/Family_Details"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="#ef5350"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+-->
+                <TextView
+                    android:textSize="@dimen/about_us_heading_dimen"
+                    android:id="@+id/Father_Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layoutMarginBottom"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:text="@string/Father_Details"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:layout_width="@dimen/image_height"
+                    android:layout_height="@dimen/event_full_layout_tv_padding"
+                    android:background="@color/colorPrimary" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Father_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/Father_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/Father_occupation"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:hint="@string/Telephone_No"
+                        android:inputType="number"
+                        android:maxLength="11" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Father_MobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Father_MobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:hint="@string/Father_Mobile_No"
+                        android:inputType="number"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/Designation"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Anual_Income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Anual_Income"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:hint="@string/Anual_Income"
+                        android:inputType="number"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_PAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/PAN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/PANCARDNo"
+                        android:inputType="text"
+                        android:maxLength="10" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textSize="@dimen/about_us_heading_dimen"
+
+                    android:id="@+id/Mother_Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layoutMarginBottom"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:text="@string/Mother_Details"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="@dimen/image_height"
+                    android:layout_height="@dimen/event_full_layout_tv_padding"
+                    android:background="@color/colorPrimary" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Mother_Occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Mother_Occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/Mother_Occupation"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Mother_Telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Mother_Telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:hint="@string/Mother_Telephone_No"
+                        android:inputType="number"
+                        android:maxLength="11" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Mother_MobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Mother_MobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="1234567890"
+                        android:hint="@string/Mother_Mobile_No"
+                        android:inputType="number"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:textSize="@dimen/about_us_heading_dimen"
+
+                    android:id="@+id/Religion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layoutMarginBottom"
+                    android:layout_marginTop="@dimen/layoutMarginBottom"
+                    android:text="@string/Religion"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="@dimen/image_height"
+                    android:layout_height="@dimen/event_full_layout_tv_padding"
+                    android:background="@color/colorPrimary" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_Religion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                    android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/Religion1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="@string/Religion"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                  >
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:background="@drawable/res_drawable_btn_flat_normal"
+                        android:text="@string/Next"
+                        android:textSize="@dimen/text_size"
+android:layout_marginBottom="@dimen/button_margin_bottom_frm_basicdetails"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

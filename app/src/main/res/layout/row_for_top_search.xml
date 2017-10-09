@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/event_full_layout_tv_mar_top"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            >
+
+            <ImageView
+                android:id="@id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_weight=".4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="@dimen/radio_button_height"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_ic"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/form_tv_size" />
+
+                <TextView
+                    android:id="@+id/Service_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/name"
+                    android:text="Name"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="@dimen/radio_button_height"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_ic"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/form_tv_size" />
+
+                <TextView
+                    android:id="@+id/Service_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/contact"
+                    android:text="Contact"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_divider"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/Address"
+                    android:layout_width="@dimen/radio_button_height"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_ic"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/form_tv_size" />
+
+                <TextView
+                    android:id="@+id/Service_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Address"
+                    android:lines="3"
+                    android:text="Address"
+                    android:textSize="@dimen/text_size" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_divider" />
+
+
+</LinearLayout>

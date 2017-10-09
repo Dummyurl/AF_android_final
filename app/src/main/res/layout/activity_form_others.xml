@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.FormOthersActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/frm_other_tv_whreuhereus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_weight=".5"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:textColor="@color/black"
+                android:text="@string/WhereDidYouHearUs"
+                />
+
+
+
+                <Spinner
+                    android:id="@+id/frm_other_spr_whreuhereus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/form_spinner_layout_margin_bottom"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/where_u_hear" />
+
+            <TextView
+                android:id="@+id/frm_other_tv_prflcrteby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_weight=".5"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:textColor="@color/black"
+                android:text="@string/ProfileCreatedBy"
+                />
+
+
+
+
+                <Spinner
+                    android:id="@+id/frm_other_spr_prflcrteby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_marginBottom="@dimen/form_spinner_layout_margin_bottom"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:entries="@array/profile_created_for" />
+
+
+            <TextView
+                android:id="@+id/frm_other_tv_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:layout_marginBottom="@dimen/form_spinner_layout_margin_bottom"
+                android:layout_weight=".5"
+                android:text="@string/Hobbies"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:textColor="@color/black"
+                />
+            <include layout="@layout/item_divider2"/>
+
+
+            <CheckBox
+                android:id="@+id/frm_other_ckbx_hobbies_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/spinner_start_margin"
+                android:text="@string/Reading" />
+            <CheckBox
+                android:id="@+id/frm_other_ckbx_hobbies_dancing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/spinner_start_margin"
+                android:text="@string/Dancing" />
+            <CheckBox
+                android:id="@+id/frm_other_ckbx_hobbies_playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/spinner_start_margin"
+                android:text="@string/Playing" />
+
+            <CheckBox
+                android:id="@+id/frm_other_ckbx_hobbies_listinigsongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_weight=".5"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/spinner_start_margin"
+                android:text="@string/ListingSongs" />
+
+            <CheckBox
+                android:id="@+id/frm_other_ckbx_hobbies_acting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:textSize="@dimen/text_size"
+                android:layout_marginBottom="@dimen/spinner_start_margin"
+                android:text="Acting" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/layout_bottom_margin"
+                android:layout_marginTop="@dimen/layout_bottom_margin"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/frm_other_et_hobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/OtherHobbies"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginBottom="@dimen/layout_bottom_margin"
+                android:layout_marginTop="@dimen/layout_bottom_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/frm_other_et_interst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:hint="@string/Interests"
+                    android:textSize="@dimen/text_size"
+                    android:inputType="textCapSentences" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+                <Button
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:onClick="goToFormPartnerPreference"
+                    android:text="@string/save_next"
+                    android:layout_marginBottom="@dimen/button_margin_bottom"
+                    android:textSize="@dimen/text_size"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttonTextColor"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

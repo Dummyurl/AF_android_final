@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.LeelaGroup.AgrawalFedration.Social_Refurn.Social_Refurn">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- <in.goodiebag.carouselpicker.CarouselPicker
+                 android:id="@+id/imageCarousel"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/ddark_grey"
+                 app:items_visible="three" />-->
+            <ViewFlipper
+                android:id="@+id/simpleViewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ViewFlipper>
+            <include layout="@layout/item_divider2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_margin="20dp"
+                android:id="@+id/leela_info"
+                android:layout_height="wrap_content"
+                android:text="@string/social_text"></TextView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/Social_News"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_40"
+         android:background="@color/colorPrimary"
+         android:id="@+id/social_heading"
+         android:textAlignment="center"/>
+
+
+     <in.goodiebag.carouselpicker.CarouselPicker
+         android:id="@+id/imageCarousel"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/ddark_grey"
+         app:items_visible="three" />
+
+
+     <TextView
+         android:layout_width="match_parent"
+         android:padding="5dp"
+         android:textSize="15sp"
+         android:layout_margin="20dp"
+         android:id="@+id/leela_info"
+         android:layout_height="wrap_content"
+         android:text="@string/social_text"></TextView>-->
+</LinearLayout>

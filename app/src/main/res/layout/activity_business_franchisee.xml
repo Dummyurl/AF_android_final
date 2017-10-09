@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:float="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.BusinessFranchisee"
+    android:id="@+id/parent">
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tl_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <EditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/First_name"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tl_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <EditText
+                    android:id="@+id/et_last_name"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Last_name"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tl_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <EditText
+                    android:id="@+id/et_email"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tl_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Mobile"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <EditText
+                    android:id="@+id/et_address"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Address"
+                    android:inputType="textMultiLine|textCapWords"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_ac_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sp_country"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view40_height"
+                    android:hint="@string/Country_1"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_ac_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sp_state"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_view40_height"
+                    android:layout_weight="0.35"
+                    android:hint="@string/State_1"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/text_size"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_ac_city"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayout_bottom"
+                android:layout_marginTop="@dimen/TextInputLayout_bottom">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sp_city"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="@dimen/text_view40_height"
+                    android:layout_weight="0.35"
+                    android:hint="@string/City_1"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/text_size"></AutoCompleteTextView>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_margin_15"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <!--
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.65"
+                    android:paddingTop="6dp"
+                    android:text="Chapter :-"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+-->
+
+                <EditText
+                    android:id="@+id/et_chapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:textSize="@dimen/text_size"
+
+                    android:hint="@string/Chapter"
+                    android:inputType="textCapWords"
+
+                    >
+
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_view40_height"
+                android:layout_marginTop="@dimen/text_layout_margin"
+                android:paddingTop="@dimen/paddingTop6"
+                android:text="@string/Gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view40_height"
+                        android:layout_weight="0.5"
+                        android:checked="true"
+                        android:text="@string/Male"
+                        android:textSize="@dimen/text_size" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view40_height"
+                        android:layout_weight="0.5"
+                        android:text="@string/Female"
+                        android:textSize="@dimen/text_size" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/text_layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:background="@drawable/res_drawable_btn_flat_normal"
+                android:text="@string/Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

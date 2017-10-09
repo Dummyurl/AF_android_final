@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:fitsSystemWindows="true"
+    android:id="@+id/parent"
+    tools:context=".matrimony.AboutUsActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginStart="@dimen/colapsing_lay_mar_start"
+            app:expandedTitleMarginEnd="@dimen/colapsing_lay_mar_end"
+            android:fitsSystemWindows="true"
+            >
+
+            <ImageView
+                android:id="@+id/img_abtus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/colapsing_lay_mar_img_height"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax"
+                android:layout_alignParentEnd="true"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_margin="@dimen/button_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_abtus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:textAlignment="textStart"
+                />
+            <TextView
+                android:textSize="@dimen/event_full_layout_tv_size"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:id="@+id/tv_abtus_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us_desc"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/button_margin_top"
+
+                android:id="@+id/btn_concept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/about_us_Concept"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:textColor="@color/colorPrimary" />
+            <TextView
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textSize="@dimen/event_full_layout_tv_size"
+
+                android:id="@+id/tv_concept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us_ourConcept"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/button_margin_top"
+
+                android:id="@+id/btn_need"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/about_us_need"
+                android:textSize="@dimen/about_us_heading_dimen"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:textSize="@dimen/event_full_layout_tv_size"
+
+                android:id="@+id/tv_need"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us_ourneed"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

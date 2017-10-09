@@ -1,0 +1,2335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.MyProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <include layout="@layout/check_internet_conn" />
+
+    <ScrollView
+        android:id="@+id/sv_myprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+
+            <LinearLayout
+                android:id="@+id/layout_basic_dtail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="@dimen/profile_pic_width"
+                    android:layout_height="@dimen/profile_pic_hight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:src="@drawable/profile_circle" />
+
+
+                <TextView
+                    android:id="@+id/tv_basicdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/BasicDetails"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/about_us_heading_dimen"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_fname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_fname"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_mname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--     <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_mname"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_mname"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_lname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_lname"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_lname"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_dob"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cake_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--      <TextView
+                              android:layout_width="@dimen/seperator_width"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center"
+                              android:text="@string/seprator"
+                               />
+  -->
+
+                    <TextView
+                        android:id="@+id/d_per_dob"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_dob"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_brthtime"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clock_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_brthtime"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/per_brthtime"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_brthplace"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--     <TextView
+                             android:layout_width="@dimen/seperator_width"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:text="@string/seprator"
+                              />
+ -->
+
+                    <TextView
+                        android:id="@+id/d_per_brthplace"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_brthplace"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_ntvplace"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_per_ntvplace"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/per_ntvplace"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_maritalstatus"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/marital_status_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--    <TextView
+                            android:layout_width="@dimen/seperator_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/seprator"
+                             />
+-->
+                    <TextView
+                        android:id="@+id/d_per_maritalstatus"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_maritalstatus"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_gender"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--     <TextView
+                             android:layout_width="@dimen/seperator_width"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:text="@string/seprator"
+                              />
+ -->
+
+                    <TextView
+                        android:id="@+id/d_per_gender"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/per_gender"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_mothertounge"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lang_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_mothertounge"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_mothertounge"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_religion"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/religion_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--   <TextView
+                           android:layout_width="@dimen/seperator_width"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="@string/seprator"
+                            />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_ep_religion"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_religion"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_cast"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cast_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_ep_cast"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_cast"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_subcast"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cast_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_subcast"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_subcast"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_abtme"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abt_me_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_abtme"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_abtme"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_contact_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_contactinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/ContactInformation"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_mobile_no"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--  <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_mobno"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_mobile_no"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_landline_no"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/landlin_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--   <TextView
+                           android:layout_width="@dimen/seperator_width"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="@string/seprator"
+                            />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_landline_no"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_landline_no"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_email"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_email"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/per_email"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_address"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_per_address"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_address"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_country"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/c_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+
+-->
+                    <TextView
+                        android:id="@+id/d_per_country"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_country"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_state"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/s_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--     <TextView
+                             android:layout_width="@dimen/seperator_width"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:text="@string/seprator"
+                              />
+
+ -->
+                    <TextView
+                        android:id="@+id/d_per_state"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_state"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_city"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/city_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_per_city"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/per_city"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_pincode"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pincode_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />-->
+
+                    <TextView
+                        android:id="@+id/d_per_pincode"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_pincode"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+
+                    >
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_residential_sttus"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/res_status_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_residential_sttus"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_residential_sttus"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_social_attribute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_socialattri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/SocialAttributes"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_maglik"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/manglik_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_manglik"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_maglik"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_horoscope"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/horoscope_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_horoscope"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/per_horoscope"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_gothra"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gothra_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_gothraself"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_gothra"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_education_detl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_edudetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/EducationDetails"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_graduatein"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edu_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_graduatein"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_graduatein"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_occupation_detl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/OccupationDetails"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_occupatn"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/occu_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_occupation"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_occupatn"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_industry"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/industry_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_industry"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_industry"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_bsnsempat"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empat_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/d_per_bsnsempat"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_bsnsempat"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_psnalanulincome"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--  <TextView
+                          android:layout_width="@dimen/seperator_width"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:text="@string/seprator"
+                           />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_psnalanulincome"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_psnalanulincome"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_family_detl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_famildtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/FamilyDetails"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_fatherfullfname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--    <TextView
+                            android:layout_width="@dimen/seperator_width"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/seprator"
+                             />
+
+-->
+                    <TextView
+                        android:id="@+id/d_per_fatherfullname"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_fatherfullfname"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_motherfullname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_motherfullname"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_motherfullname"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+
+                    >
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_ftheroccptn"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/occu_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--  <TextView
+                          android:layout_width="@dimen/seperator_width"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:text="@string/seprator"
+                           />
+-->
+                    <TextView
+                        android:id="@+id/d_per_ftheroccptn"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_ftheroccptn"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_mthe_roccptn"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/occu_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_mthr_occptn"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_mthe_roccptn"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_noofbros"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_noofbros"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_noofbros"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_noofsis"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_sister"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_noofsis"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_noofbrosmaried"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+
+                    <TextView
+                        android:id="@+id/d_per_noofbrosmaried"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_noofbrosmaried"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_noofsismaried"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+
+                    <TextView
+                        android:id="@+id/d_per_noofsismarried"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_noofsismaried"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_familysatus"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:id="@+id/d_per_familysatus"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_familysatus"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_familytype"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />-->
+
+                    <TextView
+                        android:id="@+id/d_per_familytype"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_familytype"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_fmlyannulincome"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_per_familyanulincome"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_fmlyannulincome"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_physical_detl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ahycialattr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/PhysicalAttribute"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_height"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/height_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--   <TextView
+                           android:layout_width="@dimen/seperator_width"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="@string/seprator"
+                            />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_height"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_height"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_weight"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weight_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--   <TextView
+                           android:layout_width="@dimen/seperator_width"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="@string/seprator"
+                            />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_weight"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_weight"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_bdytype"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bodytype_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_per_bdyype"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_bdytype"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_bloodgrp"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drop_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+
+-->
+                    <TextView
+                        android:id="@+id/d_per_bloodgrp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_bloodgrp"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_complexion"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smile_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_per_complexion"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_complexion"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_diet"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diet_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_dirt"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_diet"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_smoke"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smoke_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_smoke"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_smoke"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_drink"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drink_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:id="@+id/d_per_drink"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_drink"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_handicap"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/handicap_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--  <TextView
+                          android:layout_width="@dimen/seperator_width"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:text="@string/seprator"
+                           />
+
+-->
+                    <TextView
+                        android:id="@+id/d_per_handicap"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_handicap"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_other_detl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/Other"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_profl_crtedby"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pencil_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_profilecreatedby"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_profl_crtedby"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_hobbies"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/football_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_ep_postgrad"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_hobbies"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_interests"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/football_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_intrests"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_interests"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_partnr_pref_detl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ptnerpref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin"
+                    android:layout_marginTop="@dimen/myProfileHeadingMarTop"
+                    android:text="@string/PartnerPreference"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/myProfileHeadingSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_profl_lookngfor"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_lookngfor"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_profl_lookngfor"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_countrylvgin"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/c_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--  <TextView
+                          android:layout_width="@dimen/seperator_width"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:text="@string/seprator"
+                           />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_contrylvgin"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_countrylvgin"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_statlvgin"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/s_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_statelvgin"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_statlvgin"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_citylvgin"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+
+                    <!--  <TextView
+                          android:layout_width="@dimen/seperator_width"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:text="@string/seprator"
+                           />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_citylvgin"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_citylvgin"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_prtnrprf_age"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cake_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_agefrm"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_prtnrprf_age"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/per_minage"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cake_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+
+                    -->
+
+                    <TextView
+                        android:id="@+id/d_ageto"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_minage"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/tv_minheight"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/height_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+
+                    <TextView
+                        android:id="@+id/d_per_minhtfrmft"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_minheight"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/tv_height"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/height_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--   <TextView
+                           android:layout_width="@dimen/seperator_width"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="@string/seprator"
+                            />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_htfrmft"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_height"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <!--  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="@dimen/form_inner_layout_margin"
+                      android:orientation="horizontal"
+                      android:weightSum="2">
+
+                      <TextView
+                          android:id="@+id/tv_per_weight"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_margin="@dimen/layout_margin"
+                          android:layout_weight="1"
+                          android:text="Weight :-"
+                           />
+
+                      <TextView
+                          android:id="@+id/d_wtfrm"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_weight="1"
+                          android:text="Weight"
+                           />
+                  </LinearLayout>
+  -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/tv_per_complxn"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smile_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_cmplxn"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_per_complxn"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/tv_per_eduction"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edu_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!--<TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_educton"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_per_eduction"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/tv_per_religion"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/religion_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size" />
+
+                    <!-- <TextView
+                         android:layout_width="@dimen/seperator_width"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:text="@string/seprator"
+                          />
+-->
+
+                    <TextView
+                        android:id="@+id/d_per_religion"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_per_religion"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin">
+
+                    <com.LeelaGroup.AgrawalFedration.FontAwsome
+                        android:id="@+id/tv_per_cast"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cast_icon"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/form_tv_size"
+
+                        />
+                    <!--
+
+                                            <TextView
+                                                android:layout_width="@dimen/seperator_width"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:text="@string/seprator"
+                                                 />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/d_per_cast"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tv_per_cast"
+                        android:textSize="@dimen/text_size" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

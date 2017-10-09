@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.FormSocialAttributeActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frm_soclattr_tv_manglik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/form_spinner_label_mar_left"
+                    android:layout_weight=".5"
+                    android:text="@string/Manglik"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/form_inner_layout_margin"
+                    android:weightSum="1">
+
+                    <RadioGroup
+                        android:id="@+id/frm_soclattr_rdogrp_mnglik"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:textSize="@dimen/text_size"
+                            android:id="@+id/frm_soclattr_rdbtn_yes"
+                            android:layout_width="@dimen/form_first_radio_bn_width"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="middle"
+                            android:text="@string/Yes" />
+
+                        <RadioButton
+                            android:textSize="@dimen/text_size"
+                            android:id="@+id/frm_soclattr_rdbtn_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:checked="true"
+                            android:text="@string/No" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layout_bottom_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textSize="@dimen/text_size"
+
+                            android:id="@+id/frm_soclattr_et_horoscope"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:hint="@string/Horoscope"
+                            android:inputType="textCapWords" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layout_bottom_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textSize="@dimen/text_size"
+
+                            android:id="@+id/frm_soclattr_et_gothra_self"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:hint="@string/Gothra"
+                            android:inputType="textCapWords" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <Button
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/res_drawable_btn_flat_normal"
+                        android:layout_marginTop="@dimen/button_margin_top"
+                        android:layout_marginBottom="@dimen/button_margin_bottom"
+                        android:onClick="goToFormEducationDetails"
+                        android:text="@string/save_next"
+                        android:textSize="@dimen/text_size"
+                        android:textAllCaps="false"
+                        android:textColor="@color/buttonTextColor"
+                        />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    tools:context=".matrimony.BasicDetailsActivity">
+
+    <include layout="@layout/toolbar_matrimony"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/d_person_image"
+                    android:layout_width="@dimen/profile_pic_width"
+                    android:layout_height="@dimen/profile_pic_hight"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:src="@drawable/profile_circle" />
+                <!-- <TextView
+            android:id="@+id/tv_basicdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Basic Details"
+            android:textAlignment="center"
+            android:textSize="20dp"
+
+            android:textColor="@color/colorAccent"/>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/per_fname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                   <!-- <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_fname"
+                        android:layout_toEndOf="@+id/per_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/per_mname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                   <!-- <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_mname"
+                        android:layout_toEndOf="@+id/per_mname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                   >
+
+                    <TextView
+                        android:id="@+id/per_lname"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                        />
+<!--
+                    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_lname"
+                        android:layout_toEndOf="@id/per_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_dob"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cake_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                   <!-- <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_dob"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                   >
+
+                    <TextView
+                        android:id="@+id/per_brthtime"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clock_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                <!--    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_brthtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:layout_toEndOf="@id/per_brthtime"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_brthplace"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+<!--
+                    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_brthplace"
+                        android:layout_toEndOf="@+id/per_brthplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/per_ntvplace"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                 <!--   <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_ntvplace"
+                        android:layout_toEndOf="@+id/per_ntvplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_maritalstatus"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/marital_status_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+<!--
+                    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_maritalstatus"
+                        android:layout_toEndOf="@+id/per_maritalstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:id="@+id/LL_No_of_Childs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/frm_per_no_of_children"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_of_child_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                  <!--  <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/frm_d_per_no_of_children"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/frm_per_no_of_children"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:id="@+id/LL_Child_Living"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/frm_per_children_living_status"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_of_child_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                 <!--   <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/frm_d_per_children_living_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/frm_per_children_living_status"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_gender"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                <!--    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+
+                        android:id="@+id/d_per_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_gender"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_mothertounge"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mother_tong_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+<!--
+                    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_mothertounge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_mothertounge"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_religion"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/religion_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+               <!--     <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_religion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/per_religion"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/per_cast"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cast_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                <!--    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_cast"
+                        android:layout_toEndOf="@+id/per_cast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_subcast"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cast_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+
+                  <!--  <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />
+-->
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_subcast"
+                        android:layout_toEndOf="@+id/per_subcast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+
+                <include layout="@layout/item_divider1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textview_width"
+                    >
+
+                    <TextView
+                        android:id="@+id/per_abtme"
+                        android:layout_width="@dimen/cont_us_logo_width"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abt_me_icon"
+                        android:textSize="@dimen/form_tv_size"
+                        android:textColor="@color/colorPrimary"
+                         />
+<!--
+                    <TextView
+                        android:layout_width="@dimen/seperator_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/layout_margin"
+                        android:gravity="center"
+                        android:text="@string/seprator"
+                         />-->
+
+                    <TextView
+                        android:textSize="@dimen/event_full_layout_tv_size"
+
+                        android:id="@+id/d_per_abtme"
+                        android:layout_toEndOf="@+id/per_abtme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/profile_pic_width"
+            android:layout_height="@dimen/profile_pic_hight"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:src="@drawable/profile_circle" />
+
+        <RelativeLayout
+            android:id="@+id/profileName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layoutMargin">
+
+            <TextView
+                android:id="@+id/nameIcon"
+                android:layout_width="@dimen/Iconsize"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:hint="@string/icon"
+                android:padding="@dimen/text_layout_margin"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/form_tv_size" />
+
+            <TextView
+                android:id="@+id/username"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/nameIcon"
+                android:padding="@dimen/text_layout_margin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_devider1" />
+
+        <RelativeLayout
+            android:id="@+id/profileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileName"
+            android:layout_marginTop="@dimen/layout_margin">
+
+
+            <TextView
+                android:id="@+id/emailIcon"
+                android:layout_width="@dimen/Iconsize"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/email_icon"
+                android:padding="@dimen/text_layout_margin"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/form_tv_size" />
+
+
+            <TextView
+                android:id="@+id/useremail"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/emailIcon"
+                android:padding="@dimen/text_layout_margin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size" />
+
+
+        </RelativeLayout>
+
+
+        <include layout="@layout/item_devider1" />
+
+        <RelativeLayout
+            android:id="@+id/profileMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin">
+
+            <TextView
+                android:id="@+id/mobileIcon"
+                android:layout_width="@dimen/Iconsize"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:hint="@string/phone_icon"
+                android:padding="@dimen/text_layout_margin"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/form_tv_size" />
+
+            <TextView
+                android:id="@+id/usermobile"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/mobileIcon"
+                android:padding="@dimen/text_layout_margin"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_devider1" />
+    </LinearLayout>
+
+    <include layout="@layout/check_internet_conn" />
+</LinearLayout>

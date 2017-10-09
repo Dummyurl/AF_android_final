@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_matrimony" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:orientation="vertical">
+
+            <!-- <TextView
+                android:id="@+id/EducationDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/Education_Details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="#ef5350"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+-->
+            <TextView
+                android:id="@+id/SSC_Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/SSC"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <View
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/event_full_layout_tv_padding"
+                android:background="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinnerstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spinnerMargin"
+                android:entries="@array/Board_array"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/SSC_Rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/SSC_Rank"
+                android:inputType="text"
+                android:textSize="@dimen/text_size" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_SchoolName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/SchoolName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/School_Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_RollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/RollNo"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Seat_Number"
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_SSCYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/SSCYear"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:hint="@string/SSC_Year"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_SSC_Percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/SSC_Percent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890."
+                    android:hint="@string/SSC_Percentage"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textSize="@dimen/text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_SSC_Rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/HSC_Details"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/HSC"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <View
+                android:layout_width="@dimen/image_width"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/HSC_spinnerstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spinnerMargin"
+                android:entries="@array/Board_array"
+                android:textAlignment="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_collegeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/collegeName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/School_College_Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_HSC_RollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/HSC_RollNo"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/HSC_Seat_Number"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_HSCYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/HSCYear"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:hint="@string/HSC_Year"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_HSC_Percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/HSC_Percent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890."
+                    android:hint="@string/HSC_Percentage"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_HSC_Rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/HSC_Rank"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/HSC_Rank"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/Graduation_Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/Graduation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <View
+                android:layout_width="@dimen/image_width"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/Graduation_spinnerstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spinnerMargin"
+                android:entries="@array/University_array"
+                android:textAlignment="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_collegeName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/collegeName1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/School_College_Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Graduation_RollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Graduation_RollNo"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Degree_Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Graduation_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Graduation_Year"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:hint="@string/Graduation_Year"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Graduation_Percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Graduation_Percent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890."
+                    android:hint="@string/Graduation_Percentage"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Graduation_Rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Graduation_Rank"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Graduation_Rank"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/Graduation_Final_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/Final_Year"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <RadioGroup
+                android:id="@+id/graduation_final"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Graduation_Final_Year_Yes"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/Yes"
+                    android:textSize="@dimen/text_size"
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/Graduation_Final_Year_No"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/No"
+                    android:textSize="@dimen/text_size"
+                    android:theme="@style/MyRadioButton" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/Post_Details"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/Post_Graduation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <View
+                android:layout_width="@dimen/image_width"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/Post_Graduation_spinnerstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spinnerMargin"
+                android:entries="@array/University_array"
+                android:textAlignment="center" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_collegeName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/collegeName2"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/School_College_Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Poat_Graduation_RollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Poat_Graduation_RollNo"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Post_Graduation_Degree_Name"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Post_Graduation_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Post_Graduation_Year"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:hint="@string/Post_Graduation_Year"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Post_Graduation_Percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Post_Graduation_Percent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890."
+                    android:hint="@string/Post_Graduation_Percentage"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textSize="@dimen/text_size" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_Post_Graduation_Rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom">
+
+                <EditText
+                    android:id="@+id/Post_Graduation_Rank"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Post_Graduation_Rank"
+                    android:inputType="text"
+                    android:textSize="@dimen/text_size" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/PostGraduation_Final_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layoutMarginBottom"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:text="@string/Final_Year"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+            <RadioGroup
+                android:id="@+id/post_graduation_final"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/TextInputLayoutMargin_top_bottom"
+                android:layout_marginTop="@dimen/TextInputLayoutMargin_top_bottom"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/PostGraduation_Final_Year_Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/Yes"
+                    android:textSize="@dimen/text_size"
+
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/PostGraduation_Final_Year_No"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/No"
+                    android:textSize="@dimen/text_size"
+                    android:theme="@style/MyRadioButton" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <!--<Button
+                    android:id="@+id/E_Prev"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ef5350"
+                    android:text="Prev"
+                    android:textColor="#ffffff"
+                    />-->
+
+                <Button
+                    android:id="@+id/E_Next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:gravity="center"
+                    android:onClick="startSecond"
+                    android:text="@string/Next"
+                    android:textColor="@color/white"
+           android:layout_marginBottom="@dimen/bottom"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.LeelaGroup.AgrawalFedration">
+
+    <uses-sdk tools:overrideLibrary="com.eqot.fontawesome" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_icon"
+        android:resource="@drawable/logo" />
+    <meta-data
+        android:name="com.google.firebase.messaging.default_notification_color"
+        android:resource="@color/colorAccent" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FCMInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FcmMessagingServices">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- <activity android:name=".medical.MainActivityModules"/> -->
+        <activity android:name=".ForgotPasswordAll"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SendOtpAll"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResetPasswordAll"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".medical.Medical_Module"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".medical.SearchResult_Medical"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".medical.Medical_Posting"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".medical.Medical_browse"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".medical.Demo"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <!-- <activity android:name=".medical.Doctor_fetch" /> -->
+        <!-- <activity android:name=".medical.Hospital_fetch" /> -->
+        <!-- <activity android:name=".medical.Medical_Fetch" /> -->
+        <activity android:name=".medical.TopSearch"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        **************************************************Education
+        Module************************************************
+        <activity android:name=".education.login_education"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Education"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.CET"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <!--
+        <activity android:name=".education.Education_Loan_Program" />
+        <activity android:name=".education.Seed_Scholarship" />
+        -->
+        <activity android:name=".education.Education_Scholarships"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Education_Upload_Doc"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.EducationDetails"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.ExamSubject"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.FamilyDetails"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.FeatchDetails"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Education_Rules"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.OtherDetails"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.PersonalDetails"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.EducationNews"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Refference"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Registration"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Signup"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.Document"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.BEAT"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.B_OtherDetail"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.B_Refference"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.ForgotPassEdu"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.SendOtpEdu"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".education.ResetPassEdu"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <!-- <activity android:name=".Event"/> -->
+
+        ********************************Matrimony Module**********************
+        <activity android:name=".matrimony.MatrimonyRegistration"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.LoginMatrimony"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.AboutUsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.BasicDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.ContactInformationActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.ContactUsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.EducationDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.EventFullViewActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.EventsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FamilyDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FindMatchActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormBasicDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormContactInformationActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormEducationDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormFamilyDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormOccupationDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormOthersActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormPartnerPreferenceActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormPhysicalAttributeActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.FormSocialAttributeActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.MatrimonyActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.MyProfileActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.OccupationDetailsActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.OtherActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.PartnerPreferenceActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.PersonDeailsAbstract"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.PhysicalAttributeActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.SocialAttributeActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.SuccessStoriesActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.SuccessStoriesFullViewActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.MyCreatedProfiles"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.ForgotPasswordActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.SendOtpActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".matrimony.ResetPasswordActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        ********************************End Matrimony Module**********************
+
+
+        ****************************************************************Business
+        Module**************************************************************
+        <activity android:name=".MainLoginActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.BusinessActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.BusinessAddAdvertized"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.BusinessFranchisee"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.BusinessModuleClick"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.Business_View_Click_Activity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.Businees_Edit_My_Add"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.Business_My_Add"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainRegistration"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Social_Refurn.Social_Refurn"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".medical.TopSearchItemClick"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".business.BusinessCardClick"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Home"
+            
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_main_drawer"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".notification.UserNotification"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.LeelaGroup.AgrawalFedration_TARGET" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".notification.NotificationViewActivity"
+             android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

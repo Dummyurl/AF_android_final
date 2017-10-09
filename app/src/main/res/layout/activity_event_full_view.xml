@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.EventFullViewActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/event_full_layout_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/evt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/event_full_layout_margin"
+                    android:padding="@dimen/event_full_layout_tv_padding"
+                    android:text="@string/event_row_layout_eventname"
+                    android:textColor="@color/ev_name"
+                    android:textSize="@dimen/cont_us_heading_dimen"
+                     />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ev_iv_evpic"
+                    android:layout_width="@dimen/profile_pic_width"
+                    android:layout_height="@dimen/profile_pic_hight"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:scaleType="centerCrop"
+                     />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/address_icon"
+                            android:layout_width="@dimen/cont_us_logo_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/map_icon"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/form_tv_size" />
+
+                        <TextView
+                            android:id="@+id/ev_loc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/event_full_layout_tv_mar_left"
+                            android:layout_toEndOf="@id/address_icon"
+                            android:textSize="@dimen/event_full_layout_tv_size" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/calandr_icon"
+                            android:layout_width="@dimen/cont_us_logo_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/calander_icon"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/form_tv_size" />
+
+                        <TextView
+                            android:id="@+id/ev_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/event_full_layout_tv_mar_left"
+                            android:layout_toEndOf="@+id/calandr_icon"
+                            android:textSize="@dimen/event_full_layout_tv_size" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/clock_icon"
+                            android:layout_width="@dimen/cont_us_logo_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/clock_icon"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/form_tv_size" />
+
+                        <TextView
+                            android:id="@+id/ev_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/event_full_layout_tv_mar_left"
+                            android:layout_toEndOf="@id/clock_icon"
+                            android:textSize="@dimen/event_full_layout_tv_size" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/item_divider1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/layout_margin">
+
+                        <com.LeelaGroup.AgrawalFedration.FontAwsome
+                            android:id="@+id/addr_icon"
+                            android:layout_width="@dimen/cont_us_logo_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_icon"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/form_tv_size" />
+
+                        <TextView
+                            android:id="@+id/ev_addr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/event_full_layout_tv_mar_left"
+                            android:layout_toEndOf="@+id/addr_icon"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <include layout="@layout/item_divider1" />
+
+
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:id="@+id/ev_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/event_full_layout_tv_mar_left"
+                    android:layout_marginRight="@dimen/event_full_layout_tv_mar_right"
+                    android:text="@string/event_row_layout_ev_desc" />
+
+                <ImageView
+                    android:id="@+id/ev_iv_patrika"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/event_full_layout_patrika_ht"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:scaleType="fitXY"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

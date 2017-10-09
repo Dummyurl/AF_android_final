@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_matrimony"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/layoutMargin">
+
+      <!--  <TextView
+            android:id="@+id/EducationDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/CET_Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#ef5350"
+            android:textSize="24sp"
+            android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/About_CET_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/About_CET"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/event_full_layout_tv_padding"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/About_CET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/Availed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:id="@+id/Cet_facility">
+
+            <RadioButton
+                android:id="@+id/About_CET_Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Yes"
+                android:textSize="@dimen/text_size"
+
+                android:checked="true"
+                android:theme="@style/MyRadioButton"/>
+
+            <RadioButton
+                android:id="@+id/About_CET_No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/No"
+                android:textSize="@dimen/text_size"
+
+                android:theme="@style/MyRadioButton"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Know_About_CET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/Form"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/SMS"
+                android:textSize="@dimen/text_size"
+
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:textSize="@dimen/text_size"
+
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Banner"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:textSize="@dimen/text_size"
+
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/TV_Add"
+                android:layout_weight="0.5"/>
+
+            <CheckBox
+                android:textSize="@dimen/text_size"
+
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Family_Friend"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="22dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:textSize="@dimen/text_size"
+
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Magzine"
+                android:layout_weight="0.7"/>
+
+            <CheckBox
+                android:textSize="@dimen/text_size"
+
+                android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Social_gathering"
+                android:layout_weight="0.4"/>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Internet_website"/>
+
+        <TextView
+            android:textSize="@dimen/text_size"
+
+            android:id="@+id/Language_CET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/Language_Medium_of_CET"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:id="@+id/Lang">
+
+            <RadioButton
+                android:id="@+id/Language_English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/English"
+                android:checked="true"
+                android:textSize="@dimen/text_size"
+
+                android:theme="@style/MyRadioButton"/>
+
+            <RadioButton
+                android:id="@+id/Language_Hindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Hindi"
+                android:textSize="@dimen/text_size"
+
+                android:theme="@style/MyRadioButton"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Examination_Center_CET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/Examination_Center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinnerCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+
+
+            android:entries="@array/ExaminationCenter"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Examination_Schedule_CET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layoutMarginBottom"
+            android:layout_marginTop="@dimen/layoutMarginBottom"
+            android:text="@string/Schedule_of_CET"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinnerSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:entries="@array/Schedule"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/output"
+            android:text="@string/output"
+            android:textSize="@dimen/text_size"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+
+
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <!--<Button
+                android:id="@+id/bt_Prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prev"
+                android:background="#ef5350"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/marginButton1"
+
+
+                />-->
+
+            <Button
+                android:id="@+id/bt_Next"
+                android:onClick="startNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false"
+
+                android:background="@drawable/res_drawable_btn_flat_normal"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="1"
+               />
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

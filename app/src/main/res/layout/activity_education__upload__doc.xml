@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parent"
+    tools:context=".education.Education_Upload_Doc">
+
+    <include layout="@layout/toolbar_matrimony" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/layoutMarginBottom">
+
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="15dp"
+                 android:text="Upload Documents"
+                 android:textColor="#c0392b"
+                 android:textSize="25dp"
+                 android:textStyle="bold" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/ten_ssc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layoutMargin"
+                    android:layout_weight="0.3"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/SSC_Result" />
+
+                <ImageView
+                    android:id="@+id/ssc_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/file_upload"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/browse_ssc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:text="@string/Browse"
+                    android:textSize="@dimen/text_size"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/ssc_btn_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_marginLeft="@dimen/layoutMargin"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/file_upload"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <include layout="@layout/item_devider5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/twelve_hsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layoutMargin"
+                    android:layout_weight="0.3"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/HSC_Result" />
+
+                <ImageView
+                    android:id="@+id/hsc_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/file_upload"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/browse_hsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:text="@string/Browse"
+                    android:textSize="@dimen/text_size"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/hsc_btn_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_marginLeft="@dimen/layoutMargin"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/file_upload"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+            <include layout="@layout/item_devider5"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/graduate_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layoutMargin"
+                    android:layout_weight="0.3"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/Graduation_Result" />
+
+
+                <ImageView
+                    android:id="@+id/graduation_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/file_upload"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/browse_UG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:text="@string/Browse"
+                    android:textSize="@dimen/text_size"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/grad_btn_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_marginLeft="@dimen/layoutMargin"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/file_upload"
+                    android:textColor="#fff" />
+            </LinearLayout>
+            <include layout="@layout/item_devider5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/post_graduation_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layoutMargin"
+                    android:layout_weight="0.3"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/Post_Graduation_Result" />
+
+
+                <ImageView
+                    android:id="@+id/post_graduate_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/file_upload"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/browse_PG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:text="@string/Browse"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/post_grad_btn_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_marginLeft="@dimen/layoutMargin"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/file_upload"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+            <include layout="@layout/item_devider5"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/other_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layoutMargin"
+                    android:layout_weight="0.3"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/Passport" />
+
+                <ImageView
+                    android:id="@+id/other_Certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/file_upload"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/browse_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:text="@string/Browse"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"
+                    />
+
+                <ImageView
+                    android:id="@+id/Profile_btn_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_marginLeft="@dimen/layoutMargin"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/file_upload"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <include layout="@layout/item_devider5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layoutMarginBottom"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/extra_Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layoutMargin"
+                    android:layout_weight="0.3"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/sign_Result" />
+
+                <ImageView
+                    android:id="@+id/other_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_weight="0.3"
+                    android:adjustViewBounds="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/file_upload"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/browse_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:text="@string/Browse"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/sign_btn_Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cont_us_logo_hight"
+                    android:layout_marginLeft="@dimen/layoutMargin"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/file_upload"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+                     <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         android:padding="@dimen/layoutMarginBottom"
+                         android:layout_weight="0.50"
+                         android:weightSum="1">
+
+                     <ImageView
+                         android:id="@+id/other_Certificate"
+                         android:layout_width="150dp"
+                         android:layout_height="200dp"
+                         android:layout_weight="0.50"
+                         android:onClick="onClick"
+                         android:padding="5dp"
+
+                         android:src="@drawable/ic_file_upload_black_24dp" />
+
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:hint="ExtraActivity"
+                         android:id="@+id/other_activity"
+                         android:gravity="center"
+                         android:textSize="@dimen/layoutMargin"
+                         android:layout_marginTop="@dimen/layoutMarginBottom"/>
+
+                         </LinearLayout>
+
+                     &lt;!&ndash;  <Button
+                           android:id="@+id/ssc_btn_Result"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="0.50"
+                           android:layout_gravity="center"
+                           android:text="10th Result(SSC)"
+                           android:layout_marginTop="5dp"/>&ndash;&gt;
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:weightSum="1"
+                     android:layout_weight="0.50"
+                     android:padding="@dimen/layoutMarginBottom">
+
+
+                     <ImageView
+                         android:id="@+id/other_Result"
+                         android:layout_width="150dp"
+                         android:layout_height="200dp"
+                         android:layout_weight="0.50"
+                         android:onClick="onClick"
+                         android:padding="5dp"
+                         android:src="@drawable/ic_file_upload_black_24dp" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="ExtraActivity"
+                         android:textSize="@dimen/layoutMargin"
+                         android:gravity="center"
+                         android:id="@+id/extra_Activity"
+                         android:layout_marginTop="@dimen/layoutMarginBottom"/>
+
+                     &lt;!&ndash;  <Button
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="12th Result(HSC)"
+                           android:layout_gravity="center"
+                           android:id="@+id/hsc_btn_Result"
+                           android:layout_weight="0.50"
+                           android:layout_marginTop="5dp"/>&ndash;&gt;
+
+
+     -->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layoutMargin">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SAVE"
+                    android:background="@color/buttons"
+                    android:textColor="#fff"
+                    android:id="@+id/upload_image"
+                    />
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

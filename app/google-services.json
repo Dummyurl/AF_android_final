@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "162847528025",
+    "firebase_url": "https://agrawalfedration.firebaseio.com",
+    "project_id": "agrawalfedration",
+    "storage_bucket": "agrawalfedration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162847528025:android:636ed93e8cf6707a",
+        "android_client_info": {
+          "package_name": "com.LeelaGroup.AgrawalFedration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162847528025-b8pnr0u0tgp1fboj06id894dd7efv1bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.LeelaGroup.AgrawalFedration",
+            "certificate_hash": "c057c6f71e92e56a7e4794df33f2afe328fa6db9"
+          }
+        },
+        {
+          "client_id": "162847528025-bv62tc3dckv5537a0ie8iuncfoimpt0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUAgXsNCuMShfvWAthE0O-HQ0GFennC7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162847528025-bv62tc3dckv5537a0ie8iuncfoimpt0e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

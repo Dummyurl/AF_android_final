@@ -1,0 +1,3330 @@
+<resources>
+
+
+    <!--share pref-->
+    <string name="FCM_PREF">FCM_PREF</string>
+    <string name="pick_image_intent_text">Pick Image</string>
+    <string name="FCM_TOKEN">FCM_TOKEN</string>
+    <!---->
+    <string name="app_name">Agrawal Fedration</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_Logout">LogOut</string>
+    <string name="faarrowleft">&#xf060;</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">first fragment</string>
+    <!--Business Module-->
+    <string name="Comapany_Name">Company Name</string>
+    <string name="Tag_Line">Tag Line</string>
+    <string name="Email">Email</string>
+    <string name="dot">:</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Contact_Code">Contact Code</string>
+    <string name="Contact_Number">Landline</string>
+    <string name="Address_Line_1">Address 1</string>
+    <string name="Country_1">Country</string>
+    <string name="State_1">State </string>
+    <string name="City_1">City </string>
+    <string name="Address_Line_2">Address 2</string>
+    <string name="Country_2">Country 2</string>
+
+
+    <string name="State_2">State 2</string>
+    <string name="City_2">City 2</string>
+    <string name="Description">Description</string>
+    <string name="Long_Description">Long Description</string>
+    <string name="Year_Established">Year Established</string>
+    <string name="Websitee">Website</string>
+    <string name="Certification">Certification</string>
+    <string name="Licenses">Licenses</string>
+    <string name="Payment_Method">Payment Method</string>
+    <!--
+    <string name="Languages">Languages</string>
+-->
+    <string name="Category">Category</string>
+    <string name="Subcategory">Subcategory</string>
+    <string name="Locale">Locale</string>
+    <string name="Service_Area">Service Area</string>
+    <string name="Working_days">Working days</string>
+    <string name="Hours_of_Operation">Hours of Operation</string>
+    <string name="Logo">Logo</string>
+    <string name="Specialities">Specialities</string>
+    <string name="Business_Type">Business Type</string>
+    <!--  <string name="Advertiser_Type">Advertiser Type</string>-->
+    <string name="Landline">Landline Number</string>
+    <string name="Image_title">Image title</string>
+    <string name="No._working_days">No. working days</string>
+    <string name="Trader">Trader</string>
+    <string name="Manufacturer">Manufacturer</string>
+    <string name="Professional">Professional</string>
+    <string name="Service_Provider">Service Provider</string>
+    <string name="Advertiser_Type">Advertiser Type</string>
+    <string name="Basic">Basic</string>
+    <string name="Premium">Premium</string>
+    <string name="Superlisting">Superlisting</string>
+    <!--
+    <string name="Save">Save</string>
+-->
+    <string name="First_name">First Name</string>
+    <string name="Last_name"> Last Name</string>
+    <string name="Chapter">Description</string>
+    <!--
+    <string name="Gender">Gender</string>
+-->
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="internet_error">Something went wrong</string>
+    <!--
+    <string name="Address">Address</string>
+-->
+
+    <!--Social Refurn-->
+    <string name="social_text">The most important objective at Agrawal Federation is to be the most powerful community
+
+In the next few weeks we would like to have a brain-storming session for defining next level of activities to be undertaken by Agrawal Federation
+
+I would like to call them as combination of a Machine and a Missile for their Vision, Strategy and its effective Execution
+
+First and foremost, I would like to convey my personal thanks to all of you for giving me the opportunity to once again SERVE the COMMUNITY.
+
+</string>
+
+    <string name="Social_News">Social News</string>
+
+
+    <string-array name="module">
+        <item>"Medical"</item>
+        <item>"Matrimony"</item>
+        <item>"Business"</item>
+        <item>"Education"</item>
+        <item>"Social Reform"</item>
+    </string-array>
+
+    <string name="DetailsFieldSearchResult">meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeFounded by JamunaLal Balaram Agrawal in 1952, the Leela Group is a nationwide enterprise, headquartered at Pune comprising over 20 independent operating companies. </string>
+    <string name="AddressFieldSearchResult">Office No. 75 to 78, A Wing, Fourth Floor, K K Market, Dhankawadi,, Pune, KK Market, Balaji Nagar, Pune, Maharashtra 411043</string>
+    <string name="time"> 8AM - 6PM</string>
+    <string name="phone">9158289285</string>
+    <string name="email">LeelaGlobalInfotech@gmail.com</string>
+
+
+    <string name="layoutTab">TabHostExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+
+
+    <string-array name="location">
+        <item>Pune</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+    </string-array>
+
+    <string-array name="search_type">
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Medical</item>
+    </string-array>
+    <string-array name="titleEvent">
+        <item>Rock Consert</item>
+        <item>DanceDiva</item>
+    </string-array>
+
+    <string-array name="event_date">
+        <item>10/10/2017</item>
+        <item>10/10/2017</item>
+        <item>10/10/2017</item>
+    </string-array>
+    <string-array name="event_day">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+    </string-array>
+    <string-array name="event_time">
+        <item>10am</item>
+        <item>11am</item>
+        <item>12am</item>
+    </string-array>
+    <string-array name="event_location">
+        <item>kotharud</item>
+        <item>kkmarket</item>
+        <item>KarveRoad</item>
+    </string-array>
+    <string-array name="event_entryCharge">
+        <item>300</item>
+        <item>400</item>
+        <item>76000</item>
+    </string-array>
+    <string-array name="cast">
+        <item>Select Cast</item>
+        <item>Agrawal</item>
+        <item>Agarwal</item>
+    </string-array>
+
+
+    <string name="person">Name</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="Designation">Designation</string>
+    <string name="Website">www.agrawalfederation.in</string>
+    <string name="fnameerror">Enter a valid first name</string>
+    <string name="mnameerror">Enter a valid Middle name</string>
+    <string name="lnameerror">Enter a valid last name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="passworderror">Enter a valid password</string>
+    <string name="confirmpasserror">Enter a valid confirmpassword</string>
+    <string name="err_msg_Qualification">Qualification</string>
+    <string name="err_msg_aboutBusiness">BusinessInfo</string>
+    <string name="err_msg_business_name">BusinessName</string>
+    <string name="err_msg_addresss">BusinessAddress</string>
+    <string name="err_msg_contact">BusinessContact</string>
+    <string name="err_msg_emailId">BusinessWebsite</string>
+    <string name="err_msg_city_pincode">Pincode</string>
+
+
+    <string-array name="Posting_country">
+        <item>Selected Country </item>
+        <item>India</item>
+        <item> Afghanistan</item>
+        <item> Albania</item>
+        <item> Algeria</item>
+        <item>  Andorra</item>
+        <item> Angola</item>
+        <item> Anguilla</item>
+        <item> Antigua and Barbuda.</item>
+        <item> Argentina.</item>
+
+    </string-array>
+
+    <string-array name="Posting_state">
+        <item>Selected State </item>
+        <item>Kerala  </item>
+        <item>  Madhya Pradesh  </item>
+        <item> Maharashtra </item>
+        <item>  Manipur </item>
+        <item>  Meghalaya  </item>
+        <item> Mizoram  </item>
+        <item> Nagaland </item>
+        <item> Orissa </item>
+        <item> Punjab  </item>
+        <item> Rajasthan  </item>
+        <item> Sikkim  </item>
+        <item>  Tamil Nadu  </item>
+        <item> Tripura  </item>
+
+    </string-array>
+
+    <string-array name="Posting_city">
+        <item>Selected_city </item>
+        <item> Mumbai</item>
+        <item>Pune</item>
+        <item>Nagpur</item>
+        <item>Nashik</item>
+        <item>Vasai-Virar</item>
+        <item>Palghar</item>
+        <item> Aurangabad</item>
+        <item>Solapur</item>
+    </string-array>
+
+
+    ***************************************************Education
+    Module*****************************************
+
+
+    <!-- <string name="app_name">Education</string>-->
+
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_first_name">Enter your first name</string>
+    <string name="err_msg_last_name">Enter your last name</string>
+    <string name="err_msg_father_name">Enter your father name</string>
+    <string name="err_msg_mother_name">Enter your mother name</string>
+    <string name="err_msg_mobile">Enter valid 10 digit mobile number</string>
+    <string name="err_msg_address">Enter your address</string>
+    <string name="err_msg_pincode">PinCode must be 6 digit</string>
+    <string name="err_msg_dob">Enter your date of birth</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Password at least 6 digit in length</string>
+    <string name="err_msg_cpassword">Enter the similar password</string>
+
+    <string name="term">I, hereby, declare that all statements and entries made in this application form are true, complete and correct to the best of my knowledge and belief. I understand that in the event of any information being found false or ineligibility being detected any time, action can be taken against me by Management. I, confirm that I will follow all the rules and regulations prescribed by AF Administrative Training Foundation and in case of any violation of any of the rules and misconduct, management would have absolute right to take disciplinary action against me. I, confirm that all decision will be final by AF Academic committee in case of any dispute</string>
+
+
+    <string-array name="Board_array">
+        <item> MAHARASHTRA BOARD </item>
+        <item> Delhi BOARD </item>
+        <item> KERLA BOARD </item>
+        <item> KARNATAKA BOARD </item>
+    </string-array>
+
+    <string-array name="University_array">
+        <item> PUNE UNIVERSITY </item>
+        <item> MUMBAI UNIVERSITY </item>
+        <item> SHIVAJI UNIVERSITY </item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>2017</item>
+        <item>2018 </item>
+        <item> 2019 </item>
+    </string-array>
+
+    <string-array name="attempt_array">
+        <item>Select number of Attempts</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>>10</item>
+
+    </string-array>
+    <string-array name="Schedule">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_login">Login</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+
+    <!--<string-array name="rules">
+        &lt;!&ndash;  Student should have following things, before starting the registration.&ndash;&gt;
+        <item>  a.A valid e-mail address for receiving all future correspondence till the admission process is over and thereon.</item>
+        <item>  b.A valid mobile number to receive SMS based notifications/communications related to the online application, Admit card, Entrance Test Result, Admission Counselling etc till the admission process is over and subsequently, if admitted.</item>
+        <item>  c.A recent scanned passport size colour photograph (4.5cmx4.5cm) in "jpeg" format only (file size of scanned photograph should not be more than 100KB). Your signature in Blue/Black pen on white sheet; scanned (2.5 cmx5cm) "jpeg" format only. (File size of scanned photograph should not be more than 100KB). Also keep ready all scanned education documents/certificate/mark sheets and testimonial in the jpeg/pdf format, but shall not be exceed 300kb each.</item>
+        <item>  2.Forms only be accepted by online mode with all the necessary documents / enclosures etc.</item>
+        3. AF Common Entrance Test (CET) will be in English and Hindi language, will be held at five
+        centres i.e. Delhi, Jaipur, Chennai, Indore and Pune.
+        4. No travelling allowance and stay arrangement will be provided by AF to student. They have
+        to make their own arrangements for the same.
+        5. Admission process comprises of a CET and interview. Due weightage is also given to past
+        academic performance of a student. Therefore, filling up complete details of educational
+        qualification is necessary. Students would be called for written test based upon academic
+        performance. Further, student will be shortlisted for interview based upon written test and
+        academic performance jointly.
+        6. Final selection would be based upon aggregate of marks obtained in written test,
+        interview and academic performance.
+        7. After successfully filling online form for registration, you will get USERID and PASSWORD
+        on your e-mail for further information. After registration go through your Email Id InBox or
+        Spam Folder for Your Login Credentials.
+        8. All admissions in AF are strictly based upon merit. Students and their parents are
+        advised not do any canvassing for admissions.
+        9. Only successful candidate will get an e-mail for admission. AF Centre will be allotted as
+        per All India Rank (AIR) of aspirant and subject to vacancy in the respective centre where
+        you have applied for.
+        10. For any other queries w.r.t. AF CET, kindly refer our FAQ section.
+        11. The Academic Committee decision will be final for admission in AF.
+        12. Please do not press back or refresh button while filing your registration form.
+        13. In case of any problem or need any assistance please call on support number between
+        10:00 am to 5:00 PM except Sunday.
+    </string-array>-->
+    *******************************************End Education Module String
+    Arrays***********************************
+
+    ********************************************Matrimony
+    Strings*************************************************
+
+    <string-array name="looking_for">
+        <item>Looking For</item>
+        <item>Groom</item>
+        <item>Bride</item>
+    </string-array>
+    <string-array name="choose_gender">
+        <item>Groom</item>
+        <item>Bride</item>
+    </string-array>
+    <string-array name="resident_status">
+        <item>Own</item>
+        <item>PG</item>
+        <item>Rental</item>
+    </string-array>
+    <string-array name="interested_in">
+        <item>Sports Adventure</item>
+        <item>Technology</item>
+        <item>Fashion</item>
+        <item>Business</item>
+    </string-array>
+    <string-array name="marital_status">
+        <item>Single</item>
+        <item>Married</item>
+    </string-array>
+
+    <string-array name="no_of_children">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3 And Above</item>
+    </string-array>
+
+    <string-array name="children_living_status">
+        <item>Live Together</item>
+        <item>Not Live Together</item>
+    </string-array>
+
+    <string-array name="mother_tongue">
+        <item>Hindi/Delhi</item>
+        <item>Hindi/MP/Bundelkhand/Chattisgarhi</item>
+        <item>Hindi/U.P./Awadhi/Bhojpuri/Garwhali</item>
+        <item>Punjabi</item>
+        <item>Bihari/Maithili/Magahi</item>
+        <item>Rajasthani / Marwari / Malwi / Jaipuri</item>
+        <item>Haryanvi</item>
+        <item>Himachali/Pahari</item>
+        <item>Kashmiri/Dogri</item>
+        <item>Sindhi</item>
+        <item>Urdu</item>
+        <item>Marathi</item>
+        <item>Gujarati / Kutchi</item>
+        <item>Konkani</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Tulu</item>
+        <item>Urdu</item>
+        <item>Bengali</item>
+        <item>Oriya</item>
+        <item>Assamese</item>
+        <item>>Sikkim/ Nepali/ Lepcha/ Bhutia/ Limbu</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="country_list">
+        <item>India</item>
+        <item>Pakistan</item>
+        <item>Bangladesh</item>
+        <item>Australia</item>
+        <item>France</item>
+        <item>South Africa</item>
+        <item>Netherlands</item>
+        <item>Afghanistan</item>
+        <item>Sri Lanka</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>Canada</item>
+        <item>Nepal</item>
+        <item>Bhutan</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>Italy</item>
+        <item>South Korea</item>
+        <item>Germany</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>Singapore</item>
+    </string-array>
+
+    <string-array name="select_age">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>94</item>
+        <item>95</item>
+        <item>96</item>
+        <item>97</item>
+        <item>98</item>
+        <item>99</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="body_type">
+        <item>Slim</item>
+        <item>Heavy</item>
+        <item>Average</item>
+    </string-array>
+
+    <string-array name="blood_group">
+        <item>A+</item>
+        <item>B+</item>
+        <item>O+</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O-</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="complexion">
+        <item>Darker</item>
+        <item>Fair</item>
+        <item>Very Fair</item>
+        <item>Medium</item>
+    </string-array>
+    <string-array name="diet">
+        <item>Vegetarian</item>
+        <item>Non Vegetarian</item>
+    </string-array>
+    <string-array name="drink">
+        <item>Addicted</item>
+        <item>Socially</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="smoke">
+        <item>Regularly</item>
+        <item>Socially</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="where_u_hear">
+        <item>Another Website</item>
+        <item>Friends</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="profile_created_for">
+        <item>Self</item>
+        <item>Daughter</item>
+        <item>Son</item>
+        <item>Brother</item>
+        <item>Sister</item>
+    </string-array>
+
+    <string-array name="interests">
+        <item>Cricket</item>
+        <item>Reading</item>
+        <item>Singing</item>
+        <item>Dancing</item>
+    </string-array>
+
+
+    <string-array name="religion">
+        <item>Hindu</item>
+        <!-- <item>Jain</item>
+        <item>Buddhism</item>
+        <item>Muslim</item>
+        <item>Christians</item>-->
+    </string-array>
+    <string-array name="education">
+        <item>SSC</item>
+        <item>HSC</item>
+        <item>Diploma</item>
+        <item>Graduation</item>
+        <item>Post Graduation</item>
+        <item>Doctorate</item>
+    </string-array>
+    <string-array name="post_graduation">
+        <item>MBA</item>
+        <item>MA</item>
+        <item>MCA</item>
+        <item>M-TECH</item>
+    </string-array>
+    <string-array name="occupation_details">
+        <item>Service</item>
+        <item>Business</item>
+        <item>Actor</item>
+        <item>Not Working</item>
+    </string-array>
+    <string-array name="industry">
+        <item>Banking</item>
+        <item>BPO</item>
+        <item>Accounting</item>
+        <item>Agriculture</item>
+    </string-array>
+    <string-array name="income">
+        <item>Below 1</item>
+        <item>Between 1-2</item>
+        <item>Between 2-3</item>
+        <item>Between 3-5</item>
+        <item>Between 5-8</item>
+        <item>Between 8-10</item>
+        <item>Above 10</item>
+    </string-array>
+    <string-array name="family_type">
+        <item>Joint Family</item>
+        <item>Neuclear Family</item>
+        <item>Other Type</item>
+    </string-array>
+    <string-array name="family_status">
+        <item>Lower Class</item>
+        <item>Middle Class</item>
+        <item>Upper Class</item>
+        <item>Rich Family</item>
+    </string-array>
+
+
+    <!-- End Arry Element for Acivity matrimony -->
+
+    <string-array name="person_id">
+        <item>ID001</item>
+        <item>ID002</item>
+        <item>ID003</item>
+        <item>ID004</item>
+        <item>ID005</item>
+        <item>ID006</item>
+        <item>ID007</item>
+        <item>ID008</item>
+        <item>ID009</item>
+    </string-array>
+    <!--<string-array name="person_age">
+        <item>25</item>
+        <item>26</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+    </string-array>-->
+    <string-array name="person_height_feet">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+
+    </string-array>
+    <string-array name="person_height_inch">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="person_designation">
+        <item>iT Engg</item>
+        <item>mechanical engg</item>
+        <item>electrical engg</item>
+        <item>electrical engg</item>
+        <item>electrical engg</item>
+        <item>electrical engg</item>
+        <item>electrical engg</item>
+        <item>electrical engg</item>
+        <item>electrical engg</item>
+    </string-array>
+
+    *************************************************End Matrimony String
+    *********************************************
+    ***********************************************************Business Module
+    Strings********************************
+
+
+    <string-array name="business_spinner">
+        <item> Advertising</item>
+        <item> Banking &amp; Finance</item>
+        <item> Capital Market </item>
+        <item> Corporate Law (Domestic &amp; International)</item>
+        <item> CSR &amp; Community Development </item>
+        <item> Engineering &amp; Automobile Manufacture</item>
+        <item> Engineering Metal Working Machinery</item>
+        <item> Ferrous &amp; Non-Ferrous Metal</item>
+        <item> Food Processing</item>
+        <item> Gems &amp; Jewellery</item>
+        <item> Goods &amp; Service Tax</item>
+        <item> Health Care</item>
+        <item> Higher Education</item>
+        <item> Imports &amp; Exports</item>
+        <item> Information Technology (Hardware &amp;</item>
+        <item> Infrastructure</item>
+        <item> Manufacturer</item>
+        <item> Others</item>
+        <item> Pharamaceuticals</item>
+        <item> plastics and Packaging</item>
+        <item> Professional</item>
+        <item> Real Estate &amp; Construction</item>
+        <item> Service Sector</item>
+        <item> Textile &amp; Garments</item>
+        <item> Trader</item>
+    </string-array>
+
+    <string-array name="Select_Locale">
+        <item>Select_Locale</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="Sub_Category">
+        <item>Select Category </item>
+        <item>Others </item>
+        <item>It and Media</item>
+        <item>Shares and Finance Others </item>
+    </string-array>
+
+    <string-array name="Zone">
+        <item>Select Zone </item>
+        <item>International</item>
+        <item>Mumbai Zone</item>
+    </string-array>
+
+    <string-array name="Chapter">
+        <item>Select Chapter</item>
+    </string-array>
+
+    <string-array name="Membership">
+        <item>FCP</item>
+        <item>Patron</item>
+    </string-array>
+
+    <string-array name="Service_Area">
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="No_working_days">
+        <item>1 or less </item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12 or more</item>
+
+    </string-array>
+
+
+    <string-array name="country">
+        <item>INDIA</item>
+    </string-array>
+
+    <string-array name="state_array">
+        <item>Andhra Pradesh</item>
+        <item>Assam</item>
+        <item>Chandigarh</item>
+        <item>Delhi</item>
+        <item>Gujarat</item>
+        <item>Goa</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Maharashtra</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+
+    </string-array>
+
+    <string-array name="Andhra_Pradesh">
+        <item> Bombuflat </item>
+        <item> Garacharma </item>
+        <item> Port Blair </item>
+        <item> Rangat </item>
+    </string-array>
+
+    <string-array name="Assam">
+        <item> Along </item>
+        <item> Basar </item>
+        <item> Bondila </item>
+        <item> Changlang </item>
+        <item> Daporijo </item>
+        <item> Deomali </item>
+        <item> Itanagar </item>
+        <item> Jairampur </item>
+        <item> Khonsa </item>
+        <item> Naharlagun </item>
+        <item> Namsai </item>
+        <item> Pasighat </item>
+        <item> Roing </item>
+        <item> Seppa </item>
+        <item> Tawang </item>
+    </string-array>
+
+
+    <string-array name="Chandigarh">
+        <item> Chandigarh </item>
+    </string-array>
+
+    <string-array name="Delhi">
+        <item> Delhi </item>
+        <item> New Delhi </item>
+    </string-array>
+
+    <string-array name="Goa">
+
+        <item> Aldona </item>
+        <item> Altinho </item>
+        <item> Aquem </item>
+        <item> Arpora </item>
+        <item> Bambolim </item>
+        <item> Bandora </item>
+        <item> Bardez </item>
+        <item> Benaulim </item>
+        <item> Betora </item>
+        <item> Bicholim </item>
+        <item> Calapor </item>
+        <item> Candolim </item>
+        <item> Caranzalem </item>
+        <item> Carapur </item>
+        <item> Chicalim </item>
+        <item> Chimbel </item>
+        <item> Chinchinim </item>
+        <item> Colvale </item>
+        <item> Corlim </item>
+        <item> Cortalim </item>
+        <item> Cuncolim </item>
+        <item> Curchorem </item>
+        <item> Curti </item>
+        <item> Davorlim </item>
+        <item> Dona Paula </item>
+        <item> Goa </item>
+        <item> Guirim </item>
+        <item> Jua </item>
+        <item> Kalangat </item>
+        <item> Kankon </item>
+        <item> Kundaim </item>
+        <item> Loutulim </item>
+        <item> Madgaon </item>
+        <item> Mapusa </item>
+        <item> Margao </item>
+        <item> Margaon </item>
+        <item> Miramar </item>
+        <item> Morjim </item>
+        <item> Mormugao </item>
+        <item> Navelim </item>
+        <item> Pale </item>
+        <item> Panaji </item>
+        <item> Parcem </item>
+        <item> Parra </item>
+        <item> Penha de Franca </item>
+        <item> Pernem </item>
+        <item> Pilerne </item>
+        <item> Pissurlem </item>
+        <item> Ponda </item>
+        <item> Porvorim </item>
+        <item> Quepem </item>
+        <item> Queula </item>
+        <item> Raia </item>
+        <item> Reis Magos </item>
+        <item> Salcette </item>
+        <item> Saligao </item>
+        <item> Sancoale </item>
+        <item> Sanguem </item>
+        <item> Sanquelim </item>
+        <item> Sanvordem </item>
+        <item> Sao Jose-de-Areal </item>
+        <item> Sattari </item>
+        <item> Serula </item>
+        <item> Sinquerim </item>
+        <item> Siolim </item>
+        <item> Taleigao </item>
+        <item> Tivim </item>
+        <item> Valpoi </item>
+        <item> Varca </item>
+        <item> Vasco </item>
+    </string-array>
+
+    <string-array name="Gujarat">
+        <item> Abrama </item>
+        <item> Adalaj </item>
+        <item> Adityana </item>
+        <item> Advana </item>
+        <item> Ahmedabad </item>
+        <item> Ahwa </item>
+        <item> Alang </item>
+        <item> Ambaji </item>
+        <item> Ambaliyasan </item>
+        <item> Amod </item>
+        <item> Amreli </item>
+        <item> Amroli </item>
+        <item> Anand </item>
+        <item> Andada </item>
+        <item> Anjar </item>
+        <item> Anklav </item>
+        <item> Ankleshwar </item>
+        <item> Anklesvar INA </item>
+        <item> Antaliya </item>
+        <item> Arambhada </item>
+        <item> Asarma </item>
+        <item> Atul </item>
+        <item> Babra </item>
+        <item> Bag-e-Firdosh </item>
+        <item> Bagasara </item>
+        <item> Bahadarpar </item>
+        <item> Bajipura </item>
+        <item> Bajva </item>
+        <item> Balasinor </item>
+        <item> Banaskantha </item>
+        <item> Bansda </item>
+        <item> Bantva </item>
+        <item> Bardoli </item>
+        <item> Barwala </item>
+        <item> Bayad </item>
+        <item> Bechar </item>
+        <item> Bedi </item>
+        <item> Beyt </item>
+        <item> Bhachau </item>
+        <item> Bhanvad </item>
+        <item> Bharuch </item>
+        <item> Bharuch INA </item>
+        <item> Bhavnagar </item>
+        <item> Bhayavadar </item>
+        <item> Bhestan </item>
+        <item> Bhuj </item>
+        <item> Bilimora </item>
+        <item> Bilkha </item>
+        <item> Billimora </item>
+        <item> Bodakdev </item>
+        <item> Bodeli </item>
+        <item> Bopal </item>
+        <item> Boria </item>
+        <item> Boriavi </item>
+        <item> Borsad </item>
+        <item> Botad </item>
+        <item> Cambay </item>
+        <item> Chaklasi </item>
+        <item> Chala </item>
+        <item> Chalala </item>
+        <item> Chalthan </item>
+        <item> Chanasma </item>
+        <item> Chandisar </item>
+        <item> Chandkheda </item>
+        <item> Chanod </item>
+        <item> Chaya </item>
+        <item> Chenpur </item>
+        <item> Chhapi </item>
+        <item> Chhaprabhatha </item>
+        <item> Chhatral </item>
+        <item> Chhota Udepur </item>
+        <item> Chikhli </item>
+        <item> Chiloda </item>
+        <item> Chorvad </item>
+        <item> Chotila </item>
+        <item> Dabhoi </item>
+        <item> Dadara </item>
+        <item> Dahod </item>
+        <item> Dakor </item>
+        <item> Damnagar </item>
+        <item> Deesa </item>
+        <item> Delvada </item>
+        <item> Devgadh Baria </item>
+        <item> Devsar </item>
+        <item> Dhandhuka </item>
+        <item> Dhanera </item>
+        <item> Dhangdhra </item>
+        <item> Dhansura </item>
+        <item> Dharampur </item>
+        <item> Dhari </item>
+        <item> Dhola </item>
+        <item> Dholka </item>
+        <item> Dholka Rural </item>
+        <item> Dhoraji </item>
+        <item> Dhrangadhra </item>
+        <item> Dhrol </item>
+        <item> Dhuva </item>
+        <item> Dhuwaran </item>
+        <item> Digvijaygram </item>
+        <item> Disa </item>
+        <item> Dungar </item>
+        <item> Dungarpur </item>
+        <item> Dungra </item>
+        <item> Dwarka </item>
+        <item> Flelanganj </item>
+        <item> GSFC Complex </item>
+        <item> Gadhda </item>
+        <item> Gandevi </item>
+        <item> Gandhidham </item>
+        <item> Gandhinagar </item>
+        <item> Gariadhar </item>
+        <item> Ghogha </item>
+        <item> Godhra </item>
+        <item> Gondal </item>
+        <item> Hajira INA </item>
+        <item> Halol </item>
+        <item> Halvad </item>
+        <item> Hansot </item>
+        <item> Harij </item>
+        <item> Himatnagar </item>
+        <item> Ichchhapor </item>
+        <item> Idar </item>
+        <item> Jafrabad </item>
+        <item> Jalalpore </item>
+        <item> Jambusar </item>
+        <item> Jamjodhpur </item>
+        <item> Jamnagar </item>
+        <item> Jasdan </item>
+        <item> Jawaharnagar </item>
+        <item> Jetalsar </item>
+        <item> Jetpur </item>
+        <item> Jodiya </item>
+        <item> Joshipura </item>
+        <item> Junagadh </item>
+        <item> Kadi </item>
+        <item> Kadodara </item>
+        <item> Kalavad </item>
+        <item> Kali </item>
+        <item> Kaliawadi </item>
+        <item> Kalol </item>
+        <item> Kalol INA </item>
+        <item> Kandla </item>
+        <item> Kanjari </item>
+        <item> Kanodar </item>
+        <item> Kapadwanj </item>
+        <item> Karachiya </item>
+        <item> Karamsad </item>
+        <item> Karjan </item>
+        <item> Kathial </item>
+        <item> Kathor </item>
+        <item> Katpar </item>
+        <item> Kavant </item>
+        <item> Keshod </item>
+        <item> Kevadiya </item>
+        <item> Khambhaliya </item>
+        <item> Khambhat </item>
+        <item> Kharaghoda </item>
+        <item> Khed Brahma </item>
+        <item> Kheda </item>
+        <item> Kheralu </item>
+        <item> Kodinar </item>
+        <item> Kosamba </item>
+        <item> Kundla </item>
+        <item> Kutch </item>
+        <item> Kutiyana </item>
+        <item> Lakhtar </item>
+        <item> Lalpur </item>
+        <item> Lambha </item>
+        <item> Lathi </item>
+        <item> Limbdi </item>
+        <item> Limla </item>
+        <item> Lunavada </item>
+        <item> Madhapar </item>
+        <item> Maflipur </item>
+        <item> Mahemdavad </item>
+        <item> Mahudha </item>
+        <item> Mahuva </item>
+        <item> Mahuvar </item>
+        <item> Makarba </item>
+        <item> Makarpura </item>
+        <item> Makassar </item>
+        <item> Maktampur </item>
+        <item> Malia </item>
+        <item> Malpur </item>
+        <item> Manavadar </item>
+        <item> Mandal </item>
+        <item> Mandvi </item>
+        <item> Mangrol </item>
+        <item> Mansa </item>
+        <item> Meghraj </item>
+        <item> Mehsana </item>
+        <item> Mendarla </item>
+        <item> Mithapur </item>
+        <item> Modasa </item>
+        <item> Mogravadi </item>
+        <item> Morbi </item>
+        <item> Morvi </item>
+        <item> Mundra </item>
+        <item> Nadiad </item>
+        <item> Naliya </item>
+        <item> Nanakvada </item>
+        <item> Nandej </item>
+        <item> Nandesari </item>
+        <item> Nandesari INA </item>
+        <item> Naroda </item>
+        <item> Navagadh </item>
+        <item> Navagam Ghed </item>
+        <item> Navsari </item>
+        <item> Ode </item>
+        <item> Okaf </item>
+        <item> Okha </item>
+        <item> Olpad </item>
+        <item> Paddhari </item>
+        <item> Padra </item>
+        <item> Palanpur </item>
+        <item> Palej </item>
+        <item> Pali </item>
+        <item> Palitana </item>
+        <item> Paliyad </item>
+        <item> Pandesara </item>
+        <item> Panoli </item>
+        <item> Pardi </item>
+        <item> Parnera </item>
+        <item> Parvat </item>
+        <item> Patan </item>
+        <item> Patdi </item>
+        <item> Petlad </item>
+        <item> Petrochemical Complex </item>
+        <item> Porbandar </item>
+        <item> Prantij </item>
+        <item> Radhanpur </item>
+        <item> Raiya </item>
+        <item> Rajkot </item>
+        <item> Rajpipla </item>
+        <item> Rajula </item>
+        <item> Ramod </item>
+        <item> Ranavav </item>
+        <item> Ranoli </item>
+        <item> Rapar </item>
+        <item> Sahij </item>
+        <item> Salaya </item>
+        <item> Sanand </item>
+        <item> Sankheda </item>
+        <item> Santrampur </item>
+        <item> Saribujrang </item>
+        <item> Sarigam INA </item>
+        <item> Sayan </item>
+        <item> Sayla </item>
+        <item> Shahpur </item>
+        <item> Shahwadi </item>
+        <item> Shapar </item>
+        <item> Shivrajpur </item>
+        <item> Siddhapur </item>
+        <item> Sidhpur </item>
+        <item> Sihor </item>
+        <item> Sika </item>
+        <item> Singarva </item>
+        <item> Sinor </item>
+        <item> Sojitra </item>
+        <item> Sola </item>
+        <item> Songadh </item>
+        <item> Suraj Karadi </item>
+        <item> Surat </item>
+        <item> Surendranagar </item>
+        <item> Talaja </item>
+        <item> Talala </item>
+        <item> Talod </item>
+        <item> Tankara </item>
+        <item> Tarsali </item>
+        <item> Thangadh </item>
+        <item> Tharad </item>
+        <item> Thasra </item>
+        <item> Udyognagar </item>
+        <item> Ukai </item>
+        <item> Umbergaon </item>
+        <item> Umbergaon INA </item>
+        <item> Umrala </item>
+        <item> Umreth </item>
+        <item> Un </item>
+        <item> Una </item>
+        <item> Unjha </item>
+        <item> Upleta </item>
+        <item> Utran </item>
+        <item> Uttarsanda </item>
+        <item> V.U. Nagar </item>
+        <item> V.V. Nagar </item>
+        <item> Vadia </item>
+        <item> Vadla </item>
+        <item> Vadnagar </item>
+        <item> Vadodara </item>
+        <item> Vaghodia INA </item>
+        <item> Valbhipur </item>
+        <item> Vallabh Vidyanagar </item>
+        <item> Valsad </item>
+        <item> Valsad INA </item>
+        <item> Vanthali </item>
+        <item> Vapi </item>
+        <item> Vapi INA </item>
+        <item> Vartej </item>
+        <item> Vasad </item>
+        <item> Vasna Borsad INA </item>
+        <item> Vaso </item>
+        <item> Veraval </item>
+        <item> Vidyanagar </item>
+        <item> Vijalpor </item>
+        <item> Vijapur </item>
+        <item> Vinchhiya </item>
+        <item> Vinzol </item>
+        <item> Virpur </item>
+        <item> Visavadar </item>
+        <item> Visnagar </item>
+        <item> Vyara </item>
+        <item> Wadhwan </item>
+        <item> Waghai </item>
+        <item> Waghodia </item>
+        <item> Wankaner </item>
+        <item> Zalod </item>
+    </string-array>
+
+    <string-array name="Karnataka">
+        <item> Adityanagar </item>
+        <item> Adityapatna </item>
+        <item> Afzalpur </item>
+        <item> Ajjampur </item>
+        <item> Aland </item>
+        <item> Almatti Sitimani </item>
+        <item> Alnavar </item>
+        <item> Alur </item>
+        <item> Ambikanagara </item>
+        <item> Anekal </item>
+        <item> Ankola </item>
+        <item> Annigeri </item>
+        <item> Arkalgud </item>
+        <item> Arsikere </item>
+        <item> Athni </item>
+        <item> Aurad </item>
+        <item> Badagavettu </item>
+        <item> Badami </item>
+        <item> Bagalkot </item>
+        <item> Bagepalli </item>
+        <item> Bailhongal </item>
+        <item> Baindur </item>
+        <item> Bajala </item>
+        <item> Bajpe </item>
+        <item> Banavar </item>
+        <item> Bangarapet </item>
+        <item> Bankapura </item>
+        <item> Bannur </item>
+        <item> Bantwal </item>
+        <item> Basavakalyan </item>
+        <item> Basavana Bagevadi </item>
+        <item> Belagula </item>
+        <item> Belakavadiq </item>
+        <item> Belgaum </item>
+        <item> Belgaum Cantonment </item>
+        <item> Bellary </item>
+        <item> Belluru </item>
+        <item> Beltangadi </item>
+        <item> Belur </item>
+        <item> Belvata </item>
+        <item> Bengaluru </item>
+        <item> Bhadravati </item>
+        <item> Bhalki </item>
+        <item> Bhatkal </item>
+        <item> Bhimarayanagudi </item>
+        <item> Bhogadi </item>
+        <item> Bidar </item>
+        <item> Bijapur </item>
+        <item> Bilgi </item>
+        <item> Birur </item>
+        <item> Bommanahalli </item>
+        <item> Bommasandra </item>
+        <item> Byadgi </item>
+        <item> Byatarayanapura </item>
+        <item> Chakranagar Colony </item>
+        <item> Challakere </item>
+        <item> Chamrajnagar </item>
+        <item> Chamundi Betta </item>
+        <item> Channagiri </item>
+        <item> Channapatna </item>
+        <item> Channarayapatna </item>
+        <item> Chickballapur </item>
+        <item> Chik Ballapur </item>
+        <item> Chikkaballapur </item>
+        <item> Chikmagalur </item>
+        <item> Chiknayakanhalli </item>
+        <item> Chikodi </item>
+        <item> Chincholi </item>
+        <item> Chintamani </item>
+        <item> Chitaguppa </item>
+        <item> Chitapur </item>
+        <item> Chitradurga </item>
+        <item> Coorg </item>
+        <item> Dandeli </item>
+        <item> Dargajogihalli </item>
+        <item> Dasarahalli </item>
+        <item> Davangere </item>
+        <item> Devadurga </item>
+        <item> Devagiri </item>
+        <item> Devanhalli </item>
+        <item> Dharwar </item>
+        <item> Dhupdal </item>
+        <item> Dod Ballapur </item>
+        <item> Donimalai </item>
+        <item> Gadag </item>
+        <item> Gajendragarh </item>
+        <item> Ganeshgudi </item>
+        <item> Gangawati </item>
+        <item> Gangoli </item>
+        <item> Gauribidanur </item>
+        <item> Gokak </item>
+        <item> Gokak Falls </item>
+        <item> Gonikoppal </item>
+        <item> Gorur </item>
+        <item> Gottikere </item>
+        <item> Gubbi </item>
+        <item> Gudibanda </item>
+        <item> Gulbarga </item>
+        <item> Guledgudda </item>
+        <item> Gundlupet </item>
+        <item> Gurmatkal </item>
+        <item> Haliyal </item>
+        <item> Hangal </item>
+        <item> Harihar </item>
+        <item> Harpanahalli </item>
+        <item> Hassan </item>
+        <item> Hatti </item>
+        <item> Hatti Gold Mines </item>
+        <item> Haveri </item>
+        <item> Hebbagodi </item>
+        <item> Hebbalu </item>
+        <item> Hebri </item>
+        <item> Heggadadevanakote </item>
+        <item> Herohalli </item>
+        <item> Hidkal </item>
+        <item> Hindalgi </item>
+        <item> Hirekerur </item>
+        <item> Hiriyur </item>
+        <item> Holalkere </item>
+        <item> Hole Narsipur </item>
+        <item> Homnabad </item>
+        <item> Honavar </item>
+        <item> Honnali </item>
+        <item> Hosakote </item>
+        <item> Hosanagara </item>
+        <item> Hosangadi </item>
+        <item> Hosdurga </item>
+        <item> Hoskote </item>
+        <item> Hospet </item>
+        <item> Hubli </item>
+        <item> Hukeri </item>
+        <item> Hunasagi </item>
+        <item> Hunasamaranahalli </item>
+        <item> Hungund </item>
+        <item> Hunsur </item>
+        <item> Huvina Hadagalli </item>
+        <item> Ilkal </item>
+        <item> Indi </item>
+        <item> Jagalur </item>
+        <item> Jamkhandi </item>
+        <item> Jevargi </item>
+        <item> Jog Falls </item>
+        <item> Kabini Colony </item>
+        <item> Kadur </item>
+        <item> Kalghatgi </item>
+        <item> Kamalapuram </item>
+        <item> Kampli </item>
+        <item> Kanakapura </item>
+        <item> Kangrali BK </item>
+        <item> Kangrali KH </item>
+        <item> Kannur </item>
+        <item> Karkala </item>
+        <item> Karwar </item>
+        <item> Kemminja </item>
+        <item> Kengeri </item>
+        <item> Kerur </item>
+        <item> Khanapur </item>
+        <item> Kodigenahalli </item>
+        <item> Kodiyal </item>
+        <item> Kodlipet </item>
+        <item> Kolar </item>
+        <item> Kollegal </item>
+        <item> Konanakunte </item>
+        <item> Konanur </item>
+        <item> Konnur </item>
+        <item> Koppa </item>
+        <item> Koppal </item>
+        <item> Koratagere </item>
+        <item> Kotekara </item>
+        <item> Kothnur </item>
+        <item> Kotturu </item>
+        <item> Krishnapura </item>
+        <item> Krishnarajanagar </item>
+        <item> Krishnarajapura </item>
+        <item> Krishnarajasagara </item>
+        <item> Krishnarajpet </item>
+        <item> Kudchi </item>
+        <item> Kudligi </item>
+        <item> Kudremukh </item>
+        <item> Kumsi </item>
+        <item> Kumta </item>
+        <item> Kundapura </item>
+        <item> Kundgol </item>
+        <item> Kunigal </item>
+        <item> Kurgunta </item>
+        <item> Kushalnagar </item>
+        <item> Kushtagi </item>
+        <item> Kyathanahalli </item>
+        <item> Lakshmeshwar </item>
+        <item> Lingsugur </item>
+        <item> Londa </item>
+        <item> Maddur </item>
+        <item> Madhugiri </item>
+        <item> Madikeri </item>
+        <item> Magadi </item>
+        <item> Magod Falls </item>
+        <item> Mahadeswara Hills </item>
+        <item> Mahadevapura </item>
+        <item> Mahalingpur </item>
+        <item> Maisuru </item>
+        <item> Maisuru Cantonment </item>
+        <item> Malavalli </item>
+        <item> Mallar </item>
+        <item> Malpe </item>
+        <item> Malur </item>
+        <item> Manchenahalli </item>
+        <item> Mandya </item>
+        <item> Mangalore </item>
+        <item> Mangaluru </item>
+        <item> Manipal </item>
+        <item> Manvi </item>
+        <item> Maski </item>
+        <item> Mastikatte Colony </item>
+        <item> Mayakonda </item>
+        <item> Melukote </item>
+        <item> Molakalmuru </item>
+        <item> Mudalgi </item>
+        <item> Mudbidri </item>
+        <item> Muddebihal </item>
+        <item> Mudgal </item>
+        <item> Mudhol </item>
+        <item> Mudigere </item>
+        <item> Mudushedde </item>
+        <item> Mulbagal </item>
+        <item> Mulgund </item>
+        <item> Mulki </item>
+        <item> Mulur </item>
+        <item> Mundargi </item>
+        <item> Mundgod </item>
+        <item> Munirabad </item>
+        <item> Munnur </item>
+        <item> Murudeshwara </item>
+        <item> Mysore </item>
+        <item> Nagamangala </item>
+        <item> Nanjangud </item>
+        <item> Naragund </item>
+        <item> Narasimharajapura </item>
+        <item> Naravi </item>
+        <item> Narayanpur </item>
+        <item> Naregal </item>
+        <item> Navalgund </item>
+        <item> Nelmangala </item>
+        <item> Nipani </item>
+        <item> Nitte </item>
+        <item> Nyamati </item>
+        <item> Padu </item>
+        <item> Pandavapura </item>
+        <item> Pattanagere </item>
+        <item> Pavagada </item>
+        <item> Piriyapatna </item>
+        <item> Ponnampet </item>
+        <item> Puttur </item>
+        <item> Rabkavi </item>
+        <item> Raichur </item>
+        <item> Ramanagaram </item>
+        <item> Ramdurg </item>
+        <item> Ranibennur </item>
+        <item> Raybag </item>
+        <item> Robertsonpet </item>
+        <item> Ron </item>
+        <item> Sadalgi </item>
+        <item> Sagar </item>
+        <item> Sakleshpur </item>
+        <item> Saligram </item>
+        <item> Sandur </item>
+        <item> Sanivarsante </item>
+        <item> Sankeshwar </item>
+        <item> Sargur </item>
+        <item> Sathyamangala </item>
+        <item> Saundatti Yellamma </item>
+        <item> Savanur </item>
+        <item> Sedam </item>
+        <item> Shahabad </item>
+        <item> Shahabad A.C.C. </item>
+        <item> Shahapur </item>
+        <item> Shahpur </item>
+        <item> Shaktinagar </item>
+        <item> Shiggaon </item>
+        <item> Shikarpur </item>
+        <item> Shimoga </item>
+        <item> Shirhatti </item>
+        <item> Shorapur </item>
+        <item> Shravanabelagola </item>
+        <item> Shrirangapattana </item>
+        <item> Siddapur </item>
+        <item> Sidlaghatta </item>
+        <item> Sindgi </item>
+        <item> Sindhnur </item>
+        <item> Sira </item>
+        <item> Sirakoppa </item>
+        <item> Sirsi </item>
+        <item> Siruguppa </item>
+        <item> Someshwar </item>
+        <item> Somvarpet </item>
+        <item> Sorab </item>
+        <item> Sringeri </item>
+        <item> Srinivaspur </item>
+        <item> Sulya </item>
+        <item> Suntikopa </item>
+        <item> Talikota </item>
+        <item> Tarikera </item>
+        <item> Tekkalakota </item>
+        <item> Terdal </item>
+        <item> Thokur </item>
+        <item> Thumbe </item>
+        <item> Tiptur </item>
+        <item> Tirthahalli </item>
+        <item> Tirumakudal Narsipur </item>
+        <item> Tonse </item>
+        <item> Tumkur </item>
+        <item> Turuvekere </item>
+        <item> Udupi </item>
+        <item> Ullal </item>
+        <item> Uttarahalli </item>
+        <item> Venkatapura </item>
+        <item> Vijayapura </item>
+        <item> Virarajendrapet </item>
+        <item> Wadi </item>
+        <item> Wadi A.C.C. </item>
+        <item> Yadgir </item>
+        <item> Yelahanka </item>
+        <item> Yelandur </item>
+        <item> Yelbarga </item>
+        <item> Yellapur </item>
+        <item> Yenagudde </item>
+    </string-array>
+
+
+    <string-array name="Kerala">
+        <item> Adimaly </item>
+        <item> Adoor </item>
+        <item> Adur </item>
+        <item> Akathiyur </item>
+        <item> Alangad </item>
+        <item> Alappuzha </item>
+        <item> Aluva </item>
+        <item> Ancharakandy </item>
+        <item> Angamaly </item>
+        <item> Aroor </item>
+        <item> Arukutti </item>
+        <item> Attingal </item>
+        <item> Avinissery </item>
+        <item> Azhikode North </item>
+        <item> Azhikode South </item>
+        <item> Azhiyur </item>
+        <item> Balussery </item>
+        <item> Bangramanjeshwar </item>
+        <item> Beypur </item>
+        <item> Brahmakulam </item>
+        <item> Chala </item>
+        <item> Chalakudi </item>
+        <item> Changanacheri </item>
+        <item> Chauwara </item>
+        <item> Chavakkad </item>
+        <item> Chelakkara </item>
+        <item> Chelora </item>
+        <item> Chendamangalam </item>
+        <item> Chengamanad </item>
+        <item> Chengannur </item>
+        <item> Cheranallur </item>
+        <item> Cheriyakadavu </item>
+        <item> Cherthala </item>
+        <item> Cherukunnu </item>
+        <item> Cheruthazham </item>
+        <item> Cheruvannur </item>
+        <item> Cheruvattur </item>
+        <item> Chevvur </item>
+        <item> Chirakkal </item>
+        <item> Chittur </item>
+        <item> Chockli </item>
+        <item> Churnikkara </item>
+        <item> Dharmadam </item>
+        <item> Edappal </item>
+        <item> Edathala </item>
+        <item> Elayavur </item>
+        <item> Elur </item>
+        <item> Eranholi </item>
+        <item> Erattupetta </item>
+        <item> Ernakulam </item>
+        <item> Eruvatti </item>
+        <item> Ettumanoor </item>
+        <item> Feroke </item>
+        <item> Guruvayur </item>
+        <item> Haripad </item>
+        <item> Hosabettu </item>
+        <item> Idukki </item>
+        <item> Iringaprom </item>
+        <item> Irinjalakuda </item>
+        <item> Iriveri </item>
+        <item> Kadachira </item>
+        <item> Kadalundi </item>
+        <item> Kadamakkudy </item>
+        <item> Kadirur </item>
+        <item> Kadungallur </item>
+        <item> Kakkodi </item>
+        <item> Kalady </item>
+        <item> Kalamassery </item>
+        <item> Kalliasseri </item>
+        <item> Kalpetta </item>
+        <item> Kanhangad </item>
+        <item> Kanhirode </item>
+        <item> Kanjikkuzhi </item>
+        <item> Kanjikode </item>
+        <item> Kanjirappalli </item>
+        <item> Kannadiparamba </item>
+        <item> Kannangad </item>
+        <item> Kannapuram </item>
+        <item> Kannur </item>
+        <item> Kannur Cantonment </item>
+        <item> Karunagappally </item>
+        <item> Karuvamyhuruthy </item>
+        <item> Kasaragod </item>
+        <item> Kasargod </item>
+        <item> Kattappana </item>
+        <item> Kayamkulam </item>
+        <item> Kedamangalam </item>
+        <item> Kochi </item>
+        <item> Kodamthuruthu </item>
+        <item> Kodungallur </item>
+        <item> Koduvally </item>
+        <item> Koduvayur </item>
+        <item> Kokkothamangalam </item>
+        <item> Kolazhy </item>
+        <item> Kollam </item>
+        <item> Komalapuram </item>
+        <item> Koothattukulam </item>
+        <item> Koratty </item>
+        <item> Kothamangalam </item>
+        <item> Kottarakkara </item>
+        <item> Kottayam </item>
+        <item> Kottayam Malabar </item>
+        <item> Kottuvally </item>
+        <item> Koyilandi </item>
+        <item> Kozhikode </item>
+        <item> Kudappanakunnu </item>
+        <item> Kudlu </item>
+        <item> Kumarakom </item>
+        <item> Kumily </item>
+        <item> Kunnamangalam </item>
+        <item> Kunnamkulam </item>
+        <item> Kurikkad </item>
+        <item> Kurkkanchery </item>
+        <item> Kuthuparamba </item>
+        <item> Kuttakulam </item>
+        <item> Kuttikkattur </item>
+        <item> Kuttur </item>
+        <item> Malappuram </item>
+        <item> Mallappally </item>
+        <item> Manjeri </item>
+        <item> Manjeshwar </item>
+        <item> Mannancherry </item>
+        <item> Mannar </item>
+        <item> Mannarakkat </item>
+        <item> Maradu </item>
+        <item> Marathakkara </item>
+        <item> Marutharod </item>
+        <item> Mattannur </item>
+        <item> Mavelikara </item>
+        <item> Mavilayi </item>
+        <item> Mavur </item>
+        <item> Methala </item>
+        <item> Muhamma </item>
+        <item> Mulavukad </item>
+        <item> Mundakayam </item>
+        <item> Munderi </item>
+        <item> Munnar </item>
+        <item> Muthakunnam </item>
+        <item> Muvattupuzha </item>
+        <item> Muzhappilangad </item>
+        <item> Nadapuram </item>
+        <item> Nadathara </item>
+        <item> Narath </item>
+        <item> Nattakam </item>
+        <item> Nedumangad </item>
+        <item> Nenmenikkara </item>
+        <item> New Mahe </item>
+        <item> Neyyattinkara </item>
+        <item> Nileshwar </item>
+        <item> Olavanna </item>
+        <item> Ottapalam </item>
+        <item> Ottappalam </item>
+        <item> Paduvilayi </item>
+        <item> Palai </item>
+        <item> Palakkad </item>
+        <item> Palayad </item>
+        <item> Palissery </item>
+        <item> Pallikkunnu </item>
+        <item> Paluvai </item>
+        <item> Panniyannur </item>
+        <item> Pantalam </item>
+        <item> Panthiramkavu </item>
+        <item> Panur </item>
+        <item> Pappinisseri </item>
+        <item> Parassala </item>
+        <item> Paravur </item>
+        <item> Pathanamthitta </item>
+        <item> Pathanapuram </item>
+        <item> Pathiriyad </item>
+        <item> Pattambi </item>
+        <item> Pattiom </item>
+        <item> Pavaratty </item>
+        <item> Payyannur </item>
+        <item> Peermade </item>
+        <item> Perakam </item>
+        <item> Peralasseri </item>
+        <item> Peringathur </item>
+        <item> Perinthalmanna </item>
+        <item> Perole </item>
+        <item> Perumanna </item>
+        <item> Perumbaikadu </item>
+        <item> Perumbavoor </item>
+        <item> Pinarayi </item>
+        <item> Piravam </item>
+        <item> Ponnani </item>
+        <item> Pottore </item>
+        <item> Pudukad </item>
+        <item> Punalur </item>
+        <item> Puranattukara </item>
+        <item> Puthunagaram </item>
+        <item> Puthuppariyaram </item>
+        <item> Puzhathi </item>
+        <item> Ramanattukara </item>
+        <item> Shoranur </item>
+        <item> Sultans Battery </item>
+        <item> Sulthan Bathery </item>
+        <item> Talipparamba </item>
+        <item> Thaikkad </item>
+        <item> Thalassery </item>
+        <item> Thannirmukkam </item>
+        <item> Theyyalingal </item>
+        <item> Thiruvalla </item>
+        <item> Thiruvananthapuram </item>
+        <item> Thiruvankulam </item>
+        <item> Thodupuzha </item>
+        <item> Thottada </item>
+        <item> Thrippunithura </item>
+        <item> Thrissur </item>
+        <item> Tirur </item>
+        <item> Udma </item>
+        <item> Vadakara </item>
+        <item> Vaikam </item>
+        <item> Valapattam </item>
+        <item> Vallachira </item>
+        <item> Varam </item>
+        <item> Varappuzha </item>
+        <item> Varkala </item>
+        <item> Vayalar </item>
+        <item> Vazhakkala </item>
+        <item> Venmanad </item>
+        <item> Villiappally </item>
+        <item> Wayanad </item>
+    </string-array>
+
+    <string-array name="Maharashtra">
+        <item> Achalpur </item>
+        <item> Aheri </item>
+        <item> Ahmadnagar Cantonment </item>
+        <item> Ahmadpur </item>
+        <item> Ahmednagar </item>
+        <item> Ajra </item>
+        <item> Akalkot </item>
+        <item> Akkalkuwa </item>
+        <item> Akola </item>
+        <item> Akot </item>
+        <item> Alandi </item>
+        <item> Alibag </item>
+        <item> Allapalli </item>
+        <item> Alore </item>
+        <item> Amalner </item>
+        <item> Ambad </item>
+        <item> Ambajogai </item>
+        <item> Ambernath </item>
+        <item> Ambivali Tarf Wankhal </item>
+        <item> Amgaon </item>
+        <item> Amravati </item>
+        <item> Anjangaon </item>
+        <item> Arvi </item>
+        <item> Ashta </item>
+        <item> Ashti </item>
+        <item> Aurangabad </item>
+        <item> Aurangabad Cantonment </item>
+        <item> Ausa </item>
+        <item> Babhulgaon </item>
+        <item> Badlapur </item>
+        <item> Balapur </item>
+        <item> Ballarpur </item>
+        <item> Baramati </item>
+        <item> Barshi </item>
+        <item> Basmat </item>
+        <item> Beed </item>
+        <item> Bhadravati </item>
+        <item> Bhagur </item>
+        <item> Bhandara </item>
+        <item> Bhigvan </item>
+        <item> Bhingar </item>
+        <item> Bhiwandi </item>
+        <item> Bhokhardan </item>
+        <item> Bhor </item>
+        <item> Bhosari </item>
+        <item> Bhum </item>
+        <item> Bhusawal </item>
+        <item> Bid </item>
+        <item> Biloli </item>
+        <item> Birwadi </item>
+        <item> Boisar </item>
+        <item> Bop Khel </item>
+        <item> Brahmapuri </item>
+        <item> Budhgaon </item>
+        <item> Buldana </item>
+        <item> Buldhana </item>
+        <item> Butibori </item>
+        <item> Chakan </item>
+        <item> Chalisgaon </item>
+        <item> Chandrapur </item>
+        <item> Chandur </item>
+        <item> Chandur Bazar </item>
+        <item> Chandvad </item>
+        <item> Chicholi </item>
+        <item> Chikhala </item>
+        <item> Chikhaldara </item>
+        <item> Chikhli </item>
+        <item> Chinchani </item>
+        <item> Chinchwad </item>
+        <item> Chiplun </item>
+        <item> Chopda </item>
+        <item> Dabhol </item>
+        <item> Dahance </item>
+        <item> Dahanu </item>
+        <item> Daharu </item>
+        <item> Dapoli Camp </item>
+        <item> Darwa </item>
+        <item> Daryapur </item>
+        <item> Dattapur </item>
+        <item> Daund </item>
+        <item> Davlameti </item>
+        <item> Deglur </item>
+        <item> Dehu Road </item>
+        <item> Deolali </item>
+        <item> Deolali Pravara </item>
+        <item> Deoli </item>
+        <item> Desaiganj </item>
+        <item> Deulgaon Raja </item>
+        <item> Dewhadi </item>
+        <item> Dharangaon </item>
+        <item> Dharmabad </item>
+        <item> Dharur </item>
+        <item> Dhatau </item>
+        <item> Dhule </item>
+        <item> Digdoh </item>
+        <item> Diglur </item>
+        <item> Digras </item>
+        <item> Dombivli </item>
+        <item> Dondaicha </item>
+        <item> Dudhani </item>
+        <item> Durgapur </item>
+        <item> Dyane </item>
+        <item> Edandol </item>
+        <item> Eklahare </item>
+        <item> Faizpur </item>
+        <item> Fekari </item>
+        <item> Gadchiroli </item>
+        <item> Gadhinghaj </item>
+        <item> Gandhi Nagar </item>
+        <item> Ganeshpur </item>
+        <item> Gangakher </item>
+        <item> Gangapur </item>
+        <item> Gevrai </item>
+        <item> Ghatanji </item>
+        <item> Ghoti </item>
+        <item> Ghugus </item>
+        <item> Ghulewadi </item>
+        <item> Godoli </item>
+        <item> Gondia </item>
+        <item> Guhagar </item>
+        <item> Hadgaon </item>
+        <item> Harnai Beach </item>
+        <item> Hinganghat </item>
+        <item> Hingoli </item>
+        <item> Hupari </item>
+        <item> Ichalkaranji </item>
+        <item> Igatpuri </item>
+        <item> Indapur </item>
+        <item> Jaisinghpur </item>
+        <item> Jalgaon </item>
+        <item> Jalna </item>
+        <item> Jamkhed </item>
+        <item> Jawhar </item>
+        <item> Jaysingpur </item>
+        <item> Jejuri </item>
+        <item> Jintur </item>
+        <item> Junnar </item>
+        <item> Kabnur </item>
+        <item> Kagal </item>
+        <item> Kalamb </item>
+        <item> Kalamnuri </item>
+        <item> Kalas </item>
+        <item> Kalmeshwar </item>
+        <item> Kalundre </item>
+        <item> Kalyan </item>
+        <item> Kamthi </item>
+        <item> Kamthi Cantonment </item>
+        <item> Kandari </item>
+        <item> Kandhar </item>
+        <item> Kandri </item>
+        <item> Kandri II </item>
+        <item> Kanhan </item>
+        <item> Kankavli </item>
+        <item> Kannad </item>
+        <item> Karad </item>
+        <item> Karanja </item>
+        <item> Karanje Tarf </item>
+        <item> Karivali </item>
+        <item> Karjat </item>
+        <item> Karmala </item>
+        <item> Kasara Budruk </item>
+        <item> Katai </item>
+        <item> Katkar </item>
+        <item> Katol </item>
+        <item> Kegaon </item>
+        <item> Khadkale </item>
+        <item> Khadki </item>
+        <item> Khamgaon </item>
+        <item> Khapa </item>
+        <item> Kharadi </item>
+        <item> Kharakvasla </item>
+        <item> Khed </item>
+        <item> Kherdi </item>
+        <item> Khoni </item>
+        <item> Khopoli </item>
+        <item> Khuldabad </item>
+        <item> Kinwat </item>
+        <item> Kodoli </item>
+        <item> Kolhapur </item>
+        <item> Kon </item>
+        <item> Kondumal </item>
+        <item> Kopargaon </item>
+        <item> Kopharad </item>
+        <item> Koradi </item>
+        <item> Koregaon </item>
+        <item> Korochi </item>
+        <item> Kudal </item>
+        <item> Kundaim </item>
+        <item> Kundalwadi </item>
+        <item> Kurandvad </item>
+        <item> Kurduvadi </item>
+        <item> Kusgaon Budruk </item>
+        <item> Lanja </item>
+        <item> Lasalgaon </item>
+        <item> Latur </item>
+        <item> Loha </item>
+        <item> Lohegaon </item>
+        <item> Lonar </item>
+        <item> Lonavala </item>
+        <item> Madhavnagar </item>
+        <item> Mahabaleshwar </item>
+        <item> Mahad </item>
+        <item> Mahadula </item>
+        <item> Maindargi </item>
+        <item> Majalgaon </item>
+        <item> Malegaon </item>
+        <item> Malgaon </item>
+        <item> Malkapur </item>
+        <item> Malwan </item>
+        <item> Manadur </item>
+        <item> Manchar </item>
+        <item> Mangalvedhe </item>
+        <item> Mangrul Pir </item>
+        <item> Manmad </item>
+        <item> Manor </item>
+        <item> Mansar </item>
+        <item> Manwath </item>
+        <item> Mapuca </item>
+        <item> Matheran </item>
+        <item> Mehkar </item>
+        <item> Mhasla </item>
+        <item> Mhaswad </item>
+        <item> Mira Bhayandar </item>
+        <item> Miraj </item>
+        <item> Mohpa </item>
+        <item> Mohpada </item>
+        <item> Moram </item>
+        <item> Morshi </item>
+        <item> Mowad </item>
+        <item> Mudkhed </item>
+        <item> Mukhed </item>
+        <item> Mul </item>
+        <item> Mulshi </item>
+        <item> Mumbai </item>
+        <item> Murbad </item>
+        <item> Murgud </item>
+        <item> Murtijapur </item>
+        <item> Murud </item>
+        <item> Nachane </item>
+        <item> Nagardeole </item>
+        <item> Nagothane </item>
+        <item> Nagpur </item>
+        <item> Nakoda </item>
+        <item> Nalasopara </item>
+        <item> Naldurg </item>
+        <item> Nanded </item>
+        <item> Nandgaon </item>
+        <item> Nandura </item>
+        <item> Nandurbar </item>
+        <item> Narkhed </item>
+        <item> Nashik </item>
+        <item> Navapur </item>
+        <item> Navi Mumbai </item>
+        <item> Navi Mumbai Panvel </item>
+        <item> Neral </item>
+        <item> Nigdi </item>
+        <item> Nilanga </item>
+        <item> Nildoh </item>
+        <item> Nimbhore </item>
+        <item> Ojhar </item>
+        <item> Osmanabad </item>
+        <item> Pachgaon </item>
+        <item> Pachora </item>
+        <item> Padagha </item>
+        <item> Paithan </item>
+        <item> Palghar </item>
+        <item> Pali </item>
+        <item> Panchgani </item>
+        <item> Pandhakarwada </item>
+        <item> Pandharpur </item>
+        <item> Panhala </item>
+        <item> Panvel </item>
+        <item> Paranda </item>
+        <item> Parbhani </item>
+        <item> Parli </item>
+        <item> Parola </item>
+        <item> Partur </item>
+        <item> Pasthal </item>
+        <item> Patan </item>
+        <item> Pathardi </item>
+        <item> Pathri </item>
+        <item> Patur </item>
+        <item> Pawni </item>
+        <item> Pen </item>
+        <item> Pethumri </item>
+        <item> Phaltan </item>
+        <item> Pimpri </item>
+        <item> Poladpur </item>
+        <item> Pulgaon </item>
+        <item> Pune </item>
+        <item> Pune Cantonment </item>
+        <item> Purna </item>
+        <item> Purushottamnagar </item>
+        <item> Pusad </item>
+        <item> Rahimatpur </item>
+        <item> Rahta Pimplas </item>
+        <item> Rahuri </item>
+        <item> Raigad </item>
+        <item> Rajapur </item>
+        <item> Rajgurunagar </item>
+        <item> Rajur </item>
+        <item> Rajura </item>
+        <item> Ramtek </item>
+        <item> Ratnagiri </item>
+        <item> Ravalgaon </item>
+        <item> Raver </item>
+        <item> Revadanda </item>
+        <item> Risod </item>
+        <item> Roha Ashtami </item>
+        <item> Sakri </item>
+        <item> Sandor </item>
+        <item> Sangamner </item>
+        <item> Sangli </item>
+        <item> Sangole </item>
+        <item> Sasti </item>
+        <item> Sasvad </item>
+        <item> Satana </item>
+        <item> Satara </item>
+        <item> Savantvadi </item>
+        <item> Savda </item>
+        <item> Savner </item>
+        <item> Sawari Jawharnagar </item>
+        <item> Selu </item>
+        <item> Shahada </item>
+        <item> Shahapur </item>
+        <item> Shegaon </item>
+        <item> Shelar </item>
+        <item> Shendurjana </item>
+        <item> Shirdi </item>
+        <item> Shirgaon </item>
+        <item> Shirpur </item>
+        <item> Shirur </item>
+        <item> Shirwal </item>
+        <item> Shivatkar </item>
+        <item> Shrigonda </item>
+        <item> Shrirampur </item>
+        <item> Shrirampur Rural </item>
+        <item> Sillewada </item>
+        <item> Sillod </item>
+        <item> Sindhudurg </item>
+        <item> Sindi </item>
+        <item> Sindi Turf Hindnagar </item>
+        <item> Sindkhed Raja </item>
+        <item> Singnapur </item>
+        <item> Sinnar </item>
+        <item> Sirur </item>
+        <item> Sitasawangi </item>
+        <item> Solapur </item>
+        <item> Sonai </item>
+        <item> Sonegaon </item>
+        <item> Soyagaon </item>
+        <item> Srivardhan </item>
+        <item> Surgana </item>
+        <item> Talegaon Dabhade </item>
+        <item> Taloda </item>
+        <item> Taloja </item>
+        <item> Talwade </item>
+        <item> Tarapur </item>
+        <item> Tasgaon </item>
+        <item> Tathavade </item>
+        <item> Tekadi </item>
+        <item> Telhara </item>
+        <item> Thane </item>
+        <item> Tirira </item>
+        <item> Totaladoh </item>
+        <item> Trimbak </item>
+        <item> Tuljapur </item>
+        <item> Tumsar </item>
+        <item> Uchgaon </item>
+        <item> Udgir </item>
+        <item> Ulhasnagar </item>
+        <item> Umarga </item>
+        <item> Umarkhed </item>
+        <item> Umarsara </item>
+        <item> Umbar Pada Nandade </item>
+        <item> Umred </item>
+        <item> Umri Pragane Balapur </item>
+        <item> Uran </item>
+        <item> Uran Islampur </item>
+        <item> Utekhol </item>
+        <item> Vada </item>
+        <item> Vadgaon </item>
+        <item> Vadgaon Kasba </item>
+        <item> Vaijapur </item>
+        <item> Vanvadi </item>
+        <item> Varangaon </item>
+        <item> Vasai </item>
+        <item> Vasantnagar </item>
+        <item> Vashind </item>
+        <item> Vengurla </item>
+        <item> Virar </item>
+        <item> Visapur </item>
+        <item> Vite </item>
+        <item> Vithalwadi </item>
+        <item> Wadi </item>
+        <item> Waghapur </item>
+        <item> Wai </item>
+        <item> Wajegaon </item>
+        <item> Walani </item>
+        <item> Wanadongri </item>
+        <item> Wani </item>
+        <item> Wardha </item>
+        <item> Warora </item>
+        <item> Warthi </item>
+        <item> Warud </item>
+        <item> Washim </item>
+        <item> Yaval </item>
+        <item> Yavatmal </item>
+        <item> Yeola </item>
+        <item> Yerkheda </item>
+    </string-array>
+
+    <string-array name="Punjab">
+        <item> Abohar </item>
+        <item> Adampur </item>
+        <item> Ahmedgarh </item>
+        <item> Ajnala </item>
+        <item> Akalgarh </item>
+        <item> Alawalpur </item>
+        <item> Amloh </item>
+        <item> Amritsar </item>
+        <item> Amritsar Cantonment </item>
+        <item> Anandpur Sahib </item>
+        <item> Badhni Kalan </item>
+        <item> Bagh Purana </item>
+        <item> Balachaur </item>
+        <item> Banaur </item>
+        <item> Banga </item>
+        <item> Banur </item>
+        <item> Baretta </item>
+        <item> Bariwala </item>
+        <item> Barnala </item>
+        <item> Bassi Pathana </item>
+        <item> Batala </item>
+        <item> Bathinda </item>
+        <item> Begowal </item>
+        <item> Behrampur </item>
+        <item> Bhabat </item>
+        <item> Bhadur </item>
+        <item> Bhankharpur </item>
+        <item> Bharoli Kalan </item>
+        <item> Bhawanigarh </item>
+        <item> Bhikhi </item>
+        <item> Bhikhiwind </item>
+        <item> Bhisiana </item>
+        <item> Bhogpur </item>
+        <item> Bhuch </item>
+        <item> Bhulath </item>
+        <item> Budha Theh </item>
+        <item> Budhlada </item>
+        <item> Chima </item>
+        <item> Chohal </item>
+        <item> Dasuya </item>
+        <item> Daulatpur </item>
+        <item> Dera Baba Nanak </item>
+        <item> Dera Bassi </item>
+        <item> Dhanaula </item>
+        <item> Dharam Kot </item>
+        <item> Dhariwal </item>
+        <item> Dhilwan </item>
+        <item> Dhuri </item>
+        <item> Dinanagar </item>
+        <item> Dirba </item>
+        <item> Doraha </item>
+        <item> Faridkot </item>
+        <item> Fateh Nangal </item>
+        <item> Fatehgarh Churian </item>
+        <item> Fatehgarh Sahib </item>
+        <item> Fazilka </item>
+        <item> Firozpur </item>
+        <item> Firozpur Cantonment </item>
+        <item> Gardhiwala </item>
+        <item> Garhshankar </item>
+        <item> Ghagga </item>
+        <item> Ghanaur </item>
+        <item> Giddarbaha </item>
+        <item> Gobindgarh </item>
+        <item> Goniana </item>
+        <item> Goraya </item>
+        <item> Gurdaspur </item>
+        <item> Guru Har Sahai </item>
+        <item> Hajipur </item>
+        <item> Handiaya </item>
+        <item> Hariana </item>
+        <item> Hoshiarpur </item>
+        <item> Hussainpur </item>
+        <item> Jagraon </item>
+        <item> Jaitu </item>
+        <item> Jalalabad </item>
+        <item> Jalandhar </item>
+        <item> Jalandhar Cantonment </item>
+        <item> Jandiala </item>
+        <item> Jugial </item>
+        <item> Kalanaur </item>
+        <item> Kapurthala </item>
+        <item> Karoran </item>
+        <item> Kartarpur </item>
+        <item> Khamanon </item>
+        <item> Khanauri </item>
+        <item> Khanna </item>
+        <item> Kharar </item>
+        <item> Khem Karan </item>
+        <item> Kot Fatta </item>
+        <item> Kot Isa Khan </item>
+        <item> Kot Kapura </item>
+        <item> Kotkapura </item>
+        <item> Kurali </item>
+        <item> Lalru </item>
+        <item> Lehra Gaga </item>
+        <item> Lodhian Khas </item>
+        <item> Longowal </item>
+        <item> Ludhiana </item>
+        <item> Machhiwara </item>
+        <item> Mahilpur </item>
+        <item> Majitha </item>
+        <item> Makhu </item>
+        <item> Malaut </item>
+        <item> Malerkotla </item>
+        <item> Maloud </item>
+        <item> Mandi Gobindgarh </item>
+        <item> Mansa </item>
+        <item> Maur </item>
+        <item> Moga </item>
+        <item> Mohali </item>
+        <item> Moonak </item>
+        <item> Morinda </item>
+        <item> Mukerian </item>
+        <item> Muktsar </item>
+        <item> Mullanpur Dakha </item>
+        <item> Mullanpur Garibdas </item>
+        <item> Munak </item>
+        <item> Muradpura </item>
+        <item> Nabha </item>
+        <item> Nakodar </item>
+        <item> Nangal </item>
+        <item> Nawashahr </item>
+        <item> Naya Nangal </item>
+        <item> Nehon </item>
+        <item> Nurmahal </item>
+        <item> Pathankot </item>
+        <item> Patiala </item>
+        <item> Patti </item>
+        <item> Pattran </item>
+        <item> Payal </item>
+        <item> Phagwara </item>
+        <item> Phillaur </item>
+        <item> Qadian </item>
+        <item> Rahon </item>
+        <item> Raikot </item>
+        <item> Raja Sansi </item>
+        <item> Rajpura </item>
+        <item> Ram Das </item>
+        <item> Raman </item>
+        <item> Rampura </item>
+        <item> Rayya </item>
+        <item> Rupnagar </item>
+        <item> Rurki Kasba </item>
+        <item> Sahnewal </item>
+        <item> Samana </item>
+        <item> Samrala </item>
+        <item> Sanaur </item>
+        <item> Sangat </item>
+        <item> Sangrur </item>
+        <item> Sansarpur </item>
+        <item> Sardulgarh </item>
+        <item> Shahkot </item>
+        <item> Sham Churasi </item>
+        <item> Shekhpura </item>
+        <item> Sirhind </item>
+        <item> Sri Hargobindpur </item>
+        <item> Sujanpur </item>
+        <item> Sultanpur Lodhi </item>
+        <item> Sunam </item>
+        <item> Talwandi Bhai </item>
+        <item> Talwara </item>
+        <item> Tappa </item>
+        <item> Tarn Taran </item>
+        <item> Urmar Tanda </item>
+        <item> Zira </item>
+        <item> Zirakpur </item>
+    </string-array>
+
+    <string-array name="Rajasthan">
+        <item> Abu Road </item>
+        <item> Ajmer </item>
+        <item> Aklera </item>
+        <item> Alwar </item>
+        <item> Amet </item>
+        <item> Antah </item>
+        <item> Anupgarh </item>
+        <item> Asind </item>
+        <item> Bagar </item>
+        <item> Bagru </item>
+        <item> Bahror </item>
+        <item> Bakani </item>
+        <item> Bali </item>
+        <item> Balotra </item>
+        <item> Bandikui </item>
+        <item> Banswara </item>
+        <item> Baran </item>
+        <item> Bari </item>
+        <item> Bari Sadri </item>
+        <item> Barmer </item>
+        <item> Basi </item>
+        <item> Basni Belima </item>
+        <item> Baswa </item>
+        <item> Bayana </item>
+        <item> Beawar </item>
+        <item> Begun </item>
+        <item> Bhadasar </item>
+        <item> Bhadra </item>
+        <item> Bhalariya </item>
+        <item> Bharatpur </item>
+        <item> Bhasawar </item>
+        <item> Bhawani Mandi </item>
+        <item> Bhawri </item>
+        <item> Bhilwara </item>
+        <item> Bhindar </item>
+        <item> Bhinmal </item>
+        <item> Bhiwadi </item>
+        <item> Bijoliya Kalan </item>
+        <item> Bikaner </item>
+        <item> Bilara </item>
+        <item> Bissau </item>
+        <item> Borkhera </item>
+        <item> Budhpura </item>
+        <item> Bundi </item>
+        <item> Chatsu </item>
+        <item> Chechat </item>
+        <item> Chhabra </item>
+        <item> Chhapar </item>
+        <item> Chhipa Barod </item>
+        <item> Chhoti Sadri </item>
+        <item> Chirawa </item>
+        <item> Chittaurgarh </item>
+        <item> Chittorgarh </item>
+        <item> Chomun </item>
+        <item> Churu </item>
+        <item> Daosa </item>
+        <item> Dariba </item>
+        <item> Dausa </item>
+        <item> Deoli </item>
+        <item> Deshnok </item>
+        <item> Devgarh </item>
+        <item> Devli </item>
+        <item> Dhariawad </item>
+        <item> Dhaulpur </item>
+        <item> Dholpur </item>
+        <item> Didwana </item>
+        <item> Dig </item>
+        <item> Dungargarh </item>
+        <item> Dungarpur </item>
+        <item> Falna </item>
+        <item> Fatehnagar </item>
+        <item> Fatehpur </item>
+        <item> Gajsinghpur </item>
+        <item> Galiakot </item>
+        <item> Ganganagar </item>
+        <item> Gangapur </item>
+        <item> Goredi Chancha </item>
+        <item> Gothra </item>
+        <item> Govindgarh </item>
+        <item> Gulabpura </item>
+        <item> Hanumangarh </item>
+        <item> Hindaun </item>
+        <item> Indragarh </item>
+        <item> Jahazpur </item>
+        <item> Jaipur </item>
+        <item> Jaisalmer </item>
+        <item> Jaiselmer </item>
+        <item> Jaitaran </item>
+        <item> Jalore </item>
+        <item> Jhalawar </item>
+        <item> Jhalrapatan </item>
+        <item> Jhunjhunun </item>
+        <item> Jobner </item>
+        <item> Jodhpur </item>
+        <item> Kaithun </item>
+        <item> Kaman </item>
+        <item> Kankroli </item>
+        <item> Kanor </item>
+        <item> Kapasan </item>
+        <item> Kaprain </item>
+        <item> Karanpura </item>
+        <item> Karauli </item>
+        <item> Kekri </item>
+        <item> Keshorai Patan </item>
+        <item> Kesrisinghpur </item>
+        <item> Khairthal </item>
+        <item> Khandela </item>
+        <item> Khanpur </item>
+        <item> Kherli </item>
+        <item> Kherliganj </item>
+        <item> Kherwara Chhaoni </item>
+        <item> Khetri </item>
+        <item> Kiranipura </item>
+        <item> Kishangarh </item>
+        <item> Kishangarh Ranwal </item>
+        <item> Kolvi Rajendrapura </item>
+        <item> Kot Putli </item>
+        <item> Kota </item>
+        <item> Kuchaman </item>
+        <item> Kuchera </item>
+        <item> Kumbhalgarh </item>
+        <item> Kumbhkot </item>
+        <item> Kumher </item>
+        <item> Kushalgarh </item>
+        <item> Lachhmangarh </item>
+        <item> Ladnun </item>
+        <item> Lakheri </item>
+        <item> Lalsot </item>
+        <item> Losal </item>
+        <item> Madanganj </item>
+        <item> Mahu Kalan </item>
+        <item> Mahwa </item>
+        <item> Makrana </item>
+        <item> Malpura </item>
+        <item> Mandal </item>
+        <item> Mandalgarh </item>
+        <item> Mandawar </item>
+        <item> Mandwa </item>
+        <item> Mangrol </item>
+        <item> Manohar Thana </item>
+        <item> Manoharpur </item>
+        <item> Marwar </item>
+        <item> Merta </item>
+        <item> Modak </item>
+        <item> Mount Abu </item>
+        <item> Mukandgarh </item>
+        <item> Mundwa </item>
+        <item> Nadbai </item>
+        <item> Naenwa </item>
+        <item> Nagar </item>
+        <item> Nagaur </item>
+        <item> Napasar </item>
+        <item> Naraina </item>
+        <item> Nasirabad </item>
+        <item> Nathdwara </item>
+        <item> Nawa </item>
+        <item> Nawalgarh </item>
+        <item> Neem Ka Thana </item>
+        <item> Neemrana </item>
+        <item> Newa Talai </item>
+        <item> Nimaj </item>
+        <item> Nimbahera </item>
+        <item> Niwai </item>
+        <item> Nohar </item>
+        <item> Nokha </item>
+        <item> One SGM </item>
+        <item> Padampur </item>
+        <item> Pali </item>
+        <item> Partapur </item>
+        <item> Parvatsar </item>
+        <item> Pasoond </item>
+        <item> Phalna </item>
+        <item> Phalodi </item>
+        <item> Phulera </item>
+        <item> Pilani </item>
+        <item> Pilibanga </item>
+        <item> Pindwara </item>
+        <item> Pipalia Kalan </item>
+        <item> Pipar </item>
+        <item> Pirawa </item>
+        <item> Pokaran </item>
+        <item> Pratapgarh </item>
+        <item> Pushkar </item>
+        <item> Raipur </item>
+        <item> Raisinghnagar </item>
+        <item> Rajakhera </item>
+        <item> Rajaldesar </item>
+        <item> Rajgarh </item>
+        <item> Rajsamand </item>
+        <item> Ramganj Mandi </item>
+        <item> Ramgarh </item>
+        <item> Rani </item>
+        <item> Raniwara </item>
+        <item> Ratan Nagar </item>
+        <item> Ratangarh </item>
+        <item> Rawatbhata </item>
+        <item> Rawatsar </item>
+        <item> Rikhabdev </item>
+        <item> Ringas </item>
+        <item> Sadri </item>
+        <item> Sadulshahar </item>
+        <item> Sagwara </item>
+        <item> Salumbar </item>
+        <item> Sambhar </item>
+        <item> Samdari </item>
+        <item> Sanchor </item>
+        <item> Sangariya </item>
+        <item> Sangod </item>
+        <item> Sardarshahr </item>
+        <item> Sarwar </item>
+        <item> Satal Kheri </item>
+        <item> Sawai Madhopur </item>
+        <item> Sewan Kalan </item>
+        <item> Shahpura </item>
+        <item> Sheoganj </item>
+        <item> Sikar </item>
+        <item> Sirohi </item>
+        <item> Siwana </item>
+        <item> Sogariya </item>
+        <item> Sojat </item>
+        <item> Sojat Road </item>
+        <item> Sri Madhopur </item>
+        <item> Sriganganagar </item>
+        <item> Sujangarh </item>
+        <item> Suket </item>
+        <item> Sumerpur </item>
+        <item> Sunel </item>
+        <item> Surajgarh </item>
+        <item> Suratgarh </item>
+        <item> Swaroopganj </item>
+        <item> Takhatgarh </item>
+        <item> Taranagar </item>
+        <item> Three STR </item>
+        <item> Tijara </item>
+        <item> Toda Bhim </item>
+        <item> Toda Raisingh </item>
+        <item> Todra </item>
+        <item> Tonk </item>
+        <item> Udaipur </item>
+        <item> Udpura </item>
+        <item> Uniara </item>
+        <item> Vanasthali </item>
+        <item> Vidyavihar </item>
+        <item> Vijainagar </item>
+        <item> Viratnagar </item>
+        <item> Wer </item>
+    </string-array>
+
+    <string-array name="ExaminationCenter">
+        <item> Delhi </item>
+        <item> Jaipur  </item>
+        <item>  Chennai  </item>
+        <item> Indore </item>
+        <item>  Pune </item>
+    </string-array>
+
+    <string name="JLEP_head" formatted="false">   JELP
+                    GUIDELINES FOR GRANTING INTEREST SUBSIDY TO NEEDY STUDENTS W.E.F. 1ST September 2014.
+    </string>
+    <string name="JLEP" formatted="false">
+        JELP application shall be in Agrawal Federation prescribed format; duly filled against each point is mandatory.</string>
+    <string name="JLEP_second" formatted="false">All required documents must be attached with the application form. </string>
+    <string name="JLEP_third" formatted="false">Incomplete application will be liable to reject without any notice and same will not be eligible for any interest grant of subsidy by Agrawal Federation.</string>
+    <string name="JLEP_forth" formatted="false">To avail the interest subsidy on study loan from Bank. Student must register (forms are available on website www.Agrawal Federation atf.org) him/her self under Agrawal Federation s JELP scheme within 3 months from the date sanction of Bank loan for study.</string>
+    <string name="JLEP_fifth" formatted="false">The applicant must have secured minimum 50% or more marks in all the Board/ College/ University examination starting from standard 10th onwards till the last examination and special test etc. he/she appeared.</string>
+    <string name="JLEP_sixth" formatted="false">Recommendation from Agrawal Federation Trustee or Agrawal Federation Chapter is mandatory along with application form; subsequently it will be verified by Agrawal Federation Office.</string>
+    <string name="JLEP_seven" formatted="false">Student shall have to submit his/her claim for interest subsidy in Agrawal Federation Mumbai Office along with his/her JELP registration number in every financial year during 1st April to 30th June. </string>
+    <string name="JLEP_eight" formatted="false">In any circumstances, claim submitted for the previous financial years will not be paid.</string>
+    <string name="JLEP_nine" formatted="false">Minimum 30 to 40 days are required to process application received in the Agrawal Federation, therefore, students are advised to keep patience.</string>
+    <string name="Seed_scholarship_head" formatted="false">
+                            SEED – SCHOLARSHIP( INTEREST FREE LOAN)
+            GUIDELINES FOR GRANTING SCHOLARSHIP (INTEREST FREE LOAN) TO NEEDY STUDENTS w.e.f Sep.2014.
+    </string>
+
+    <string name="Seed_scholarship" formatted="false">
+        SEED application should be on AF prescribed form only and the reply against each point is compulsory.
+        </string>
+    <string name="first" formatted="false">In this case the student has to send the following documents : I-20 Letter from University, Copy of Passport page showing visa and immigration stamp. Copy of fees payment, if paid in advance.
+</string>
+
+    <string name="second" formatted="false">The applicant must have secured 60% or more marks in all the Board / College / University examinations commencing from standard 10th onwards till the last examination / Special test etc.</string>
+    <string name="third" formatted="false">All required documents must be attached along with the application. </string>
+    <string name="forth" formatted="false">Incomplete applications will be rejected and same will not be eligible for personal interview and financial assistance.</string>
+    <string name="fifth" formatted="false">Recommendation from AF or AF FCP/Patron member is a must and same will be verified by AF office.</string>
+    <string name="sixth" formatted="false">Application will be accepted by AF only between April to July of each year.</string>
+    <string name="seven" formatted="false">Application for Finance Assistance will not be consider for student who has already taken admission for the course.</string>
+    <string name="eight" formatted="false">Applicant must arrange and give documentary proof that he / she has already arranged at least 50% of the required TOTAL STUDY EXPENSES..</string>
+    <string name="nine" formatted="false">In case the student is going abroad for study, then the payment is to be released only after admission in the Institute. </string>
+
+
+    <string name="apply_franchisee">Apply Franchisee</string>
+    <string name="add_addvertized">Add Addvertized</string>
+    <string name="my_add">Manage Advertized</string>
+    <string name="logout">LogOut</string>
+
+
+    <!--/********************************************************************************************/-->
+    <string name="err_company_name">Enter company name</string>
+    <string name="err_tag_line">Enter tag line</string>
+    <string name="err_email">Enter valid email</string>
+    <string name="err_mobile">Enter valid mobile number</string>
+    <string name="err_contact_code">Enter valid contact code</string>
+    <string name="err_contact_no">Enter valid contact no</string>
+    <string name="err_address_one">Enter first address</string>
+    <string name="err_address_two">Enter sencond address</string>
+    <string name="err_short_desc">Enter short description</string>
+    <string name="err_long_desc">Enter long description</string>
+    <string name="err_year_established">Enter year of establised</string>
+    <string name="err_website">Enter your description</string>
+    <string name="err_certification">Enter your certification</string>
+    <string name="err_license">Enter lincense</string>
+    <string name="err_payment_method">Enter payment method</string>
+    <string name="err_language">Enter your language</string>
+    <string name="err_speciality">Enter Speciality</string>
+
+
+    <!--/******************************************************************************************/-->
+
+    <!--/******************************************************************************************/-->
+
+    <string name="err_firstName">Enter First Name</string>
+    <string name="err_lastName">Enter last name</string>
+    <!--<string name=" err_email">Enter valid email</string>-->
+    <string name="err_mobile_no">Enter valid mobile number</string>
+    <string name="err_address">Enter address</string>
+    <string name="splash_title">Agrawal Federation</string>
+
+
+    <!-- ##########   Matrimony Module  ############# -->
+
+    <!-- About us Page -->
+    <string name="about_us">About Us</string>
+    <string name="about_us_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text</string>
+    <string name="about_us_Concept">Concept :</string>
+    <string name="about_us_ourConcept">Our Concept</string>
+    <string name="about_us_need">Need :</string>
+    <string name="about_us_ourneed">Our Need</string>
+
+    <!-- Basic Details page -->
+    <string name="basic_detail_firstname">First Name</string>
+    <string name="seprator">:</string>
+    <string name="basic_detail_midname">Middle Name</string>
+    <string name="basic_detail_lastname">Last Name</string>
+    <string name="basic_detail_dob">Date of Birth</string>
+    <string name="basic_detail_tob">Time of Birth</string>
+    <string name="basic_detail_birth_place">Birth Place</string>
+    <string name="basic_detail_native_place">Native Place</string>
+    <string name="basic_detail_marital_status">Marital Status</string>
+    <string name="basic_detail_no_of_children">Number of Children</string>
+    <string name="basic_detail_children_live_status">Children Living status</string>
+    <string name="basic_detail_gender">Gender</string>
+    <string name="basic_detail_mother_tongue">Mother Tongue</string>
+    <string name="basic_detail_religion">Religion</string>
+    <string name="basic_detail_cast">Cast</string>
+    <string name="basic_detail_subcast">SubCast</string>
+    <string name="basic_detail_aboutme">About Me</string>
+
+    <!-- Contact Information page -->
+    <string name="contact_info_mob_no">Mobile Number</string>
+    <string name="contact_info_lanline_no">Landline Number</string>
+    <string name="contact_info_address">Address</string>
+    <string name="contact_info_country">Country</string>
+    <string name="contact_info_state">State</string>
+    <string name="contact_info_city">City</string>
+    <string name="contact_info_pincode">Pincode</string>
+    <string name="contact_info_resedential_status">Residential Status</string>
+
+    <!-- Contact Us page -->
+    <string name="contact_us_address_head">Address :</string>
+    <string name="contact_us_address">75-78 Level 4, A-Wing KK Market Road, KK Market, Dhankawadi Pune Maharashtra 411043, India.</string>
+    <string name="contact_us_cont_number_head">Contact Number :</string>
+    <string name="contact_us_cont_number">000 000 000 000</string>
+    <string name="contact_us_email_head">Email :</string>
+    <string name="contact_us_email">info@theleelagroup.com</string>
+
+    <!-- Education details page-->
+    <string name="edu_detail_heghst_edu">Highest Education</string>
+
+    <!--  Event Row Layout -->
+    <string name="event_row_layout_eventname">Kolkata Matrimonial Meet</string>
+    <string name="event_row_layout_ev_addr">16A Dover Road, Regent Kusum Building , Kolkata - 700019 (West Bengal)</string>
+    <string name="event_row_layout_ev_loc">Location</string>
+    <string name="event_row_layout_ev_date">Date</string>
+    <string name="event_row_layout_ev_time">Time</string>
+    <string name="event_row_layout_ev_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
+    <string name="event_row_layout_viewmore">View More...</string>
+
+    <!-- event full details -->
+    <string name="event_full_layout_address">Address</string>
+
+    <!-- family details page-->
+    <string name="family_details_layout_father_full_name">Fathers Full Name</string>
+    <string name="family_details_layout_mother_full_name">Mothers Full Name</string>
+    <string name="family_details_layout_father_occu">Fathers Occupation</string>
+    <string name="family_details_layout_mother_occu">Mothers Occupation</string>
+    <string name="family_details_layout_no_of_bros">No.Of Brother</string>
+    <string name="family_details_layout_no_of_bros_mar">No.Of Brother Married</string>
+    <string name="family_details_layout_no_of_sis">No.Of Sister</string>
+    <string name="family_details_layout_no_of_sis_mar">No.Of Sister Married</string>
+    <string name="family_details_layout_fam_status">Family Status</string>
+    <string name="family_details_layout_fam_type">Family Type</string>
+    <string name="family_details_layout_fam_income">Family Income (In LPA)</string>
+
+
+    <!-- Form forgot password-->
+    <string name="send_otp">Send Otp</string>
+
+    <!--  Form Basic Details-->
+    <string name="i_am">I Am</string>
+    <string name="bride">Bride</string>
+    <string name="groom">Groom</string>
+    <string name="first_name">First Name</string>
+    <string name="mid_name">Middle Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="dob_hint">DD/MM/YY</string>
+    <string name="tob_hint">Hrs:Min</string>
+    <string name="birth_place">Birth Place</string>
+    <string name="native_place">Native Place</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="religion_details">Religion Detail</string>
+    <string name="hindu">Hindu</string>
+    <string name="cast">Cast</string>
+    <string name="subcast">SubCast</string>
+    <string name="SomethingAboutYou">Something About You</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="save_next">Next</string>
+    <!--
+    <string name="Address">Address</string>
+-->
+    <string name="ResidentialStatus">Residential Status</string>
+
+    <!--  Form Education Details-->
+    <string name="HighestEducation">Highest Education</string>
+
+    <!--  Form Family details-->
+    <string name="FatherFullName">Father Full Name</string>
+    <string name="MotherFullName">Mother Full Name</string>
+    <string name="FatherOccupation">Fathers Occupation</string>
+    <string name="MotherOccupation">Mothers Occupation</string>
+    <string name="NumberOfBrothers">Number Of Brothers</string>
+    <string name="NumberOfSisters">Number Of Sisters</string>
+    <string name="NumberOfBrothersMarried">Number Of Brothers Married</string>
+    <string name="NumberOfSistersMarried">Number Of Sisters Married</string>
+    <string name="FamilyStatus">Family Status</string>
+    <string name="FamilyType">Family Type</string>
+    <string name="FamilyAnnualIncome">Family Annual Income (In LPA)</string>
+
+    <!--  Form Occupation details-->
+    <string name="Occupation">Occupation</string>
+    <string name="Industry">Industry</string>
+    <string name="WorkField">Work Field</string>
+    <string name="PersonalAnnualIncome">Personal Annual Income(In LPA)</string>
+
+    <!--  Form Other details-->
+    <string name="WhereDidYouHearUs">Where Did You Hear Us</string>
+    <string name="ProfileCreatedBy">Profile Created By</string>
+    <!--
+    <string name="Hobbies">Hobbies</string>
+-->
+    <string name="Reading">Reading</string>
+    <string name="Dancing">Dancing</string>
+    <string name="Playing">Playing</string>
+    <string name="ListingSongs">Listing Songs</string>
+    <string name="Acting">Acting</string>
+    <string name="OtherHobbies">Other Hobbies</string>
+    <string name="Interests">Interests</string>
+
+    <!--  Form Partner Pref details-->
+    <string name="LookingFor">Looking For</string>
+    <string name="MinimumAge">Minimum Age</string>
+    <string name="MaximumAge">Maximum Age</string>
+    <!--    <string name="Country">Country</string>
+    <string name="State">State</string>
+    <string name="City">City</string>-->
+    <string name="ResidentStatus">Resident Status</string>
+    <string name="MinimumHeight">Minimum Height(cm)</string>
+    <string name="MaximumHeight">Maximum Height (cm)</string>
+    <string name="Complexion">Complexion</string>
+    <!--
+    <string name="Religion">Religion</string>
+-->
+    <string name="Cast">Cast</string>
+    <string name="termsandConditions">I have read and agree with Terms And Conditions.</string>
+    <string name="SaveAll">Save</string>
+
+    <!--  Form Physicasl Attribute details-->
+    <string name="Heightincm">Height in cm</string>
+    <string name="Weightinkg">Weight in kg</string>
+    <string name="BodyType">Body Type</string>
+    <string name="bloodgouup">Blood Group</string>
+    <string name="Diet">Diet</string>
+    <string name="Smoke">Smoke</string>
+    <string name="Drink">Drink</string>
+    <string name="YouAreHandicapped">Are You Handicapped</string>
+    <!-- <string name="Yes">Yes</string>
+    <string name="No">No</string>
+-->
+    <!--  Form Physicasl Attribute details-->
+    <string name="Manglik">Manglik</string>
+    <string name="Horoscope">Horoscope</string>
+    <string name="Gothra">Gothra</string>
+
+    <!--  Form Login -->
+    <string name="Login">Login</string>
+    <string name="Password">Password</string>
+    <!--
+    <string name="Email">Email</string>
+-->
+    <!--
+    <string name="NewUser">New User?</string>
+-->
+    <string name="ForgotPassword">Forgot Password?</string>
+
+    <!--  Activity Matrimony -->
+    <string name="EnterCity">Enter City</string>
+    <string name="FindMatch">Find Match</string>
+    <string name="CreateProfile">Create New Profile</string>
+    <string name="successstories">Success Stories</string>
+
+    <!--  Form registraion -->
+    <string name="ContactNumber">Contact Number</string>
+    <!-- <string name="Male">Male</string>
+    <string name="Female">Female</string>-->
+    <string name="Register">Register</string>
+
+    <!--  My EducationNews -->
+    <string name="BasicDetails">Basic Details</string>
+    <string name="ContactInformation">Contact Information</string>
+    <string name="SocialAttributes">Social Attributes</string>
+    <string name="EducationDetails">Education Details</string>
+    <string name="OccupationDetails">Occupation Details</string>
+    <string name="BusinessEmployeeAt">Business Employee At</string>
+    <string name="FamilyDetails">Family Details</string>
+    <string name="PhysicalAttribute">Physical Attribute</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+    <string name="Other">Other</string>
+    <string name="PartnerPreference">Partner Preference</string>
+    <string name="CountryLivingIn">Country Living In</string>
+    <string name="StateLivingIn">State Living In</string>
+    <string name="CityLivingin">City Living in</string>
+    <string name="Education">Education</string>
+    <string name="ID007">ID007</string>
+    <string name="age">Age</string>
+    <string name="EnterPassword">Enter Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="Save">Save</string>
+    <string name="OTP">OTP</string>
+    <string name="Send">Send</string>
+    <string name="IsManglik">Is Manglik</string>
+    <string name="BrideName">Bride Name</string>
+    <string name="GroomName">Groom Name</string>
+    <!--<string name="Location">Location</string>-->
+    <string name="Help">Our Story</string>
+    <string name="NewUser">New User</string>
+    <string name="forgot">Forgot Password ?</string>
+
+    <!--Medical_Module-->
+    <string name="Location">Location</string>
+    <string name="Top_Search">Top Search</string>
+    <string name="View_Add">View Your Add</string>
+    <string name="Add_your_services">Add Your Services</string>
+    <!--Medical_Module-->
+
+    <!--SearchResult_Medical-->
+    <string name="SWASTHYA_MEDICAL">SWASTHYA MEDICAL</string>
+    <string name="Detail">Detail</string>
+    <string name="Timing">Timing</string>
+    <string name="Phone">Phone</string>
+    <string name="Websites">Website</string>
+    <string name="Person">Person</string>
+
+    <!-- &lt;!&ndash;Fontawsome icons&ndash;&gt;
+    <string name="icon">&#xf007;</string>
+    <string name="tag_icon">&#xf292;</string>
+    <string name="email_icon">&#xf0e0;</string>
+    <string name="phone_icon">&#xf10b;</string>
+    <string name="landline_icon">&#xf095;</string>
+    <string name="c_icon">&#xf279;</string>
+    <string name="s_icon">&#xf041;</string>
+    <string name="city_icon">&#xf276;</string>
+    <string name="descrioption_icon">&#xf15b;</string>
+    <string name="lD_icon">&#xf15c;</string>
+    <string name="established">&#xf19c;</string>
+    <string name="website_icon">&#xf0ac;</string>
+    <string name="certificate_icon">&#xf0a3;</string>
+    <string name="licen_icon">&#xf2c3;</string>
+    <string name="payment_method_ic">&#xf283;</string>
+    <string name="lang_icon">&#xf2a3;</string>
+    <string name="catgory_icon">&#xf02c;</string>
+    <string name="sub_categry_icon">&#xf1c0;</string>
+    <string name="locale_icon">&#xf234;</string>
+    <string name="serv_area">&#xf1fe;</string>
+    <string name="working_day_icon">&#xf073;</string>
+    <string name="clock">&#xf017;</string>
+    <string name="logo">&#xf164;</string>
+    <string name="spetiality_icon">&#xf0f2;</string>
+    <string name="business_type_icon">&#xf275;</string>
+    <string name="adevertisement_type_icon">&#xf170;</string>
+-->
+    <!--SearchResult_Medical-->
+
+
+    <!--Medical_Posting-->
+    <string name="Basic_Details">Basic Details</string>
+    <string name="Doctor">Doctor</string>
+    <string name="Medical">Medical</string>
+    <string name="Hospital">Hospital</string>
+    <string name="Business_Name">Business Name</string>
+    <string name="Business_address">Business address</string>
+    <string name="Business_Contact">Business Contact</string>
+    <string name="Qualification">Qualification</string>
+    <string name="Open_Time">Open Time</string>
+    <string name="Close_Time">Close Time</string>
+    <string name="About_Business">About Business</string>
+    <string name="Business_Website">Business Website</string>
+    <string name="Contact_Person_Detail">Contact Person Detail</string>
+    <string name="Contact_Details">Contact_Details</string>
+    <string name="Show">Show</string>
+    <!-- <string name="app_name">Education</string>-->
+
+    <!--EducationNews-->
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="Father_Name">Father Name</string>
+    <string name="Mother_Name">Mother Name</string>
+    <string name="Gender">Gender</string>
+    <string name="Country">Country</string>
+    <string name="State">State</string>
+    <string name="City">City</string>
+    <string name="Address">Address</string>
+    <string name="Pincode">Pincode</string>
+    <!--EducationNews-->
+
+    <!--Education_Upload_Doc-->
+    <string name="SSC_Result">SSC Result</string>
+    <string name="HSC_Result">HSC Result</string>
+    <string name="Graduation_Result">Graduation Result</string>
+    <string name="Post_Graduation_Result">Post Graduation Result</string>
+
+
+    <string name="Passport">Passport</string>
+    <string name="sign_Result">Signature</string>
+    <string name="Browse">Browse</string>
+    <!--Education_Upload_Doc-->
+
+    <!--Registration-->
+    <string name="CET_Button">CET-(IAS,Civil Service)</string>
+    <string name="BEAT_Button">BEAT-(Bank PO Exam)</string>
+    <!--Registration-->
+
+    <!--Education_Rules-->
+    <string name="Go_To_Form">Go To Form</string>
+    <string-array name="rule">
+        <item>1]. A valid e-mail address for receiving all future correspondence till the admission process is over and thereon.</item>
+        <item>2]. A valid mobile number to receive SMS based notifications/communications related to the online application, Admit card, Entrance Test Result, Admission Counselling etc till the admission process is over and subsequently, if admitted.</item>
+        <item>3]. A recent scanned passport size colour photograph (4.5cmx4.5cm) in "jpeg" format only (file size of scanned photograph should not be more than 100KB). Your signature in Blue/Black pen on white sheet; scanned (2.5 cmx5cm) "jpeg" format only. (File size of scanned photograph should not be more than 100KB). Also keep ready all scanned education documents/certificate/mark sheets and testimonial in the jpeg/pdf format, but shall not be exceed 300kb each.</item>
+        <item>4]. Forms only be accepted by online mode with all the necessary documents / enclosures etc.</item>
+        <item>5]. Agrawal Federation Common Entrance Test (CET) will be in English and Hindi language, will be held at five centres i.e. Delhi, Jaipur, Chennai, Indore and Pune.</item>
+        <item>6]. No travelling allowance and stay arrangement will be provided by Agrawal Federation to student. They have to make their own arrangements for the same.</item>
+        <item>7]. Admission process comprises of a CET and interview. Due weightage is also given to past academic performance of a student. Therefore, filling up complete details of educational qualification is necessary. Students would be called for written test based upon academic performance. Further, student will be shortlisted for interview based upon written test and  academic performance jointly.</item>
+        <item>8]. Final selection would be based upon aggregate of marks obtained in written test,interview and academic performance.</item>
+        <item>9]. After successfully filling online form for registration, you will get USERID and PASSWORD on your e-mail for further information. After registration go through your Email Id InBox or Spam Folder for Your Login Credentials.</item>
+        <item>10]. All admissions in Agrawal Federation are strictly based upon merit. Students and their parents are advised not do any canvassing for admissions.</item>
+        <item>11]. Only successful candidate will get an e-mail for admission. Agrawal FederationCentre will be allotted as per All India Rank (AIR) of aspirant and subject to vacancy in the respective centre where you have applied for.</item>
+        <item>12]. For any other queries w.r.t. Agrawal Federation CET, kindly refer our FAQ section.</item>
+        <item>13]. The Academic Committee decision will be final for admission in Agrawal Federation.</item>
+        <item>14]. Please do not press back or refresh button while filing your registration form.</item>
+        <item>15]. In case of any problem or need any assistance please call on support number between 10:00 am to 5:00 PM except Sunday.</item>
+    </string-array>
+    <!--Education_Rules-->
+
+    <!--PersonalDetails-->
+    <string name="First_Mobile_Number">Mobile Number 1</string>
+    <string name="Second_Mobile_Number">Mobile Number 2</string>
+    <!--  <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Email">Email</string>-->
+    <string name="CountryName">Country</string>
+    <string name="Fix_Country">India</string>
+    <!--
+    <string name="Password">Password</string>
+-->
+    <!--PersonalDetails-->
+
+    <!--FamilyDetails-->
+    <string name="Family_Details">Family Details</string>
+    <string name="Father_Details">Father Details</string>
+    <string name="Father_occupation">Father occupation</string>
+    <string name="Telephone_No">Telephone No</string>
+    <string name="Father_Mobile_No">Father Mobile No</string>
+    <string name="Anual_Income">Annual Income (INR only)</string>
+    <string name="PANCARDNo">PAN CARD No</string>
+    <string name="Mother_Details">Mother Details</string>
+    <string name="Mother_Occupation">Mother Occupation</string>
+    <string name="Mother_Telephone_No">Mother Telephone No</string>
+    <string name="Mother_Mobile_No">Mother Mobile No</string>
+    <string name="Religion">Religion</string>
+    <string name="Father_Telephone_No">Father Telephone No :-</string>
+
+    <!--FamilyDetails-->
+
+    <!--EducationDetails-->
+    <string name="Education_Details">Education Details</string>
+    <string name="SSC">SSC (Xth Class)</string>
+    <string name="SSC_Rank">SSC Rank</string>
+    <string name="Rank_If_any">Rank, If any </string>
+    <string name="Roll_No">Roll No</string>
+    <string name="Percent">Percent(%)</string>
+    <string name="School_Name">School Name</string>
+    <string name="Seat_Number">Seat Number</string>
+    <string name="SSC_Year">SSC Year</string>
+    <string name="SSC_Details">SSC Details</string>
+    <string name="SSC_Percentage">SSC Percentage like (99.99)</string>
+    <string name="HSC">HSC (XIIth Class)</string>
+    <string name="School_College_Name">School/College Name</string>
+    <string name="HSC_Seat_Number">HSC Seat Number</string>
+    <string name="HSC_Details">HSC Details</string>
+    <string name="HSC_Board">HSC Board</string>
+    <string name="HSC_Year">HSC Year</string>
+    <string name="HSC_Percentage">HSC Percentage like (99.99)</string>
+    <string name="HSC_Rank">HSC Rank</string>
+    <string name="Graduation">Graduation</string>
+    <string name="Graduation_Details">Graduation Details</string>
+    <string name="Graduation_University">Graduation University</string>
+    <string name="Degree_Name">Degree Name</string>
+    <string name="Graduation_Year">Graduation Year</string>
+    <string name="Graduation_Percentage">Graduation Percentage like (99.99)</string>
+    <string name="Graduation_Rank">Graduation Rank</string>
+    <string name="Final_Year">Are You in the final year of degree ?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Post_Graduation">Post Graduation</string>
+    <string name="Post_Graduation_University">Post Graduation University</string>
+    <string name="Post_Graduation_Details">Post Graduation Details</string>
+    <string name="Post_Graduation_Degree_Name">Post Graduation Degree Name</string>
+    <string name="Post_Graduation_Year">Post Graduation Year</string>
+    <string name="Post_Graduation_Percentage">Post Graduation Percentage like (99.99)</string>
+    <string name="Post_Graduation_Rank">Post Graduation Rank</string>
+
+    <!--EducationDetails-->
+
+
+    <!--CET Details-->
+    <string name="CET_Details">CET Details</string>
+    <string name="Facilty_from_Af">Facilty from Agrawal Federation</string>
+    <string name="About_CET">About CET</string>
+    <string name="Availed">Have you availed any of the facility from Agrawal Federation?</string>
+    <string name="Form">From where you come to know about CET /Agrawal Federation?</string>
+    <string name="SMS">SMS</string>
+    <string name="Banner">Banner</string>
+    <string name="TV_Add">TV Add</string>
+    <string name="Family_Friend">Family Friend</string>
+    <string name="Magzine">Magzine</string>
+    <string name="Social_gathering">Social  gathering</string>
+    <string name="Internet_website">Internet/website</string>
+    <string name="Language_Medium_of_CET">Language Medium of CET </string>
+    <string name="English">English</string>
+    <string name="Hindi">Hindi</string>
+    <string name="Examination_Center">Examination Center of CET </string>
+    <string name="Schedule_of_CET">Schedule of CET </string>
+    <string name="output">Output</string>
+    <string name="Languages">Languages</string>
+    <string name="APPEAR">Name of exam for which you want to appear</string>
+    <!--CET Details-->
+
+    <!--ExamSubject-->
+    <string name="EXAM_AND_SUBJECT">Exam And Subject</string>
+    <string name="Exam_Name">Name of exam for which you want to appear</string>
+    <string name="States">State</string>
+    <string name="UPSC">UPSC</string>
+    <string name="UPSC_E">UPSC :-</string>
+    <string name="Preliminary">Preliminary</string>
+    <string name="Mains">Mains</string>
+    <string name="Interview">Interview</string>
+    <string name="UPSC_Preliminary">UPSC Preliminary</string>
+    <string name="Details_Optional_Subject">Details of Optional Subject you would like to opt for main Exam </string>
+    <string name="LanguageMediumofExamination">Language Medium of Examination</string>
+    <string name="STATE">STATE</string>
+    <string name="State_Preliminary">State Preliminary</string>
+    <string name="Past_Detail_for_UPSC">Past Detail for UPSC</string>
+    <string name="Number_of_Attempt">Number of Attempt</string>
+    <!--ExamSubject-->
+
+    <!--OtherDetails-->
+    <string name="OTHER_DETAILS">OTHER DETAILS</string>
+    <string name="Extra_Curriculum_Activity">Extra Curriculum Activity</string>
+    <string name="Zonal_National_International_Level">Zonal/National/International Level</string>
+    <string name="Year">Year</string>
+    <string name="Other_Information">Other Information</string>
+    <string name="Position">Position</string>
+    <string name="Any_Other_Achivment">Any Other Achivment </string>
+    <string name="Hobbies">Hobbies</string>
+    <!--OtherDetails-->
+
+    <!--Refference-->
+    <string name="REFERENCE">Reference</string>
+    <string name="Reference_of_two_Person">Reference of two Person</string>
+    <string name="First_Person">First Person</string>
+    <string name="Name">Name</string>
+    <string name="Cities">City</string>
+    <string name="Mobile_No">Mobile No</string>
+    <string name="Second_Person">Second Person</string>
+    <string name="Term_and_Condition">I Accept Term and Condition</string>
+    <string name="SAVE">SAVE</string>
+    <string name="Email1">Email</string>
+    <!--Refference-->
+
+    <!--BEAT-->
+    <string name="BEAT_Details">BEAT Details</string>
+    <string name="About_BEAT">About BEAT</string>
+    <string name="Language_Medium_of_BEAT">Language Medium of BEAT</string>
+    <string name="Examination_Center_of_BEAT">Examination Center of BEAT </string>
+    <string name="Schedule_of_BEAT">Schedule of BEAT</string>
+
+    <!--BEAT-->
+
+    <!--Fontawsome icons-->
+    <string name="plus_icon">&#xf067;</string>
+    <string name="userId">&#xf084;</string>
+    <string name="icon">&#xf007;</string>
+    <string name="tag_icon">&#xf292;</string>
+    <string name="email_icon">&#xf0e0;</string>
+    <string name="phone_icon">&#xf10b;</string>
+    <string name="landline_icon">&#xf095;</string>
+    <string name="c_icon">&#xf279;</string>
+    <string name="s_icon">&#xf041;</string>
+    <string name="city_icon">&#xf276;</string>
+    <string name="descrioption_icon">&#xf15b;</string>
+    <string name="lD_icon">&#xf15c;</string>
+    <string name="established">&#xf19c;</string>
+    <string name="website_icon">&#xf0ac;</string>
+    <string name="certificate_icon">&#xf0a3;</string>
+    <string name="lic_icon">&#xf2c2;</string>
+    <string name="payment_method_ic">&#xf283;</string>
+    <string name="lang_icon">&#xf2a3;</string>
+    <string name="catgory_icon">&#xf02c;</string>
+    <string name="sub_categry_icon">&#xf1c0;</string>
+    <string name="locale_icon">&#xf234;</string>
+    <string name="serv_area">&#xf1fe;</string>
+    <string name="working_day_icon">&#xf073;</string>
+    <string name="clock">&#xf017;</string>
+    <string name="logo">&#xf164;</string>
+    <string name="spetiality_icon">&#xf0f2;</string>
+    <string name="business_type_icon">&#xf275;</string>
+    <string name="adevertisement_type_icon">&#xf170;</string>
+
+    <!--  BAsic details Icon -->
+    <string name="map_icon">&#xf041;</string>
+    <string name="clock_icon">&#xf017;</string>
+    <string name="calander_icon">&#xf073;</string>
+    <string name="cake_icon">&#xf1fd;</string>
+    <string name="home_icon">&#xf015;</string>
+    <string name="marital_status_icon">&#xf004;</string>
+    <string name="child_liv_sts_icon">&#xf2c0;</string>
+    <string name="no_of_child_icon">&#xf0c0;</string>
+    <string name="gender_icon">&#xf007;</string>
+    <string name="mother_tong_icon">&#xf1ab;</string>
+    <string name="religion_icon">&#xf0a2;</string>
+    <string name="cast_icon">&#xf25e;</string>
+    <string name="abt_me_icon">&#xf29e;</string>
+
+    <!--  Contact details Icon -->
+    <string name="mobile_icon">&#xf10b;</string>
+    <string name="landlin_icon">&#xf098;</string>
+    <string name="address_icon">&#xf015;</string>
+    <string name="pincode_icon">&#xf276;</string>
+    <string name="res_status_icon">&#xf145;</string>
+    <string name="edu_icon">&#xf19d;</string>
+
+    <string name="occu_icon">&#xf0f2;</string>
+    <string name="group_icon">&#xf0c0;</string>
+    <string name="dollar_icon">&#xf155;</string>
+
+    <string name="industry_icon">&#xf275;</string>
+    <string name="empat_icon">&#xf19c;</string>
+    <string name="money_icon">&#xf0d6;</string>
+    <string name="pencil_icon">&#xf044;</string>
+    <string name="football_icon">&#xf1e3;</string>
+    <string name="thumbsup_icon">&#xf087;</string>
+    <string name="search_icon">&#xf002;</string>
+    <string name="height_icon">&#xf034;</string>
+    <string name="smile_icon">&#xf118;</string>
+    <string name="weight_icon">&#xf24e;</string>
+    <string name="bodytype_icon">&#xf29a;</string>
+    <string name="drop_icon">&#xf043;</string>
+    <string name="diet_icon">&#xf0f5;</string>
+    <string name="smoke_icon">&#xf1b6;</string>
+    <string name="drink_icon">&#xf000;</string>
+    <string name="handicap_icon">&#xf193;</string>
+    <string name="manglik_icon">&#xf222;</string>
+    <string name="horoscope_icon">&#xf005;</string>
+    <string name="gothra_icon">&#xf1e5;</string>
+    <string name="female_icon">&#xf182;</string>
+    <string name="male_icon">&#xf183;</string>
+    <string name="licen_icon">&#xf2c3;</string>
+
+
+    <!--************************************************* medical Font ********************************************************-->
+    <string name="Detail_ic">&#xf05a;</string>
+    <string name="timeing_ic">&#xf017;</string>
+    <string name="phone_ic">&#xf098;</string>
+    <string name="website_ic">&#xf0ac;</string>
+    <string name="person_ic">&#xf007;</string>
+    <string name="mobile_ic">&#xf10b;</string>
+    <string name="email_ic">&#xf0e0;</string>
+    <string name="designation_ic">&#xf0b1;</string>
+    <string name="medical_ic">&#xf0f8;</string>
+    <string name="add_ic">&#xf015;</string>
+    <string name="category">&#xf0b1;</string>
+
+
+    <!--************************************************* medical Font ********************************************************-->
+
+
+    <!--*********************************************EDUCATION MODULE***************************************************************-->
+
+    <!--educationfont-->
+    <string name="dob_ic">&#xf1fd;</string>
+    <string name="country_ic">&#xf279;</string>
+    <string name="state_ic">&#xf041;</string>
+    <string name="city_ic">&#xf276;</string>
+    <string name="gender_ic">&#xf225;</string>
+    <string name="pincode_ic">&#xf08d;</string>
+
+    <string name="occupation_ic">&#xf0f2;</string>
+    <string name="pan_card_ic">&#xf05a;</string>
+    <string name="religion_ic">&#xf25d;</string>
+    <string name="result_ic">&#xf19c;</string>
+    <string name="school_ic">&#xf19c;</string>
+    <string name="rollno_ic">&#xf162;</string>
+    <string name="year_ic">&#xf073;</string>
+    <string name="percentage_ic">&#xf295;</string>
+    <string name="rank_ic">&#xf006;</string>
+    <string name="degree_ic">&#xf19d;</string>
+    <string name="facility_ic">&#xf0f7;</string>
+    <string name="language_ic">&#xf1ab;</string>
+    <string name="subject_ic">&#xf02d;</string>
+    <string name="extra_activity_ic">&#xf055;</string>
+    <string name="leval_ic">&#xf148;</string>
+
+
+    <!--*********************************************EDUCATION MODULE***************************************************************-->
+    <string name="ChooseLogo">Choose Logo</string>
+    <string name="Update">Update</string>
+    <string name="Reset">Reset</string>
+    <string name="Next">Next</string>
+    <string name="Prev">Prev</string>
+    <string name="title_activity_main_drawer">Home</string>
+    <!--user profile-->
+    <string name="userName">Full Name</string>
+    <string name="userEmail">Email</string>
+    <string name="userPhone">Mobile Number</string>
+    <string name="checkConn">Please Check Internet Connection.</string>
+    <string name="AboutUsStatic" formatted="false"> Agrawal Federation is an overall group of Agrawals specialists, industrialists, learning laborers and experts in different fields mirroring their brilliance of moral business rehearses. Agrawal Federation is set to accomplish financial strengthening, esteem based training, group welfare, routine with regards to sympathy, profound upliftment of kindred creatures through worldwide kingship.</string>
+
+    <string name="education_text">Agrawal Federation has taken this initiative and launched an easy education scheme so that students from the Agrawal community do not compromise on their education because of unavailability of enough financial resources.
+</string>
+    <string name="matrimony_text">The mission of Agrawal Federation is to provide a superior matchmaking experience by expanding the opportunities available to meet potential life partners and build fulfilling relationships.
+
+</string>
+
+    <string name="medical_text">Agrawal Federation is providing community medical services under National Vocational Education Mission has started General Allopathic Medical Course of Community Medical Service of Essential Drugs in Allopathic Medicine.</string>
+    <string name="title_activity_educationpdf">EducationpdfActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="calender">&#xf073;</string>
+</resources>

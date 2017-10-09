@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.FormContactInformationActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_margin"
+            android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/frm_d_per_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/contact_info_mob_no"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_d_per_landlnno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/contact_info_lanline_no"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/frm_d_per_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:hint="@string/Email"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_d_per_addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:hint="@string/Address"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:scrollbars="vertical" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_d_per_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="@string/contact_info_country"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <AutoCompleteTextView
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_d_per_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:hint="@string/contact_info_state"
+                        android:inputType="textCapWords" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <AutoCompleteTextView
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+
+                    android:id="@+id/frm_d_per_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:hint="@string/contact_info_city"
+                    android:inputType="textCapWords" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="@dimen/layout_bottom_margin"
+                    android:layout_marginTop="@dimen/layout_bottom_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textSize="@dimen/text_size"
+
+                        android:id="@+id/frm_d_per_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:digits="0123456789"
+                        android:hint="@string/contact_info_pincode"
+                        android:inputType="number"
+                        android:maxLength="6" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/frm_per_resdsts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                android:text="@string/ResidentialStatus"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                android:textSize="@dimen/about_us_heading_dimen" />
+
+
+
+                <Spinner
+                    android:id="@+id/frm_d_per_ressts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:entries="@array/resident_status" />
+
+                <Button
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/button_margin_top"
+                    android:layout_marginBottom="@dimen/form_spinner_layout_margin_bottom"
+                    android:background="@drawable/res_drawable_btn_flat_normal"
+                    android:gravity="center"
+                    android:onClick="goToFormSocialAttribute"
+                    android:text="@string/save_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttonTextColor"
+                     />
+                <!-- <Button
+                    android:id="@+id/bnsaveupdate"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5"
+                    android:textColor="#fff"
+                    
+                    android:background="@color/circleArrowButton"
+                    android:onClick="goToFormContactInformation"
+                    android:text="save update"
+                    android:visibility="gone"/>-->
+        </LinearLayout>
+
+        <!-- <ImageButton
+             android:id="@+id/draggable_view"
+             android:background="@drawable/home_icon"
+             android:layout_gravity="bottom|left"
+             android:layout_marginBottom="20dp"
+             android:layout_marginEnd="20dp"
+             android:layout_width="50dp"
+             android:layout_height="50dp"/>-->
+    </ScrollView>
+</LinearLayout>

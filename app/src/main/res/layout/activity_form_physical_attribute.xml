@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".matrimony.FormPhysicalAttributeActivity">
+
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layout_bottom_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textSize="@dimen/text_size"
+                            android:id="@+id/frm_phyclattr_et_higt_ft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:hint="@string/Heightincm"
+                            android:inputType="number"
+                            android:maxLength="3" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:layout_marginTop="@dimen/layout_bottom_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:textSize="@dimen/text_size"
+                            android:id="@+id/frm_phyclattr_et_wegt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".5"
+                            android:digits="0123456789"
+                            android:hint="@string/Weightinkg"
+                            android:inputType="number"
+                            android:maxLength="3" />
+                    </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_bdtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:text="@string/BodyType"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+
+                    <Spinner
+                        android:id="@+id/frm_phyclattr_spr_bdtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:layout_marginTop="@dimen/button_margin_top"
+                        android:layout_marginBottom="@dimen/button_margin_top"
+                        android:entries="@array/body_type" />
+
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_bldgrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:text="@string/bloodgouup"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+
+
+                    <Spinner
+                        android:id="@+id/frm_phyclattr_spr_bldgrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+
+                        android:entries="@array/blood_group" />
+
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_complexn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:text="@string/Complexion"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:textSize="@dimen/about_us_heading_dimen"
+                    android:textColor="@color/black"
+                    />
+
+
+
+                    <Spinner
+                        android:id="@+id/frm_phyclattr_spr_complxn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:entries="@array/complexion" />
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_diet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:text="@string/Diet"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:textSize="@dimen/about_us_heading_dimen"
+                     />
+
+                    <Spinner
+                        android:id="@+id/frm_phyclattr_spr_diet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:entries="@array/diet" />
+
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_smoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight=".5"
+                    android:text="@string/Smoke"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/about_us_heading_dimen" />
+
+
+                    <Spinner
+                        android:id="@+id/frm_phyclattr_spr_smoke"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:entries="@array/smoke" />
+
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:text="@string/Drink"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:textSize="@dimen/about_us_heading_dimen"
+                    android:textColor="@color/black"
+                     />
+
+
+                    <Spinner
+                        android:id="@+id/frm_phyclattr_spr_drink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:entries="@array/drink" />
+
+                <TextView
+                    android:id="@+id/frm_phyclattr_tv_hndcped"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/form_spinner_label_mar_left"
+                    android:layout_marginTop="@dimen/form_spinner_layout_margin_top"
+                    android:layout_weight=".5"
+                    android:text="@string/YouAreHandicapped"
+                    android:textSize="@dimen/form_tv_size"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioGroup
+                        android:id="@+id/frm_phyclattr_rdgrp_hndcped"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:textSize="@dimen/text_size"
+                            android:id="@+id/frm_phyclattr_rdbtn_hndcped_yes"
+                            android:layout_width="@dimen/form_first_radio_bn_width"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="middle"
+                            android:text="@string/Yes" />
+
+                        <RadioButton
+                            android:textSize="@dimen/text_size"
+
+                            android:id="@+id/frm_phyclattr_rdbtn_hndcped_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/No" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                    <Button
+                        android:textSize="@dimen/text_size"
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/res_drawable_btn_flat_normal"
+                        android:onClick="goToOtherInfrmation"
+                        android:text="@string/save_next"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/buttonTextColor"
+                        android:textStyle="bold" />
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

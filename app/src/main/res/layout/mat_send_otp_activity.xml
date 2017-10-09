@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/form_layout_margin"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_registration_til_mar_top">
+
+            <EditText
+                android:textSize="@dimen/text_size"
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+                android:drawablePadding="@dimen/form_et_drawable_padding"
+                android:hint="@string/OTP"
+                android:inputType="number"
+                android:maxLength="6" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:orientation="horizontal">
+
+            <Button
+                android:textSize="@dimen/text_size"
+
+                android:id="@+id/otp_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:background="@drawable/res_drawable_btn_flat_normal"
+                android:text="@string/Send"
+                android:textColor="@color/buttonTextColor"
+                 />
+
+            <!-- <Button
+             android:id="@+id/otp_cancle"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="cancel"
+             android:background="@color/colorPrimary"
+             android:textColor="#FFFFFF"
+             android:textStyle="bold"
+             android:layout_marginTop="10dp"
+             android:layout_weight="0.5"
+             android:layout_margin="5dp"/>-->
+
+        </LinearLayout>
+
+        >
+
+    </LinearLayout>
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar">
+    </include>
+
+</LinearLayout>

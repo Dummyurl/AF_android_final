@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".education.Education">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/education1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="GET"
+            android:textAllCaps="true"
+            android:textColor="#08138c"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" REGISTER"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="2.8dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ff0000"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="8dp">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='"AF" wishes to Empower the Education, facilitate  and strengthen the process of preparing deserving  youth for joining Civil and Banking services.'
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="17sp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_margin="15dp"
+        android:onClick="startSecond"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:text="Registration for CET/BEAT "
+       android:layout_gravity="center"
+        android:background="#ef5350"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/LoginToEducation"
+        android:layout_margin="15dp"
+        android:onClick="startSecond"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:text=" Login "
+        android:layout_gravity="center"
+        android:background="#ef5350"
+        android:textColor="#fff"/>
+
+</LinearLayout>

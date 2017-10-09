@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/item_apply_franchisee"
+        android:title="@string/apply_franchisee"
+        />
+
+    <item
+        android:id="@+id/item_add_addvertized"
+        android:title="@string/add_addvertized" />
+    <item
+        android:id="@+id/item_my_add"
+        android:title="@string/my_add"
+        />
+   <!-- <item
+        android:id="@+id/item_logout"
+        android:title="@string/logout"
+        />-->
+
+</menu>
